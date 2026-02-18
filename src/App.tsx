@@ -4,10 +4,12 @@ import { QuizView } from './components/QuizView';
 import { BookmarkedQuestions } from './components/BookmarkedQuestions';
 import { HistoryView } from './components/HistoryView';
 import { AttemptDetail } from './components/AttemptDetail';
+import { SpacedRepetitionView } from './components/SpacedRepetitionView';
+import { quizCatalog } from './data/quizCatalog';
 import type { QuizInfo, Language } from './types';
 import type { QuizAttempt } from './types/history';
 
-type View = 'selection' | 'quiz' | 'bookmarks' | 'history' | 'attempt';
+type View = 'selection' | 'quiz' | 'bookmarks' | 'history' | 'attempt' | 'reviews';
 
 function App() {
   const [view, setView] = useState<View>('selection');
@@ -36,6 +38,25 @@ function App() {
     setSelectedAttempt(null);
     setView('history');
   };
+
+  const handleStartReview = (quizId: string) => {
+    // Find the quiz from catalog
+    const quizInfo = quizCatalog.find((q) => q.id === quizId);
+    if (quizInfo) {
+      setSelectedQuiz(quizInfo);
+      setView('quiz');
+    }
+  };
+
+  if (view === 'reviews') {
+    return (
+      <SpacedRepetitionView
+        language={language}
+        onStartReview={handleStartReview}
+        onBack={handleBack}
+      />
+    );
+  }
 
   if (view === 'quiz' && selectedQuiz) {
     return (
@@ -83,6 +104,7 @@ function App() {
       onLanguageChange={setLanguage}
       onShowBookmarks={() => setView('bookmarks')}
       onShowHistory={() => setView('history')}
+      onShowReviews={() => setView('reviews')}
     />
   );
 }

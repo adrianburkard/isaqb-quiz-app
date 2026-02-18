@@ -2,6 +2,7 @@ import { quizCatalog, languageLabels } from '../data/quizCatalog';
 import { useAllQuizProgress, clearQuizProgress } from '../hooks/useQuizProgress';
 import { useAllBookmarks } from '../hooks/useQuestionMarks';
 import { useQuizHistory } from '../hooks/useQuizHistory';
+import { useSpacedRepetition } from '../hooks/useSpacedRepetition';
 import { PreferencesPanel } from './PreferencesPanel';
 import type { QuizInfo, Language } from '../types';
 
@@ -11,12 +12,15 @@ interface Props {
   onLanguageChange: (language: Language) => void;
   onShowBookmarks?: () => void;
   onShowHistory?: () => void;
+  onShowReviews?: () => void;
 }
 
-export function QuizSelection({ onSelectQuiz, language, onLanguageChange, onShowBookmarks, onShowHistory }: Props) {
+export function QuizSelection({ onSelectQuiz, language, onLanguageChange, onShowBookmarks, onShowHistory, onShowReviews }: Props) {
   const { summaries, refresh } = useAllQuizProgress();
   const { count: bookmarkCount } = useAllBookmarks();
   const { totalAttempts } = useQuizHistory();
+  const { getSummary } = useSpacedRepetition();
+  const dueReviews = getSummary().totalDue;
 
   const filteredQuizzes = quizCatalog.filter(
     (quiz) => quiz.language === language
@@ -43,6 +47,7 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange, onShow
       resetTitle: 'Quiz neu starten',
       bookmarks: 'Lesezeichen',
       history: 'Verlauf',
+      reviews: 'Wiederholungen',
     },
     en: {
       title: 'iSAQB CPSA-F Practice Exams',
@@ -53,6 +58,7 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange, onShow
       resetTitle: 'Reset quiz',
       bookmarks: 'Bookmarks',
       history: 'History',
+      reviews: 'Reviews',
     },
   };
 
@@ -113,6 +119,32 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange, onShow
                   {totalAttempts > 0 && (
                     <span className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center">
                       {totalAttempts > 9 ? '9+' : totalAttempts}
+                    </span>
+                  )}
+                </button>
+              )}
+              {onShowReviews && (
+                <button
+                  onClick={onShowReviews}
+                  className="relative p-2 text-muted hover:text-purple-500 hover:bg-hover rounded-lg transition-colors"
+                  title={t.reviews}
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  {dueReviews > 0 && (
+                    <span className="absolute -top-1 -right-1 w-4 h-4 bg-purple-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center">
+                      {dueReviews > 9 ? '9+' : dueReviews}
                     </span>
                   )}
                 </button>
