@@ -1,0 +1,1286 @@
+{
+  "exam_title": "Offizielle iSAQB CPSA-F Beispielprüfung (Version 2025.2)",
+  "version": "Official-Mock-2025.2",
+  "questions": [
+    {
+      "id": "MOCK-Q01",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Wie viele Definitionen des Begriffes 'Softwarearchitektur' gibt es?",
+      "explanation": "Es gibt keine einzelne, universell akzeptierte Definition. Verschiedene Autoren (Bass, Clements, Kazman, IEEE, etc.) und Organisationen haben unterschiedliche Definitionen geprägt, die je nach Kontext (Unternehmensarchitektur, Systemarchitektur, etc.) variieren.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Genau eine für alle Arten von Systemen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Eine für jede Art von Softwaresystem (z. B. 'eingebettet', 'Echtzeit', 'Entscheidungsunterstützung', 'Web', 'Batch', ...).",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ein Dutzend oder mehr unterschiedliche Definitionen.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q02",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche der folgenden Aspekte werden durch den Begriff 'Softwarearchitektur' abgedeckt?",
+      "explanation": "Softwarearchitektur befasst sich mit der Strukturierung des Systems in Komponenten, deren Schnittstellen (interne und externe) und übergreifenden Konzepten (Querschnittskonzepte). Coding Conventions sind Detailentscheidungen der Implementierung, Hardware-Sizing ist eher Teil der Infrastrukturplanung (wird zwar beeinflusst, ist aber nicht die Architekturdefinition selbst).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Komponenten",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Querschnittskonzepte",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "(interne und externe) Schnittstellen",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Programmierkonventionen ('coding conventions')",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Hardware-Sizing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q03",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche VIER der folgenden Aussagen zu (Querschnitts-) Konzepten sind am zutreffendsten?",
+      "explanation": "Konzepte (wie Logging, Security, Fehlerbehandlung) schaffen Konsistenz (e), regeln Aspekte wie Exception Handling (c), können Einschränkungen für viele Bausteine vorgeben (f) und können manchmal auch durch einen zentralen Baustein realisiert werden (g). Sie verringern die Kopplung nicht zwingend (a) und sind nicht nur für Mustertreue da (b).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Durch die einheitliche Verwendung von Konzepten wird die Kopplung zwischen Bausteinen verringert.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Durch die Definition von geeigneten Konzepten wird die Mustertreue der Architektur sichergestellt.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Eine einheitliche Ausnahmebehandlung (Exception Handling) kann man gut erreichen, indem die Architekt:innen mit den Entwickler:innen vor der Implementierung ein geeignetes Konzept vereinbaren.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Für jedes Qualitätsziel sollte es ein explizit dokumentiertes Konzept geben.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Konzepte sind ein Mittel zur Erhöhung der Konsistenz.",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "Ein Konzept kann Einschränkungen für die Umsetzung vieler Bausteine definieren.",
+          "is_correct": true
+        },
+        {
+          "id": "g",
+          "text": "Ein Konzept kann durch einen einzigen Baustein umgesetzt werden.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q04",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Bei Ihrem Projekt arbeiten drei Architekt:innen und sieben Entwickler:innen an der Dokumentation der Softwarearchitektur. Welche Methoden eignen sich zur Gewährleistung einer konsistenten und zweckmäßigen Dokumentation und welche nicht?",
+      "explanation": "Koordination durch eine leitende Person (a) und die Nutzung gemeinsamer Vorlagen/Templates (b) sind bewährte Mittel für Konsistenz. Die *vollständige* automatische Extraktion (c) ist illusorisch, da Entwurfsentscheidungen, Ziele und nicht-funktionale Anforderungen nicht im Code stehen.",
+      "column_headers": [
+        "Geeignet",
+        "Nicht geeignet"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Die/der leitende Architekt:in koordiniert die Erstellung der Dokumentation.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Für die Dokumentation werden identische Vorlagen verwendet.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Alle Teile der Dokumentation werden automatisch aus dem Quellcode extrahiert.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q05",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche der folgenden Techniken sind am besten zur Darstellung von Abläufen oder Laufzeitverhalten geeignet?",
+      "explanation": "Laufzeitverhalten wird dynamisch dargestellt. Flussdiagramme (a), Aktivitätsdiagramme (b) und Sequenzdiagramme (d) sind klassische dynamische Diagramme. Auch eine nummerierte Liste (f) ist eine valide, einfache Form zur Beschreibung eines Ablaufs. Klassendiagramme (h) sind statisch.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flussdiagramme",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Aktivitätsdiagramme",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Darstellung von Screenflows (Abfolge von Benutzerinteraktionen)",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Sequenzdiagramm",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Lineares Venn-Diagramm",
+          "is_correct": false
+        },
+        {
+          "id": "f",
+          "text": "Nummerierte Liste aufeinanderfolgender Schritte",
+          "is_correct": true
+        },
+        {
+          "id": "g",
+          "text": "Tabellarische Schnittstellenbeschreibung",
+          "is_correct": false
+        },
+        {
+          "id": "h",
+          "text": "Klassendiagramme",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q06",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche der folgenden Grundsätze gelten für das Testen?",
+      "explanation": "Testen kann nie die Abwesenheit von Fehlern beweisen, nur deren Anwesenheit (d). Vollständiges Testen ist bei komplexen Systemen unmöglich (a). Fehler treten oft gehäuft auf (Fehlercluster) (b).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Im Allgemeinen ist es nicht möglich, sämtliche Fehler eines Systems zu finden.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Bei Komponenten mit vielen bekannten vorherigen Fehlern sind die Chancen für zusätzliche Fehler hoch.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Durch ausreichendes Testen kann aufgezeigt werden, dass ein Programm fehlerfrei ist.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Durch Testen kann nur die Existenz von Fehlern aufgezeigt werden, nicht jedoch ihre Abwesenheit.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Die funktionale Programmierung erlaubt keine automatisierten Tests.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q07",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Welche der folgenden Aussagen zum Entwurfsprinzip 'Information Hiding' sind richtig und welche falsch?",
+      "explanation": "Information Hiding (Geheimnisprinzip) kapselt Details, was Änderungen erleichtert (a) und Informationen vor Konsumenten verbirgt (b). Es steht nicht im Widerspruch zu Bottom-Up (c) und leitet sich nicht aus dem Kontrollfluss ab (d), sondern aus der Modulzerlegung.",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Durch die Befolgung des Prinzips 'Information Hiding' wird die Flexibilität für Änderungen erhöht.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Beim Information Hiding werden absichtlich Informationen vor Aufrufern oder Konsumenten des Bausteins verborgen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Information Hiding erschwert das Bottom-Up Vorgehen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Information Hiding ist abgeleitet vom Ansatz der inkrementellen Verfeinerung entlang des Kontrollflusses.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q08",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Was sind die wichtigsten Ziele von Softwarearchitektur?",
+      "explanation": "Hauptziele sind das Erreichen von Qualitätsanforderungen (b) und die Kommunikation/Verständlichkeit der Lösung (d). Mustergenauigkeit (a) ist kein Selbstzweck. Tests (c) sind wichtig, aber Architektur ist mehr als nur Testbarkeit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verbesserung der Genauigkeit von Mustern in Struktur und Implementierung.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Erreichung der Qualitätsanforderungen auf nachvollziehbare Weise.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ermöglichung von kosteneffizienten Integrations- und Abnahmetests des Systems.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ermöglichung eines grundlegenden Verständnisses der Strukturen und Konzepte für das Entwicklungsteam und andere Beteiligte.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q09",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Stellen Sie sich vor, Sie sind Softwarearchitekt:in für eine große und verteilte Geschäftsanwendung im Banken- oder Versicherungsbereich. Welche der folgenden Aussagen sind für diese Situation richtig und welche falsch?",
+      "explanation": "Geschäftsprozesse ändern sich oft, die Architektur sollte dies unterstützen (a). Produktqualitäten (Sicherheit, Performance) sind Architekturtreiber (b). Architektur ist nie völlig unabhängig von der Infrastruktur (c), besonders bei verteilten Systemen.",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Die Architektur sollte so aufgebaut sein, dass häufig vorkommende Änderungen an den entsprechenden Geschäftsprozessen ohne umfangreiche Umstrukturierungen der Softwarearchitektur möglich sind.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Erforderliche Produktqualitäten sollten Ihre architektonischen Entscheidungen leiten.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Die Softwarearchitektur kann völlig unabhängig von Hardware und Infrastruktur entworfen werden.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q10",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Was sind Ihre wichtigsten Verantwortlichkeiten als Softwarearchitekt:in in Bezug auf Anforderungen?",
+      "explanation": "Architekt:innen müssen Qualitätsanforderungen konkretisieren (a), technisches Feedback zu Geschäftsmöglichkeiten geben (b) und die technische Machbarkeit prüfen (e). Sie sind nicht dafür da, Anforderungen pauschal abzulehnen (c) oder alleinverantwortlich umzuformulieren (d).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unterstützung der Fachexpert:innen dabei, Qualitätsanforderungen konkret und explizit zu formulieren.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Hilfe bei der Identifizierung von neuen Geschäftsmöglichkeiten anhand Ihres technischen Know-hows.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ablehnung von Anforderungen, die technische Risiken enthalten.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Umformulierung aller Geschäftsanforderungen, so dass sie für Ihr Entwicklungsteam verständlich sind.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Überprüfung der Anforderungen auf technische Machbarkeit.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q11",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Sie sind als Architekt:in dafür zuständig, ein Altsystem entsprechend den laufenden Betriebsanforderungen am Laufen zu halten. Was sind Ihre wichtigsten Aufgaben?",
+      "explanation": "Bei Altsystemen ist die Aktualität der Doku wichtig (b), die Analyse von Auswirkungen neuer Anforderungen (c) und das Vorschlagen technischer Updates (e), um 'Bit Rot' zu verhindern. Budgetverhandlungen (a) sind meist PM-Aufgabe.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verhandlung des Wartungsbudgets für Ihr Team",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sicherstellung einer aktuellen Dokumentation des ausgelieferten Systems",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Analyse der Auswirkungen von neuen Anforderungen auf das aktuelle System",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Ermunterung der Teammitglieder, neue Programmiersprachen zu lernen",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Ihren Vorgesetzten technologische Updates zusätzlich zu den Geschäftsanforderungen vorschlagen",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q12",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Welche der folgenden Aussagen zu Architekturentscheidungen sind wahr, welche falsch?",
+      "explanation": "Entscheidungen müssen dokumentiert werden (ADRs sind gut) (b), Qualitätsanforderungen treiben Entscheidungen (d). Entscheidungen dürfen revidiert werden (c - falsch) und 'nur im Kopf' reicht nicht (a - falsch).",
+      "column_headers": [
+        "Wahr",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Architekturentscheidungen müssen nie aufgeschrieben werden, da diese bereits dem Entwicklungsteam bekannt sind.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Architecture Decision Records helfen dabei, Entscheidungen in ihrem Kontext nachzuvollziehen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Nachdem man sich für ein zentrales Framework (z.B. Persistenzframework) entschieden hat, darf diese Entscheidung nicht mehr geändert werden.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Qualitätsanforderungen helfen maßgeblich bei Architekturentscheidungen.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q13",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Geben Sie für jede der folgenden Aussagen an, ob sie richtig oder falsch ist.",
+      "explanation": "Agilität bedeutet iterative Anpassung der Architektur (a). Der Aufwand ist nicht zwingend 'wesentlich höher' (b). Auch agile Projekte brauchen Doku (c). Auch Microservices brauchen eine Gesamtarchitektur/Rahmenbedingungen (d).",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Jede Iteration eines agilen Entwicklungsvorgehens kann Auswirkungen auf architektonische Grundsatzentscheidungen haben.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Der Gesamtaufwand für Architekturarbeit ist bei iterativen Projekten wesentlich höher als bei Wasserfall-Projekten.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Agile Projekte benötigen keine Architekturdokumente, da das Entwicklungsteam in täglichen Standup-Meetings Entscheidungen kommuniziert.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Wenn Ihr System aus einer Reihe von Microservices besteht, ist kein zentrales Architekturdokument erforderlich, da jeder Service seine Technologien auswählen kann.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q14",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Geben Sie an, welche der folgenden Aussagen zu Projektzielen und Architekturzielen richtig und welche falsch sind.",
+      "explanation": "Projektziele umfassen Funktionalität und Qualität (a). Architekturziele leiten sich aus Qualitätsanforderungen ab (b). Stakeholder haben sehr wohl Interesse an Architekturzielen (z.B. Wartbarkeit = Kosten) (c). Geschäfts- und Architekturziele überlappen oft (d).",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Projektziele können funktionale Anforderungen sowie Qualitätsanforderungen umfassen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Architekturziele leiten sich von den Qualitätsanforderungen für das System oder Produkt ab.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Stakeholder aus dem Business sollten sich auf Geschäftsziele konzentrieren und sich nicht mit Architekturzielen auseinandersetzen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Zur Vermeidung von Konflikten sollten Geschäfts- und Architekturziele einander nicht überlappen.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q15",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Was bedeutet die Regel 'explizit, nicht implizit' für die Architekturarbeit? Wählen Sie die passendsten Antworten aus.",
+      "explanation": "Annahmen (b) und Voraussetzungen (e) müssen explizit gemacht werden, da implizites Wissen eine Fehlerquelle ist. Es geht nicht um Code-Schleifen (a) oder erzwungene Kommentare (c).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architekt:innen sollten rekursive Strukturen vermeiden und durch explizite Schleifen ersetzen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Architekt:innen sollten die Annahmen, die zu Entscheidungen führen, explizit machen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Architekt:innen sollten explizit auf Erläuterungen (d.h. Kommentare) in natürlicher Sprache für jeden Baustein bestehen.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Architekt:innen sollten explizit auf schriftlichen oder zumindest mündlichen Begründungen für Aufwandschätzungen der Entwicklung von ihrem Team bestehen.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Architekt:innen sollten die Voraussetzungen für ihre Entscheidungen explizit darlegen.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q16",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Es gibt zahlreiche Ansätze, die zu einer Softwarearchitektur führen. Welche der folgenden Ansätze kommen in der Praxis am häufigsten vor?",
+      "explanation": "DDD (b), Sichtenbasierte Entwicklung (c) und Bottom-up (d) (oft bei Refactoring oder Prototyping) sind gängige Praxis.",
+      "options": [
+        {
+          "id": "a",
+          "text": "User-Interface Driven Design",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Domain-driven Design",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Sichtenbasierte Architekturentwicklung",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Bottom-up Design",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Mehrheitsentscheid",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q17",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Diverse Architekturentwicklungsmethoden schlagen einen sichtenbasierten Ansatz vor. Welche der folgenden Sichten werden am häufigsten verwendet?",
+      "explanation": "Die Standard-Sichten (z.B. nach arc42) sind Kontext (b), Baustein/Komponente (c) und Laufzeit (f).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Physische Datenbanksicht",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Kontextsicht",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Bausteinsicht oder Komponentensicht",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Testbasierte Sicht",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Konfigurationssicht",
+          "is_correct": false
+        },
+        {
+          "id": "f",
+          "text": "Laufzeitsicht",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q18",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Sie dokumentieren einen Baustein einer Softwarearchitektur. Welche Informationen sollten in seiner Black-Box-Beschreibung enthalten sein?",
+      "explanation": "Blackbox bedeutet Außensicht: Schnittstellen (a) und Verantwortlichkeit (b). Interne Struktur (c) und Implementierungsdetails (d) gehören zur Whitebox.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Öffentliche Schnittstellen.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Verantwortlichkeiten des Bausteins.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Interne Struktur des Bausteins.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Spezifikation von Implementierungsdetails.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q19",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche Voraussetzungen müssen vor der Entwicklung einer Softwarearchitektur erfüllt sein? Wählen Sie die passendsten Antworten aus.",
+      "explanation": "Qualitätsanforderungen (b) und organisatorische Randbedingungen (c) sind essenziell. Eine vollständige Spec (a) gibt es fast nie (agil), Programmiersprache (d) kann Teil der Architekturentscheidung sein.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Die Anforderungsspezifikation für das System ist vollständig, detailliert und konsistent.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Die wichtigsten Qualitätsanforderungen an das System sind bekannt.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die organisatorischen Randbedingungen sind bekannt.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Die Programmiersprache wurde ausgewählt.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Die Hardware für das Entwicklungsteam ist verfügbar.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q20",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche Faktoren können den Entwurf einer Softwarearchitektur beeinflussen? Wählen Sie die passendsten Antworten aus.",
+      "explanation": "Einflussfaktoren sind vielfältig: Politisch (a), Organisatorisch (b) und Technisch (c). 'Virtuell' ist kein klassischer Einflussfaktor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Politische.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Organisatorische.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Technische.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Virtuelle.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q21",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welche der folgenden Eigenschaften lässt sich am ehesten durch eine Schichtenarchitektur verbessern?",
+      "explanation": "Schichtenarchitektur trennt Belange (z.B. UI von Logik), was die Austauschbarkeit und Änderbarkeit (b) erhöht. Performance (a) leidet oft eher unter Schichten.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Laufzeiteffizienz (Performance).",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Flexibilität bei der Modifizierung oder Änderung des Systems.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Flexibilität bei der Laufzeit (Konfigurierbarkeit).",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Nichtabstreitbarkeit.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q22",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Für welche Entwurfsprobleme bietet das Pipes & Filter Pattern Lösungsansätze?",
+      "explanation": "Pipes & Filter ist ideal für Datenströme (b) und entkoppelt die Verarbeitungsschritte (c). Globaler Zustand (a) ist hierbei eher hinderlich.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verwaltung von globalem Anwendungszustand",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Strukturierung von IT-Systemen die Datenströme verarbeiten",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Entkopplung von Verarbeitungsschritten",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Entkopplung von zeitlichen Abhängigkeiten",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q23",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welche Ziele versuchen Sie mit dem Dependency-Inversion-Prinzip zu erreichen?",
+      "explanation": "DIP besagt: Module sollen von Abstraktionen abhängen, nicht von Konkretisierungen (c). Das entkoppelt Implementierungen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Große Bausteine sollen nicht von kleinen Bausteinen abhängen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Komponenten sollen in der Lage sein, abhängige Komponenten leichter zu erstellen.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bausteine sollen nur über Abstraktionen voneinander abhängen.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q24",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Was sind die Eigenschaften von enger (hoher) bzw. loser (niedriger) Kopplung?",
+      "explanation": "Direkte Aufrufe (a), gemeinsame Datenstrukturen (b) und geteilte DB-Tabellen (c) erzeugen enge Kopplung. DIP (d) erzeugt lose Kopplung.",
+      "column_headers": [
+        "Enge Kopplung",
+        "Lose Kopplung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Bausteine können abhängige Bausteine direkt, d.h. ohne Umwege über Schnittstellen oder Abstraktionen, aufrufen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Bausteine verwenden gemeinsame komplexe Datenstrukturen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Bausteine verwenden eine gemeinsame Tabelle (für Schreib- und Leseoperationen) innerhalb einer relationalen Datenbank.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Beim Baustein-Design haben Sie das Dependency-Inversion-Prinzip konsequent umgesetzt.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q25",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche Aussagen zum 'Don’t repeat yourself'-Prinzip (DRY) treffen am ehesten zu?",
+      "explanation": "Strenge DRY-Einhaltung kann zu Kopplung führen (b), wenn man alles teilt. Umgekehrt kann Redundanz (Verletzung von DRY) die Unabhängigkeit/Entkopplung fördern (c) (z.B. bei Microservices).",
+      "options": [
+        {
+          "id": "a",
+          "text": "DRY verringert die Sicherheit.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Die strenge Einhaltung von DRY könnte zu höherer Kopplung führen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Komponenten des Systems mit redundantem Code können unabhängig voneinander verbessert werden.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Die Einhaltung von DRY führt zu einer Verringerung der Angriffsvektoren in der IT-Sicherheit.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Die Anwendung der Schichtenmuster ermöglicht eine konsistente Anwendung des DRY-Prinzips.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q26",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie können Aspekte Ihrer Softwarearchitektur mündlich und/oder schriftlich kommunizieren. In welchem Zusammenhang stehen diese Möglichkeiten zueinander?",
+      "explanation": "Mündlich ergänzt schriftlich (a) (für Verständnis/Kontext). Feedback muss nicht zwingend schriftlich sein (b), schriftlich muss nicht immer vorausgehen (c), und man sollte sich nicht auf eine Variante beschränken (d).",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Mündliche Kommunikation sollte schriftliche Dokumentation ergänzen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Feedback zu Architekturentscheidungen sollte zur Sicherstellung der Nachverfolgbarkeit grundsätzlich schriftlich erfolgen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Schriftliche Dokumentation sollte immer mündlicher Kommunikation vorausgehen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Architekt:innen sollten sich eine Variante (mündlich oder schriftlich) aussuchen und während der gesamten Entwicklung dabei bleiben.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q27",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Welche der folgenden Aussagen zu Notationen für Architektursichten sind richtig und welche falsch?",
+      "explanation": "UML-Paketdiagramme eignen sich für Bausteinsichten (c). Beliebige Notationen sind ok, wenn erklärt (d). BPMN kann auch für Architektur relevant sein (a - falsch). UML-Verteilung ist nicht die *einzige* Möglichkeit (b - falsch).",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Business Process Model & Notation (BPMN) sollte nur von Business-Analysten und nicht zur Architekturdokumentation verwendet werden.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "UML-Verteilungsdiagramme sind die einzige Möglichkeit zur Dokumentation des Mappings der Softwarekomponenten in Bezug auf die Infrastruktur.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "UML-Paketdiagramme können zum Festhalten der Bausteinsicht der Softwarearchitektur verwendet werden.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Solange die Notation (z. B. mithilfe einer Legende) erläutert wird, kann eine beliebige Notation ausreichen, um Bausteinstrukturen und Zusammenarbeit zu beschreiben.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q28",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche Architektursichten haben die beste praktische Anwendung für die Entwicklung von Softwarearchitekturen?",
+      "explanation": "Bausteinsicht (c) und Verteilungssicht (d) sind die fundamentalen Sichten in den meisten Architekturdokumentationen (z.B. arc42). Pattern-Sicht oder Beobachtersicht sind keine Standardsichten.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pattern-Sicht.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Beobachtersicht (Observer-View).",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bausteinsicht (Komponentensicht).",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Verteilungssicht.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q29",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "In der Kontextsicht können Sie einen geschäftlichen Kontext ('business context') und einen technischen Kontext verwenden. Wählen Sie die am besten passenden Antworten für den technischen Kontext aus.",
+      "explanation": "Technischer Kontext zeigt Kanäle/Protokolle (a) und Hardware (Kabel, etc.). Er unterscheidet sich vom fachlichen Kontext (e). Interne Infrastruktur (b) oder Code-Details (d) gehören in andere Sichten (Verteilung/Baustein).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Der technische Kontext enthält die physischen Übertragungskanäle zwischen Ihrem System und der Umgebung.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Der technische Kontext enthält die gesamte Infrastruktur, über die die Komponenten Ihres Systems verteilt werden.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Der technische Kontext sollte die Hardware-Preisliste oder die Preisgestaltung von Cloud-Diensten enthalten.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Der technische Kontext enthält Informationen zur gewählten Programmiersprache und Frameworks.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Der technische Kontext enthält gegebenenfalls andere Elemente als der Geschäftskontext ('business context').",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q30",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Die Dokumentation der Softwarearchitektur sollte Beschreibungen der Querschnittskonzepte enthalten. Wählen Sie die besten Gründe, warum die Dokumentation von Querschnittskonzepten sinnvoll ist.",
+      "explanation": "Redundanzvermeidung (b) und Wiederverwendbarkeit (c) sind Hauptgründe für Konzepte. Sie müssen nicht technikfrei sein (a - falsch) und nicht zwingend von Spezialisten umgesetzt werden (d - falsch).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Querschnittskonzepte sollten sich auf die Fachdomäne konzentrieren und frei von technischen Informationen sein.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Aspekte oder Konzepte, die in mehreren Teilen Ihrer Softwarearchitektur verwendet werden, sollten auf nicht redundante Weise beschrieben werden.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Querschnittskonzepte können in weiteren Produkten innerhalb der gleichen Organisation erneut verwendet werden.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Querschnittskonzepte sollten von Spezialist:innen implementiert werden. Daher ist eine separate Dokumentation hilfreich.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q31",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Was sind Richtlinien für ein gutes Schnittstellen-Design? Kreuzen Sie an, welche der folgenden Aussagen richtig und welche falsch sind.",
+      "explanation": "Einfach zu lernen (a) und zu nutzen (b) ist gut. Funktionale und nicht-funktionale Aspekte gehören dazu (d). Implementierungsdetails sollten verborgen bleiben (c - falsch). Remote-Aufrufe verhalten sich anders als lokale (Latenz, Fehler) (e - falsch).",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Die Verwendung der Schnittstellen sollte einfach zu erlernen sein.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Es soll möglich sein, angemessen verständlichen Client-Code für diese Schnittstelle zu schreiben.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Eine Schnittstelle soll Zugriff auf eine umfassende Menge von Implementierungsdetails ermöglichen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Schnittstellenspezifikationen sollten funktionale und nichtfunktionale Aspekte enthalten.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "e",
+          "text": "Lokale und entfernte ('remote') Aufrufe einer Schnittstelle sollen sich in allen Belangen identisch verhalten.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q32",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Eine Definition lautet: 'Softwarearchitektur ist die Summe aller während der Entwicklung gefällten Entscheidungen'. Kreuzen Sie an, welche der folgenden Aussagen zu Architektur-/Designentscheidungen richtig und welche falsch sind.",
+      "explanation": "Entscheidungen prägen die Struktur (a), haben Wechselwirkungen (c) und Trade-offs müssen explizit sein (d). Aber: Nicht *alle* Entscheidungen müssen schriftlich begründet werden, nur die architektonisch relevanten (b - falsch).",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Architektonische Entscheidungen können sich in der Struktur der Bausteine oder Komponenten niederschlagen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Softwarearchitekt:innen sollten alle Entwurfsentscheidungen schriftlich begründen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Architektonische Entscheidungen können untereinander Wechselwirkungen haben.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Kompromisse zwischen zueinander in Konflikt stehenden Qualitätsanforderungen sollten explizite Entscheidungen sein.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q33",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Welche der folgenden Aussagen sind typische Gründe zur Einführung einer Architekturdokumentation und welche nicht?",
+      "explanation": "Doku hilft beim Onboarding (a), verteilten Teams (c), Wartung (d) und Compliance (e). Sie hilft nicht direkt bei der Testautomatisierung (b) oder der Auslastung (f).",
+      "column_headers": [
+        "Typisch",
+        "Nicht typisch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Unterstützung des Onboardings neuer Entwickler:innen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Unterstützung der Testautomatisierung des Systems.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Unterstützung der Arbeit von verteilten Teams.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Unterstützung von späteren Verbesserungen des Systems.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "e",
+          "text": "Einhaltung regulatorischer Vorgaben.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "f",
+          "text": "Sicherstellung der gleichmäßigen Auslastung des Teams.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q34",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Welche der folgenden Eigenschaftspaare stehen üblicherweise miteinander in Konflikt und welche nicht?",
+      "explanation": "Benutzerfreundlichkeit vs. Sicherheit (b) (z.B. Passwortkomplexität) und Konfigurierbarkeit vs. Robustheit (c) (Fehlkonfiguration) sind klassische Konflikte. Verständlichkeit und Lesbarkeit (a) unterstützen sich. Sicherheit und Korrektheit (d) widersprechen sich nicht.",
+      "column_headers": [
+        "Konflikt",
+        "Kein Konflikt"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Verständlichkeit – Lesbarkeit",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Benutzerfreundlichkeit – Sicherheit",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Laufzeitkonfigurierbarkeit – Robustheit",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Sicherheit – Funktionale Korrektheit",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q35",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "ISO 25010 enthält allgemeine Qualitätseigenschaften für Softwaresysteme. Wie können Qualitätsanforderungen zu diesen Eigenschaften konkretisiert werden?",
+      "explanation": "Qualitätsszenarien sind das Standardmittel (z.B. in ATAM), um abstrakte ISO-Begriffe wie 'Effizienz' in messbare Anforderungen zu übersetzen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Durch Entwickeln von UI-Prototypen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Durch Definieren expliziter Schnittstellen.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Durch Erstellen, Verfassen oder Diskutieren von Qualitätsszenarien.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Durch Erstellen automatisierter Tests.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q36",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche der folgenden Punkte sind am besten geeignet, die qualitative Bewertung einer Softwarearchitektur bzgl. der Erfüllung von Qualitätsanforderungen zu unterstützen?",
+      "explanation": "Quantitative Analysen (a), Modelle (b), Szenarien (c) und Logdateien (e) (Laufzeitverhalten) sind hilfreich. Teamgröße (d) und Organigramm (f) sagen wenig über die Architekturqualität aus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quantitative Abhängigkeitsanalyse.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Architekturmodelle.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Qualitätsszenarien.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Teamgröße.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Logdateien.",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "Organigramm.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q37",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Sie versuchen, Ihre Architektur qualitativ zu analysieren. Was sind die zutreffendsten Anzeichen für architektonische Problembereiche?",
+      "explanation": "Hohe Kopplung (a) und Fehlerhäufungen in bestimmten Bausteinen (d) sind starke Indikatoren für Designprobleme. Methodennamen (b) und Kommentare (c) sind Code-Quality-Themen (Clean Code), nicht zwingend Architektur.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hohe Kopplung der Komponenten.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Namen öffentlicher Methoden geben nicht deren Zweck wieder.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Fehlende Kommentare.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Häufung von Fehlern in bestimmten Bausteinen des Systems.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Anzahl der Testfälle pro Komponente.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "MOCK-Q38",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Sie versuchen, ihre Architektur quantitativ zu untersuchen. Welche der folgenden Größen können Sie für Ihre Softwarearchitektur zuverlässig messen? Wählen Sie die am besten passenden Antworten aus.",
+      "explanation": "Größe (LOC) (a), Änderungsrate (Churn) (b) und Anzahl der Contributoren (e) sind objektiv messbar. Kohäsion (c) ist schwer messbar (LCOM ist umstritten), Sicherheitsstufe (d) ist eher qualitativ.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Größe der Bausteine (z. B. Lines-of-Code).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Änderungsrate des Quellcodes der Komponenten.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Kohäsion der Architekturkomponenten.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Sicherheitsstufe einer Komponente.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Anzahl der Personen, die zu einer bestimmten Komponente beigetragen haben.",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}

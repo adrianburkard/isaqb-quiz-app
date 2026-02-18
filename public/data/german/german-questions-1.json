@@ -1,0 +1,1076 @@
+{
+  "exam_title": "iSAQB CPSA-F Übungsprüfung - Set 1 (Easy)",
+  "version": "2025.1-generated",
+  "questions": [
+    {
+      "id": "SET1-Q01",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welche der folgenden Aussagen definiert den Begriff 'Softwarearchitektur' am treffendsten?",
+      "explanation": "Softwarearchitektur umfasst die grundlegenden Konzepte oder Eigenschaften eines Systems in seiner Umgebung, verkörpert in seinen Elementen, Beziehungen und den Prinzipien seines Entwurfs und seiner Evolution (gemäß ISO/IEC/IEEE 42010). Sie ist nicht auf die Hardware oder alleinige Ordnerstruktur beschränkt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Die vollständige Beschreibung aller Algorithmen im Quellcode.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Die grundlegende Organisation eines Systems, dargestellt durch dessen Komponenten, deren Beziehungen zueinander und zur Umgebung sowie die Prinzipien für Entwurf und Evolution.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Auswahl der Hardware-Komponenten und Netzwerk-Kabel für das Rechenzentrum.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Die grafische Gestaltung der Benutzeroberfläche (UI).",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q02",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche der folgenden Aufgaben gehören zur primären Verantwortung von Softwarearchitekt:innen? (Wählen Sie 2)",
+      "explanation": "Softwarearchitekt:innen klären technische und qualitative Anforderungen und treffen fundamentale Strukturentscheidungen (Bausteine, Schnittstellen). Die Projektleitung kümmert sich um Budget/Zeitpläne, und die Implementierung von Unit-Tests liegt meist bei den Entwickler:innen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Erstellung des Projektzeitplans und Budgetverwaltung.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Klärung und Hinterfragung von Anforderungen (insb. Qualitätsanforderungen).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Entwurf der Bausteinstruktur und Festlegung von Schnittstellen.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Implementierung aller Unit-Tests für das System.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Personalmarketing und Einstellung neuer Mitarbeiter.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q03",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die folgenden Begriffe den Kategorien 'Qualitätsmerkmal nach ISO 25010' oder 'Architekturmuster' zu.",
+      "explanation": "Wartbarkeit (Maintainability) und Benutzbarkeit (Usability) sind Qualitätsmerkmale der ISO 25010. Model-View-Controller (MVC) und Pipes & Filters sind Architekturmuster (Patterns).",
+      "column_headers": [
+        "Qualitätsmerkmal (ISO 25010)",
+        "Architekturmuster"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Wartbarkeit (Maintainability)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Model-View-Controller (MVC)",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Benutzbarkeit (Usability)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Pipes & Filters",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q04",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist das Ziel des Prinzips 'Lose Kopplung' (Low Coupling)?",
+      "explanation": "Lose Kopplung minimiert die Abhängigkeiten zwischen Bausteinen. Dies stellt sicher, dass Änderungen in einem Baustein möglichst geringe Auswirkungen auf andere Bausteine haben, was die Wartbarkeit erhöht.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sicherstellen, dass alle Klassen in einer einzigen Datei liegen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Abhängigkeiten zwischen Bausteinen zu minimieren, um Änderungen lokal zu begrenzen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Anzahl der Codezeilen im Projekt zu maximieren.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q05",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Informationen gehören typischerweise in die 'Blackbox'-Beschreibung eines Bausteins?",
+      "explanation": "Eine Blackbox-Beschreibung soll die Schnittstellen, die funktionalen Verantwortlichkeiten und gegebenenfalls Qualitätsmerkmale (z.B. Performance-Garantien) enthalten. Die interne Struktur (Whitebox) oder der Quellcode sollen verborgen bleiben (Geheimnisprinzip).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interne Implementierungsdetails (Variablennamen).",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Angebotene und genutzte Schnittstellen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Zweck und Verantwortlichkeit des Bausteins.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Erfüllte Qualitätsmerkmale (z. B. Antwortzeitverhalten).",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Der Name des Entwicklers, der den Baustein geschrieben hat.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q06",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "In welchem Kapitel des arc42-Templates würden Sie die folgenden Informationen verorten?",
+      "explanation": "Externe Schnittstellen gehören zur Kontextabgrenzung (Kapitel 3). Die Schichtenarchitektur ist eine grundlegende Entwurfsentscheidung (Bausteinsicht oder Lösungsstrategie), während das Deployment (Hardware) in die Verteilungssicht (Kapitel 7) gehört.",
+      "column_headers": [
+        "Kontextabgrenzung",
+        "Verteilungssicht",
+        "Bausteinsicht"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Liste der externen Nachbarsysteme und deren Schnittstellen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Abbildung von Software-Artefakten auf Hardware-Knoten.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Hierarchische Zerlegung des Systems in Module/Komponenten.",
+          "correct_column_index": 2
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q07",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was verstehen Sie unter dem 'Dependency Inversion Principle' (DIP) aus den SOLID-Prinzipien?",
+      "explanation": "DIP besagt, dass Module höherer Ebenen nicht von Modulen niedrigerer Ebenen abhängen sollten. Beide sollten von Abstraktionen (Interfaces) abhängen. Details sollten von Abstraktionen abhängen, nicht umgekehrt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eine Datenbank muss immer von der Benutzeroberfläche abhängen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Abstraktionen sollten nicht von Details abhängen, sondern Details von Abstraktionen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es sollten gar keine Abhängigkeiten im System existieren.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q08",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche Diagrammtypen der UML eignen sich besonders gut, um die 'Laufzeitsicht' (dynamisches Verhalten) einer Architektur zu dokumentieren? (Wählen Sie 2)",
+      "explanation": "Sequenzdiagramme und Aktivitätsdiagramme sind Verhaltensdiagramme, die Abläufe über die Zeit oder Prozessflüsse darstellen. Klassendiagramme und Paketdiagramme sind Strukturdiagramme (statisch).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Klassendiagramm",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sequenzdiagramm",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Paketdiagramm",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Aktivitätsdiagramm",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Verteilungsdiagramm",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q09",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Bei der Bewertung von Softwarearchitekturen mittels ATAM (Architecture Tradeoff Analysis Method) spielen 'Szenarien' eine wichtige Rolle. Was ist ein 'Qualitätsszenario'?",
+      "explanation": "Ein Qualitätsszenario beschreibt eine konkrete Interaktion mit dem System (Stimulus), die Umgebung und die erwartete Reaktion (Response) inklusive messbarer Metriken, um abstrakte Qualitätsziele (z.B. 'hohe Performance') konkret prüfbar zu machen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ein Drehbuch für einen Werbefilm über die Software.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Eine konkrete Beschreibung eines Stimulus, der Umgebung und der erwarteten Antwort des Systems, um Qualitätsanforderungen messbar zu machen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Eine Liste aller verfügbaren Java-Klassen.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q10",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Entscheiden Sie für folgende Aussagen, ob sie das Prinzip 'Hohe Kohäsion' (High Cohesion) oder 'Lose Kopplung' (Low Coupling) beschreiben.",
+      "explanation": "Kohäsion bezieht sich auf den inneren Zusammenhalt eines Bausteins (gehören die Dinge logisch zusammen?). Kopplung bezieht sich auf die Abhängigkeiten *zwischen* verschiedenen Bausteinen.",
+      "column_headers": [
+        "Hohe Kohäsion",
+        "Lose Kopplung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Die Aufgaben innerhalb eines Moduls gehören logisch eng zusammen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Änderungen an Modul A erfordern keine oder nur wenige Änderungen an Modul B.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Ein Baustein erledigt genau eine Aufgabe vollständig (Single Responsibility).",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q11",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche Vorteile bietet die explizite Dokumentation von 'Querschnittskonzepten' (Cross-cutting Concepts)? (Wählen Sie 2)",
+      "explanation": "Querschnittskonzepte (wie Logging, Security, Transaktionshandling) betreffen viele Teile des Systems. Ihre zentrale Dokumentation sorgt für Konsistenz (Einheitlichkeit) und verhindert Redundanz (Vermeidung von Codeduplizierung/wiederholter Spezifikation).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Erhöhung der Kopplung zwischen fachlichen Komponenten.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sicherstellung der konzeptionellen Integrität und Einheitlichkeit im System.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Verbesserung der Wartbarkeit durch zentrale Definition von Lösungsstrategien (z.B. für Logging).",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Automatische Generierung von Unit-Tests.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q12",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welches Entwurfsmuster (Design Pattern) eignet sich am besten, um die Erzeugung komplexer Objekte von deren Repräsentation zu trennen?",
+      "explanation": "Der 'Builder' (Erbauer) ist ein Erzeugungsmuster, das dazu dient, komplexe Objekte Schritt für Schritt zu konstruieren. Adapter ist ein Strukturmuster, Observer ein Verhaltensmuster.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adapter",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Builder",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Observer",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q13",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Welche der folgenden Risiken sind typischerweise 'Projektrisiken' und welche sind explizite 'Architekturrisiken'?",
+      "explanation": "Budgetkürzungen sind organisatorische Projektrisiken. Die Wahl einer Technologie, die Performance-Ziele gefährdet, oder eine zu enge Kopplung sind technische Architekturrisiken.",
+      "column_headers": [
+        "Projektrisiko",
+        "Architekturrisiko"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Das Budget für externe Berater wird um 20% gekürzt.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Die gewählte Datenbank-Technologie skaliert nicht für die erwartete Nutzerlast.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Aufgrund zyklischer Abhängigkeiten ist das System schwer wartbar.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q14",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Bestandteile sind für die Beschreibung einer Schnittstelle (Interface) essentiell?",
+      "explanation": "Eine Schnittstelle benötigt eine technische Signatur (Name, Parameter), eine semantische Beschreibung (was tut sie?) und Informationen zu Fehlerverhalten/Exceptions sowie Quality-of-Service (z.B. Antwortzeit). Der Name des Autors ist irrelevant für die Nutzung.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Name und Signatur der Methoden.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Semantik und Verhalten (Vor-/Nachbedingungen).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Fehlerbehandlung und mögliche Exceptions.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Name des Programmierers.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Die Anzahl der Codezeilen der Implementierung.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q15",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welche Aussage zum 'Conway's Law' ist korrekt?",
+      "explanation": "Conway's Law besagt, dass die Struktur von Systemen zwangsläufig die Kommunikationsstrukturen der Organisation abbildet, die sie entworfen hat. Architekten müssen daher organisatorische Strukturen berücksichtigen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es besagt, dass Software immer doppelt so lange braucht wie geplant.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Es besagt, dass Systeme die Kommunikationsstrukturen der Organisation abbilden, die sie entworfen hat.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es ist ein Gesetz zur Berechnung der zyklomatischen Komplexität.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q16",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die Eigenschaften den Begriffen 'Top-Down' und 'Bottom-Up' Entwurf zu.",
+      "explanation": "Top-Down beginnt abstrakt beim Gesamtüberblick und verfeinert nach unten. Bottom-Up beginnt bei konkreten Details oder vorhandenen Komponenten und setzt diese zusammen.",
+      "column_headers": [
+        "Top-Down",
+        "Bottom-Up"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Beginnt mit der Gesamtübersicht und verfeinert schrittweise.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Führt oft zu stabileren Basiskomponenten, da diese zuerst entworfen werden.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Beginnt mit der Implementierung von Details oder Wiederverwendung existierender Teile.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q17",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Hauptkategorien unterscheidet man bei der 'Kontextabgrenzung'?",
+      "explanation": "Man unterscheidet den fachlichen Kontext (Domäne, fachliche Ein-/Ausgaben) und den technischen Kontext (Protokolle, Hardware, Kanäle).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fachlicher Kontext",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Technischer Kontext",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Monetärer Kontext",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Personeller Kontext",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q18",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist eine 'Architekturentscheidung' (Architectural Decision) im Gegensatz zu einer normalen Designentscheidung?",
+      "explanation": "Architekturentscheidungen haben weitreichende Konsequenzen, sind schwer rückgängig zu machen und beeinflussen oft die nicht-funktionalen Eigenschaften (Qualitätsmerkmale) des Systems maßgeblich.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Die Benennung einer lokalen Variable in einer Methode.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Eine Entscheidung mit weitreichenden Konsequenzen, die schwer rückgängig zu machen ist.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Entscheidung über die Hintergrundfarbe eines Buttons.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q19",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Welche Beschreibung passt zu 'Vertikale Schichtung' (Vertical Slicing) und welche zu 'Horizontale Schichtung' (Layers)?",
+      "explanation": "Horizontale Schichtung (Layers) ist technisch getrennt (z.B. UI, Business, Data). Vertikale Schichtung schneidet durch alle technischen Schichten hindurch und gruppiert nach fachlichen Features (z.B. 'Kunde', 'Bestellung').",
+      "column_headers": [
+        "Horizontale Schichtung",
+        "Vertikale Schichtung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Trennung nach technischer Verantwortlichkeit (z.B. UI, Logik, Datenhaltung).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Trennung nach fachlichen Domänen/Features (durch alle technischen Ebenen).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q20",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Warum sind zyklische Abhängigkeiten zwischen Bausteinen auf Architekturebene problematisch? (Wählen Sie 2)",
+      "explanation": "Zyklen (A nutzt B, B nutzt A) führen dazu, dass Bausteine nicht mehr isoliert getestet, verstanden oder wiederverwendet werden können. Sie erhöhen die Kopplung extrem ('Tight Coupling').",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sie erhöhen die Wiederverwendbarkeit der beteiligten Komponenten.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Sie erschweren das isolierte Testen und Verstehen der Komponenten.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Sie führen zu einer sehr engen Kopplung ('Tight Coupling').",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Sie werden vom Compiler moderner Sprachen automatisch aufgelöst.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q21",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist im Kontext der ATAM-Methode (Architecture Tradeoff Analysis Method) unter einem 'Sensitivitätspunkt' (Sensitivity Point) zu verstehen?",
+      "explanation": "Ein Sensitivitätspunkt ist eine Eigenschaft oder ein Parameter in der Architektur (z. B. Verschlüsselungsstärke), der eine kritische Auswirkung auf ein bestimmtes Qualitätsmerkmal (z. B. Sicherheit oder Performance) hat. Kleine Änderungen an diesem Punkt beeinflussen das Qualitätsziel signifikant.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ein Fehler im Quellcode, der zum Absturz führt.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ein Parameter der Architektur, der kritisch für die Erreichung eines bestimmten Qualitätsmerkmals ist.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Eine Person, die negativ auf Kritik an der Architektur reagiert.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Ein Punkt im Projektplan, an dem das Budget überschritten wird.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q22",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche beiden Teilmerkmale gehören gemäß ISO 25010 zur Hauptkategorie 'Wartbarkeit' (Maintainability)? (Wählen Sie 2)",
+      "explanation": "Analysierbarkeit (wie leicht findet man Fehler/Ursachen?) und Modifizierbarkeit (wie leicht kann das System geändert werden?) sind zentrale Aspekte der Wartbarkeit. Verfügbarkeit gehört zur Zuverlässigkeit, Vertraulichkeit zur Sicherheit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verfügbarkeit (Availability)",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Analysierbarkeit (Analysability)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Vertraulichkeit (Confidentiality)",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Modifizierbarkeit (Modifiability)",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Zeitverhalten (Time Behaviour)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q23",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Ordnen Sie die folgenden Szenarien den Begriffen 'Funktionale Anforderung' und 'Qualitätsanforderung' zu.",
+      "explanation": "Funktionale Anforderungen beschreiben, WAS das System tut (z. B. Daten speichern, Berechnungen durchführen). Qualitätsanforderungen beschreiben, WIE GUT es das tut (z. B. Antwortzeit, Verfügbarkeit).",
+      "column_headers": [
+        "Funktionale Anforderung",
+        "Qualitätsanforderung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Das System muss Kundendaten in der Datenbank speichern können.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Die Antwortzeit bei einer Suchanfrage muss unter 500ms liegen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Das System muss bei einem Serverausfall innerhalb von 30 Sekunden wieder verfügbar sein.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q24",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welchen Zweck erfüllt das Kapitel 'Lösungsstrategie' im arc42-Template?",
+      "explanation": "Die Lösungsstrategie fasst die grundlegenden Entscheidungen und Lösungsansätze (z. B. Technologiewahl, Top-Level-Muster) zusammen, bevor in die Details der Sichten gegangen wird. Sie dient als Einstieg und Überblick über die technische Richtung.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es listet alle Unit-Tests im Detail auf.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Es enthält eine Zusammenfassung der fundamentalen Lösungsansätze und zentralen Architekturentscheidungen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es beschreibt ausschließlich die Hardware-Komponenten.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q25",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Elemente sind zwingende Bestandteile eines vollständig formulierten Qualitätsszenarios? (Wählen Sie 3)",
+      "explanation": "Ein Qualitätsszenario benötigt einen Auslöser (Stimulus), eine Beschreibung der Umgebung/Situation und die erwartete Reaktion (Response) inklusive einer Messgröße, um überprüfbar zu sein. Der Name des Testers ist organisatorisch, aber nicht Teil der Szenario-Definition.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stimulus (Auslöser)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Umgebung (Situation)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Name des verantwortlichen Testers",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Reaktion (Response) mit Messgröße",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Programmiersprache",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q26",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Welches Entwurfsmuster (Pattern) löst welches Problem?",
+      "explanation": "Der Adapter passt inkompatible Schnittstellen aneinander an. Der Observer ermöglicht eine 1:n Benachrichtigung bei Zustandsänderungen. Die Fassade (Facade) bietet eine vereinfachte Schnittstelle zu einem komplexen Subsystem.",
+      "column_headers": [
+        "Adapter",
+        "Observer",
+        "Facade"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Ermöglicht die Zusammenarbeit von Klassen mit inkompatiblen Schnittstellen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Benachrichtigt abhängige Objekte automatisch über Zustandsänderungen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Bietet eine vereinfachte Schnittstelle zu einem komplexen Subsystem.",
+          "correct_column_index": 2
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q27",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was besagt das 'Open-Closed Principle' (OCP)?",
+      "explanation": "Software-Einheiten sollten offen für Erweiterungen sein (z.B. durch Vererbung oder Plugins), aber geschlossen für Modifikationen (der bestehende, funktionierende Quellcode soll nicht verändert werden müssen, um Neues hinzuzufügen).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Software sollte Open Source sein, aber geschlossene Schnittstellen haben.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Module sollten offen für Erweiterungen, aber geschlossen für Modifikationen sein.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Datenbankverbindungen sollten immer offen gehalten und nie geschlossen werden.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q28",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche Vorteile bietet der Einsatz eines iterativen und inkrementellen Vorgehens bei der Architekturentwicklung? (Wählen Sie 2)",
+      "explanation": "Iteratives Vorgehen erlaubt das frühzeitige Erkennen von Fehlentwicklungen (Risikominimierung) und ermöglicht schnelles Feedback durch Stakeholder, da frühzeitig funktionierende Teile der Software (Inkremente) verfügbar sind.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Die gesamte Dokumentation ist garantiert vor Beginn der Programmierung fertig.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Risiken können früher erkannt und adressiert werden.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es ermöglicht frühzeitiges Feedback durch Stakeholder.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Es verhindert jegliche Änderungen an den Anforderungen.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q29",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist ein 'Qualitätsbaum' (Utility Tree) im Rahmen von ATAM?",
+      "explanation": "Ein Qualitätsbaum ist eine hierarchische Darstellung von Qualitätsmerkmalen. Er beginnt bei allgemeinen Begriffen (z. B. 'Performance') und verfeinert diese schrittweise bis hin zu konkreten Szenarien an den Blättern, die priorisiert werden.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ein Baumdiagramm, das die Vererbungshierarchie von Klassen zeigt.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Eine hierarchische Gliederung von Qualitätsanforderungen bis hin zu konkreten Szenarien.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ein Diagramm zur Darstellung der Netzwerktopologie.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q30",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Sind die folgenden Aussagen über 'Architecture Decision Records' (ADRs) wahr oder falsch?",
+      "explanation": "ADRs sind kurze Textdokumente, die eine spezifische Entscheidung, den Kontext, die Alternativen und die Konsequenzen festhalten. Sie dienen nicht der Marketing-Dokumentation, sondern der technischen Nachvollziehbarkeit.",
+      "column_headers": [
+        "Wahr",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "ADRs dokumentieren wichtige Architekturentscheidungen und deren Begründung.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "ADRs werden primär für das Marketing erstellt, um Kunden zu überzeugen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "ADRs sollten unveränderlich (immutable) sein, sobald die Entscheidung final ist.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q31",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Aspekte gehören zur 'Technischen Kontextabgrenzung'?",
+      "explanation": "Die technische Kontextabgrenzung fokussiert auf Übertragungswege und Protokolle. Fachliche Ein-/Ausgaben gehören zum fachlichen Kontext.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verwendete Transportprotokolle (z. B. HTTPS, MQTT).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Physische Kanäle und Hardware-Schnittstellen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Rein fachliche Beschreibung der Ein- und Ausgabedaten.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Die Liste der fachlichen Stakeholder.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q32",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist das Hauptziel des 'Dependency Injection' (DI) Musters?",
+      "explanation": "DI entkoppelt die Erzeugung von Abhängigkeiten von deren Nutzung. Ein Objekt erhält seine Abhängigkeiten von außen 'injiziert', anstatt sie selbst mit 'new' zu erzeugen. Das erleichtert Austauschbarkeit und Tests (Mocking).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Die Geschwindigkeit der Datenbankzugriffe zu erhöhen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Die Verantwortung für die Erzeugung und Verknüpfung von Abhängigkeiten aus den Komponenten herauszulösen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Möglichst viele globale Variablen zu verwenden.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q33",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Entscheiden Sie, ob folgende Eigenschaften eher zu einer 'Monolithischen Architektur' oder zu 'Microservices' passen.",
+      "explanation": "Monolithen haben ein gemeinsames Deployment aller Funktionen. Microservices erlauben unabhängiges Deployment und technologische Vielfalt (Polyglot), erhöhen aber die Komplexität der Verteilung.",
+      "column_headers": [
+        "Monolith",
+        "Microservices"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Alle Funktionen werden in einer einzigen Deployment-Einheit ausgeliefert.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Einzelne Services können unabhängig voneinander deployt und skaliert werden.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Verschiedene Teams können unterschiedliche Technologien/Sprachen nutzen.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q34",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welche Aussage trifft auf 'Technische Schulden' (Technical Debt) zu?",
+      "explanation": "Technische Schulden entstehen oft durch bewusste oder unbewusste Entscheidungen für kurzfristige Lösungen (Workarounds), die langfristig den Wartungsaufwand erhöhen (Zinsen). Sie müssen 'zurückgezahlt' (refactored) werden.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es sind finanzielle Schulden, die das Projekt bei der Bank hat.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Es sind suboptimale Implementierungen, die kurzfristig Zeit sparen, aber langfristig die Wartung erschweren.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es sind Fehler, die der Compiler automatisch behebt.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q35",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Informationen gehören in ein Glossar der Architekturdokumentation?",
+      "explanation": "Ein Glossar dient der einheitlichen Sprache (Ubiquitous Language). Es sollte fachliche Begriffe der Domäne und spezifische technische Begriffe erklären. Autorennamen gehören in das Versionsprotokoll, nicht ins Glossar.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Definitionen der zentralen Fachbegriffe (Domäne).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Erklärung spezifischer technischer Abkürzungen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Lebensläufe der Entwickler.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Das Budget des Projekts.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q36",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Warum ist es wichtig, Annahmen (Assumptions) explizit zu dokumentieren?",
+      "explanation": "Implizite (nicht ausgesprochene) Annahmen sind eine häufige Fehlerquelle. Wenn sich eine Annahme als falsch herausstellt (z.B. 'Netzwerk ist immer verfügbar'), kann die Architektur scheitern. Dokumentation macht sie prüfbar.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um den Dokumentationsumfang künstlich zu erhöhen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Weil implizite Annahmen oft zu Missverständnissen und Fehlentscheidungen führen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Weil der Compiler Annahmen benötigt, um den Code zu optimieren.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q37",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Ordnen Sie die Begriffe den Kategorien 'Statische Sicht' und 'Dynamische Sicht' zu.",
+      "explanation": "Die Bausteinsicht und das Verteilungsdiagramm zeigen statische Strukturen (wie ist es aufgebaut?). Sequenzdiagramme und Zustandsautomaten zeigen dynamisches Verhalten (was passiert wann?).",
+      "column_headers": [
+        "Statische Sicht",
+        "Dynamische Sicht"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Bausteinsicht (Hierarchie der Komponenten)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Sequenzdiagramm (Nachrichtenaustausch)",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Zustandsautomat (State Chart)",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET1-Q38",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was versteht man unter 'Pipes and Filters'?",
+      "explanation": "Pipes and Filters ist ein Architekturmuster zur Verarbeitung von Datenströmen. Daten werden durch eine Kette von Verarbeitungsstationen (Filtern) geleitet, die über Puffer/Leitungen (Pipes) verbunden sind. Es ist typisch für Batch-Verarbeitung oder Streaming.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ein Muster zur Gestaltung von grafischen Benutzeroberflächen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ein Architekturmuster zur Verarbeitung von Datenströmen in sequenziellen Schritten.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Eine Methode zur Verkabelung von Serverräumen.",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

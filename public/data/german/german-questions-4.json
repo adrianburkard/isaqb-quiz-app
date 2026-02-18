@@ -1,0 +1,1168 @@
+{
+  "exam_title": "iSAQB CPSA-F Übungsprüfung - Set 4",
+  "version": "2025.1-set4",
+  "questions": [
+    {
+      "id": "SET4-Q01",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche der folgenden Faktoren gelten als typische 'Organisatorische Randbedingungen' (Organizational Constraints), die den Spielraum eines Softwarearchitekten einschränken? Wählen Sie die vier zutreffendsten Antworten aus.",
+      "explanation": "Budget, Zeitpläne, Verfügbarkeit des Teams und vorgegebene Prozessmodelle (z. B. 'Vorgabe: Scrum') sind klassische organisatorische Einschränkungen. Die Wahl einer Datenbank ist meist eine technische Entscheidung (oder technische Randbedingung, wenn vorgegeben), keine organisatorische. Die Farbe des Logos ist eine Design-Vorgabe.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verfügbares Budget und Zeitrahmen.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Die Entscheidung, ob SQL oder NoSQL verwendet wird.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Verfügbarkeit und Skill-Level des Entwicklungsteams.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Unternehmensinterne Vorgaben zu Vorgehensmodellen (z. B. SAFe, Scrum).",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Juristische Vorgaben und Verträge mit Drittanbietern.",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "Die physikalische Netzwerkbandbreite im Rechenzentrum.",
+          "is_correct": false
+        },
+        {
+          "id": "g",
+          "text": "Die Farbgebung des Firmenlogos.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q02",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die folgenden Szenarien den ISO 25010 Qualitätsmerkmalen 'Funktionale Eignung' (Functional Suitability) oder 'Kompatibilität' (Compatibility) zu.",
+      "explanation": "Funktionale Eignung betrifft die Vollständigkeit und Korrektheit der Ergebnisse (tut es das Richtige?). Kompatibilität betrifft das Zusammenspiel mit anderen Systemen (Interoperabilität) oder die Koexistenz auf derselben Infrastruktur.",
+      "column_headers": [
+        "Funktionale Eignung",
+        "Kompatibilität"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Die Software berechnet die Mehrwertsteuer für alle EU-Länder korrekt.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Die Anwendung kann problemlos Daten im Format des Altsystems importieren.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Die App läuft auf demselben Server wie der Datenbankdienst, ohne diesen zu stören.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Alle im Lastenheft geforderten Berichte können generiert werden.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q03",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welches Problem adressiert das 'Composite'-Entwurfsmuster primär?",
+      "explanation": "Das Composite-Muster ermöglicht es, einzelne Objekte und Kompositionen von Objekten (Gruppen) einheitlich zu behandeln. Clients müssen nicht unterscheiden, ob sie mit einem Blatt oder einem Knoten (der weitere Blätter enthält) interagieren (Beispiel: Dateisystem mit Dateien und Ordnern).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es ermöglicht die Erzeugung einer einzigen Instanz einer Klasse (Singleton).",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Es erlaubt Clients, einzelne Objekte und Objektkompositionen einheitlich zu behandeln.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es kapselt eine komplexe Subsystem-Schnittstelle (Facade).",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Es trennt die Abstraktion von der Implementierung (Bridge).",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q04",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Aussagen charakterisieren eine 'strikte Schichtenarchitektur' (Strict Layering) im Gegensatz zu einer 'entspannten Schichtenarchitektur' (Relaxed Layering)?",
+      "explanation": "Bei strikter Schichtung darf eine Schicht nur die direkt darunterliegende Schicht nutzen. Dies erhöht die Wartbarkeit (Austauschbarkeit von Schichten), kann aber die Performance mindern (Durchreiche-Code). Bei entspannter Schichtung darf auf alle tieferen Schichten zugegriffen werden.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jede Schicht darf nur auf die direkt unter ihr liegende Schicht zugreifen.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Schichten dürfen beliebige andere Schichten aufrufen, solange keine Zyklen entstehen.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Änderungen in einer Schicht wirken sich meist nur auf die direkt darüberliegende Schicht aus.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Es entsteht oft sogenannter 'Durchreiche-Code' (Pass-through code) in den mittleren Schichten.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Sie bietet in der Regel eine bessere Laufzeit-Performance als entspannte Schichtung.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q05",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie dokumentieren eine Schnittstelle in der Bausteinsicht. Welche Informationen gehören in die Schnittstellendefinition und welche sind Implementierungsdetails, die verborgen bleiben sollten?",
+      "explanation": "Schnittstellen müssen das 'Was' und 'Wie nutzen' (Signatur, Fehler, Vorbedingungen) beschreiben. Das 'Wie funktioniert es intern' (Hilfsklassen, Persistenzstrategie) ist Geheimnis der Implementierung (Blackbox).",
+      "column_headers": [
+        "Schnittstellendefinition",
+        "Implementierungsdetail"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Erwartete Ausnahmebehandlungen (Exceptions) und Fehlercodes.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Die Namen der internen Hilfsklassen, die die Logik ausführen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Vorbedingungen, die der Aufrufer erfüllen muss.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Die Entscheidung, ob Daten in einer SQL-Datenbank oder als CSV gespeichert werden.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q06",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist der Kernunterschied zwischen 'Validierung' und 'Verifizierung' im Kontext von Architekturbewertungen?",
+      "explanation": "Verifizierung prüft: 'Bauen wir das Produkt richtig?' (Konformität zu Spezifikationen/Regeln). Validierung prüft: 'Bauen wir das richtige Produkt?' (Erfüllung der tatsächlichen Stakeholder-Bedürfnisse/Nutzen).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es gibt keinen Unterschied, die Begriffe sind synonym.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Verifizierung prüft die Übereinstimmung mit Spezifikationen ('Doing the thing right'), Validierung prüft den Nutzen für den Stakeholder ('Doing the right thing').",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Validierung macht der Compiler, Verifizierung macht der Mensch.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q07",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Vorteile bietet die Nutzung etablierter Architekturmuster (wie MVC, Layers, Pipes & Filters)?",
+      "explanation": "Muster bieten eine bewährte Lösung für wiederkehrende Probleme, erleichtern die Kommunikation durch ein gemeinsames Vokabular (jeder weiß, was 'MVC' bedeutet) und machen Qualitätsmerkmale vorhersagbarer (z. B. ist bekannt, dass Layering die Portierbarkeit fördert). Sie garantieren aber keine Fehlerfreiheit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vereinfachung der Kommunikation durch einheitliches Vokabular.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Automatische Garantie, dass der Code fehlerfrei ist.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Nutzung bewährter Lösungen für wiederkehrende Probleme.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Vorhersagbarkeit von Qualitätseigenschaften (z. B. Entkopplung).",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Reduktion der Hardwarekosten um 50%.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q08",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie entscheiden sich in einem Projekt für asynchrone Kommunikation mittels Message Queue statt synchroner REST-Aufrufe. Bewerten Sie die Auswirkungen auf die Qualitätsmerkmale.",
+      "explanation": "Asynchrone Kommunikation verbessert die Entkopplung (Sender muss Empfänger nicht kennen) und die Skalierbarkeit/Lastspitzenabfederung. Sie erhöht jedoch die Komplexität (Fehlerbehandlung, Eventual Consistency) und erschwert das Debugging (kein linearer Stacktrace).",
+      "column_headers": [
+        "Wird tendenziell besser/einfacher",
+        "Wird tendenziell schlechter/schwieriger"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Zeitliche Entkopplung der Komponenten.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Nachvollziehbarkeit des gesamten Geschäftsprozesses (Tracing/Debugging).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Abfedern von Lastspitzen (Load Leveling).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Einfachheit der Fehlerbehandlung (z.B. sofortige Rückmeldung an den User).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q09",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Hauptbestandteile definieren eine 'Sicht' (View) gemäß ISO 42010?",
+      "explanation": "Eine Sicht besteht aus dem eigentlichen Inhalt (den Modellen/Diagrammen) und folgt den Regeln eines 'Blickwinkels' (Viewpoint), der die Konventionen und die adressierten Stakeholder-Anliegen definiert.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eine Liste aller Codezeilen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Der Inhalt der Sicht (Modelle, Diagramme, Texte).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Der zugrundeliegende Blickwinkel (Viewpoint), der die Konventionen definiert.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Der Preis der verwendeten Modellierungssoftware.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q10",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist ein 'Qualitätsszenario' im Gegensatz zu einem normalen 'Anwendungsfall' (Use Case)?",
+      "explanation": "Ein Use Case beschreibt rein funktional, was passiert. Ein Qualitätsszenario erweitert dies um spezifische Qualitätsanforderungen (Wie schnell? Wie sicher? Wie zuverlässig?), oft durch Angabe einer Messgröße für die Reaktion auf einen Stimulus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es gibt keinen Unterschied.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ein Use Case beschreibt Funktionalität, ein Qualitätsszenario spezifiziert zusätzlich Qualitätsattribute (z.B. Antwortzeit) konkret messbar.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Qualitätsszenarien werden nur von Testern geschrieben, Use Cases von Architekten.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q11",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die folgenden Diagramme der passenden arc42-Sicht zu ('Bausteinsicht' oder 'Laufzeitsicht').",
+      "explanation": "Paket- und Komponentendiagramme zeigen statische Strukturen (Bausteinsicht). Sequenz- und Aktivitätsdiagramme zeigen dynamische Abläufe (Laufzeitsicht).",
+      "column_headers": [
+        "Bausteinsicht",
+        "Laufzeitsicht"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "UML Paketdiagramm (Package Diagram)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "UML Sequenzdiagramm (Sequence Diagram)",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "UML Kompositionsstrukturdiagramm (Composite Structure)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "UML Aktivitätsdiagramm (Activity Diagram)",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q12",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche vier Elemente sind Teil der 'Schutzziele' (Security Goals) bzw. der erweiterten CIA-Triade in der Informationssicherheit?",
+      "explanation": "Die klassischen Ziele sind Vertraulichkeit (Confidentiality), Integrität (Integrity) und Verfügbarkeit (Availability). Oft ergänzt um Authentizität (Authenticity) oder Nichtabstreitbarkeit. 'Portierbarkeit' und 'Wartbarkeit' sind keine Sicherheitsziele.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertraulichkeit (Confidentiality)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Portierbarkeit (Portability)",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Integrität (Integrity)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Verfügbarkeit (Availability)",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Authentizität (Authenticity)",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "Wartbarkeit (Maintainability)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q13",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welche Konsequenz hat die Verletzung des 'Interface Segregation Principle' (ISP)?",
+      "explanation": "Wenn ISP verletzt wird, müssen Clients von Methoden abhängen, die sie gar nicht nutzen (weil die Interfaces zu 'fett' sind). Dies führt zu unnötiger Kopplung: Ändert sich eine ungenutzte Methode im Interface, muss der Client neu kompiliert/deployt werden.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Das System wird unsicherer gegen Hackerangriffe.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Clients hängen von Methoden ab, die sie nicht nutzen, was zu unnötiger Kopplung führt.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Datenbank wird inkonsistent.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q14",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie wollen die Kopplung in Ihrem System bewerten. Welche Art von Kopplung liegt in den folgenden Beispielen vor?",
+      "explanation": "Aufruf über Interface ist eine lose, wünschenswerte Kopplung. Gemeinsame Nutzung globaler Daten oder direkter Zugriff auf interne Felder anderer Klassen ist eine enge, problematische Kopplung (Content Coupling / Common Coupling).",
+      "column_headers": [
+        "Lose Kopplung (Eher gut)",
+        "Enge Kopplung (Eher schlecht)"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Komponente A ruft Komponente B über ein definiertes Interface auf.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Mehrere Komponenten lesen und schreiben unkontrolliert auf globale Variablen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Komponente A greift direkt auf private Felder von Komponente B zu (z.B. per Reflection).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Kommunikation erfolgt über asynchrone Events (Publish-Subscribe).",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q15",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Aussagen treffen auf das Architekturmuster 'Model-View-ViewModel' (MVVM) zu?",
+      "explanation": "MVVM ist auf UI-Entwicklung (oft WPF/Web) spezialisiert. Es nutzt Data-Binding zur automatischen Synchronisation zwischen View und ViewModel. Das ViewModel kennt die View nicht direkt (keine Referenz), was die Testbarkeit des ViewModels erhöht. Businesslogik liegt nicht in der View.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es wird häufig in der Entwicklung moderner Benutzeroberflächen (z. B. SPA, Desktop) eingesetzt.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Das ViewModel kennt die View und greift direkt auf deren UI-Elemente zu.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Data-Binding (Datenbindung) verbindet View und ViewModel oft automatisch.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Das ViewModel enthält den Präsentationszustand und die Logik für die View.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Es ist ein Muster zur Datenhaltung in relationalen Datenbanken.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q16",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist das Hauptziel der 'Kontextabgrenzung' (Context View) im arc42-Template?",
+      "explanation": "Die Kontextabgrenzung definiert den Scope des Systems: Was gehört dazu (ist meine Verantwortung) und was ist extern (Nachbarsysteme, Benutzer)? Sie legt die externen Schnittstellen fest.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Die Darstellung der internen Klassenstruktur.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Die Definition der Systemgrenze und der Schnittstellen zur Außenwelt (Nachbarsysteme/Benutzer).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Planung der Projektkosten.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q17",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die folgenden Tätigkeiten den Phasen 'Entwurf' (Design) oder 'Bewertung' (Evaluation) zu.",
+      "explanation": "Das Festlegen von Mustern und Schnittstellen ist eine konstruktive Entwurfstätigkeit. Das Prüfen mittels ATAM oder das Reviewen von Code gegen Konzepte ist eine analytische Bewertungstätigkeit.",
+      "column_headers": [
+        "Entwurf",
+        "Bewertung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Auswahl des Microservices-Musters zur Erfüllung der Skalierbarkeitsanforderungen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Durchführung eines ATAM-Workshops zur Risikoidentifikation.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Spezifikation der REST-API-Schnittstellen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Überprüfung, ob der Quellcode die definierten Schichtungsregeln einhält.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q18",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Werkzeuge eignen sich am besten zur 'Statischen Analyse' von Softwarearchitekturen?",
+      "explanation": "Tools wie SonarQube oder ArchUnit analysieren den Code ohne Ausführung auf Regelverletzungen (z. B. zyklische Abhängigkeiten). JMeter ist ein Lasttest-Tool (dynamisch), Jira ein Ticket-System.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SonarQube (für Code-Metriken und Regelverletzungen)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "JMeter (für Lasttests)",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "ArchUnit (für Unit-Tests von Architekturregeln)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Jira (für Projektmanagement)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q19",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was versteht man unter 'Pipes and Filters'?",
+      "explanation": "Pipes and Filters ist ein Architekturmuster zur Verarbeitung von Datenströmen. Daten werden durch eine Kette von Verarbeitungsstationen (Filtern) geleitet, die über Puffer/Leitungen (Pipes) verbunden sind.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ein Entwurfsmuster für Benutzeroberflächen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ein Architekturmuster, bei dem Datenströme schrittweise durch unabhängige Filterkomponenten verarbeitet werden.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Eine Methode zur Verkabelung von Netzwerken.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q20",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Bewerten Sie die folgenden Aussagen zum Thema 'Kontextabgrenzung'.",
+      "explanation": "Der fachliche Kontext ist oft stabil (Kern der Domäne), während der technische Kontext (Protokolle, Hardware) sich öfter ändern kann. Externe Schnittstellen sind der Hauptinhalt der Kontextabgrenzung.",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Der fachliche Kontext ändert sich typischerweise häufiger als der technische Kontext.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Die Kontextabgrenzung dokumentiert alle externen Schnittstellen des Systems.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Interne Bausteine gehören in die Kontextabgrenzung.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q21",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie bewerten die Sicherheit einer Webanwendung. Ordnen Sie die folgenden Maßnahmen den Schutzzielen 'Vertraulichkeit' (Confidentiality) oder 'Integrität' (Integrity) zu.",
+      "explanation": "Vertraulichkeit schützt Daten vor unbefugtem Zugriff (Leseschutz), z. B. durch Verschlüsselung (TLS) oder Zugriffskontrollen (ACLs). Integrität schützt Daten vor unbefugter oder versehentlicher Veränderung (Schreibschutz/Manipulationsschutz), z. B. durch digitale Signaturen oder Checksummen.",
+      "column_headers": [
+        "Vertraulichkeit",
+        "Integrität"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Verschlüsselung der Transportverbindung mittels TLS 1.3.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Einsatz von digitalen Signaturen für Software-Updates.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Hashing von Passwörtern mit Salt vor der Speicherung.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Verwendung von Checksummen bei der Datenübertragung.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q22",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Informationen sollten in der 'Blackbox'-Beschreibung eines Bausteins in der Bausteinsicht enthalten sein?",
+      "explanation": "Die Blackbox-Sicht definiert die Schnittstelle zur Außenwelt: Was bietet der Baustein an (Schnittstellen), was ist seine Aufgabe (Verantwortlichkeit) und welche Qualitätsgarantien (z. B. Performance) gibt er? Der interne Aufbau (Klassen, private Hilfsmethoden) ist Teil der Whitebox-Sicht und hier *nicht* sichtbar.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Die öffentliche Schnittstelle (API) des Bausteins.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Die interne Paketstruktur und Klassenverteilung.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Die primäre Verantwortlichkeit oder der Zweck des Bausteins.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Erfüllte Qualitätsmerkmale (z. B. Durchsatz, Antwortzeit).",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Die Namen der privaten Variablen.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q23",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist ein 'Qualitätsbaum' (Utility Tree) im Kontext der ATAM-Methode?",
+      "explanation": "Ein Qualitätsbaum ist ein Werkzeug zur Konkretisierung und Priorisierung von Qualitätsanforderungen. Er bricht abstrakte Qualitätsmerkmale (Wurzel) in verfeinerte Attribute (Äste) und schließlich in konkrete Szenarien (Blätter) herunter. Dies dient als Basis für die Architekturbewertung.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eine grafische Darstellung der Vererbungshierarchie im Code.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Ein hierarchisches Modell zur Verfeinerung von Qualitätszielen bis hin zu priorisierten Szenarien.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ein Baumdiagramm, das die Kostenstruktur des Projekts visualisiert.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q24",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche vier Elemente sind typischerweise Teil der 'Lösungsstrategie' (Solution Strategy) in einer Architekturdokumentation (z. B. nach arc42)?",
+      "explanation": "Die Lösungsstrategie fasst die fundamentalen Entscheidungen zusammen: Wie wird das System grob zerlegt (Top-Level-Architektur)? Welche Technologien werden eingesetzt? Wird Software gekauft oder selbst gebaut (Make-or-Buy)? Wie werden die wichtigsten Qualitätsziele erreicht? Detailschnittstellen gehören in die Bausteinsicht.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Technologieentscheidungen (Programmiersprache, Frameworks).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Detaillierte Methoden-Signaturen aller Klassen.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Entscheidungen über 'Make or Buy' (Eigenentwicklung vs. Zukauf).",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Strategien zur Erreichung der Top-Qualitätsziele.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Grobe Zerlegung des Systems (Top-Level-Pattern).",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "Die Urlaubsplanung des Teams.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q25",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie wollen die Kopplung zwischen zwei Modulen A und B bewerten. Welche der folgenden Szenarien beschreiben eine 'lose Kopplung' (wünschenswert) und welche eine 'enge Kopplung' (problematisch)?",
+      "explanation": "Aufrufe über Interfaces und die Nutzung einfacher Datentypen (primitive types/DTOs) entkoppeln die Module. Direkte Zugriffe auf Interna (private Felder) oder das Teilen komplexer interner Objekte erzeugen enge Abhängigkeiten, die Änderungen erschweren.",
+      "column_headers": [
+        "Lose Kopplung",
+        "Enge Kopplung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Modul A ruft Modul B über ein definiertes Interface auf.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Modul A greift mittels Reflection auf private Felder von Modul B zu.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Modul A und B tauschen Daten über einfache, standardisierte Formate (z.B. JSON) aus.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Modul A übergibt Modul B eine Referenz auf seine eigene interne Datenbankverbindung.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q26",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welches Entwurfsmuster (Pattern) ermöglicht es, das Verhalten eines Objekts zur Laufzeit zu ändern, indem das Objekt in ein anderes Objekt 'eingepackt' wird?",
+      "explanation": "Das 'Decorator'-Muster (Dekorierer) erlaubt es, einem Objekt dynamisch neue Zuständigkeiten hinzuzufügen, indem es in eine Wrapper-Klasse eingepackt wird. Dies ist eine flexible Alternative zur Unterklassenbildung.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Singleton",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Decorator",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Observer",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Factory Method",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q27",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Vorteile bietet die Verwendung von 'Qualitätsszenarien' gegenüber abstrakten Qualitätsanforderungen (wie 'Das System soll schnell sein')?",
+      "explanation": "Szenarien machen Qualität messbar (durch konkrete Metriken in der 'Response') und verständlich, indem sie einen Kontext (Umgebung) und einen Auslöser (Stimulus) definieren. Sie ermöglichen so eine objektive Überprüfung statt subjektiver Diskussionen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sie machen Qualitätsanforderungen konkret messbar und überprüfbar.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Sie reduzieren die Anzahl der benötigten Entwickler.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sie erleichtern die Kommunikation zwischen Stakeholdern durch anschauliche Beispiele.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Sie garantieren automatisch eine fehlerfreie Software.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q28",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Ordnen Sie die folgenden Diagrammtypen der 'Statischen Sicht' (Struktur) oder der 'Dynamischen Sicht' (Verhalten) zu.",
+      "explanation": "Komponentendiagramme zeigen die statische Struktur und Abhängigkeiten von Bausteinen. Zustandsdiagramme (State Charts) beschreiben das dynamische Verhalten eines Objekts in Reaktion auf Ereignisse.",
+      "column_headers": [
+        "Statische Sicht",
+        "Dynamische Sicht"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "UML Komponentendiagramm",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "UML Zustandsdiagramm (State Chart)",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q29",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was besagt das 'Gesetz von Conway' (Conway's Law)?",
+      "explanation": "Conway's Law besagt, dass Organisationen, die Systeme entwerfen, zwangsläufig Entwürfe produzieren, die Abbilder der Kommunikationsstrukturen dieser Organisationen sind. Architektur und Organisationsstruktur beeinflussen sich gegenseitig.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Software wird mit der Zeit immer langsamer.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Die Struktur eines Systems spiegelt die Kommunikationsstrukturen der Organisation wider, die es entworfen hat.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Anzahl der Fehler in einem Programm ist konstant.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q30",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei der folgenden Aspekte gehören zu den 'Querschnittskonzepten' (Cross-cutting Concepts) einer Softwarearchitektur?",
+      "explanation": "Querschnittskonzepte betreffen mehrere Teile des Systems und müssen einheitlich gelöst werden. Dazu gehören Logging/Monitoring, Persistenz (Datenhaltung) und das allgemeine UI/Bedienkonzept. Die Implementierung einer spezifischen Geschäftsregel ist meist lokal gekapselt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Logging und Monitoring",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Persistenz und Transaktionsmanagement",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Eine spezifische Berechnungsformel für Rabatte",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Benutzeroberflächen-Konzepte (Ergonomie, i18n)",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Der Name des Projektleiters",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q31",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welches Problem adressiert das 'Adapter'-Entwurfsmuster primär?",
+      "explanation": "Der Adapter (Wrapper) dient dazu, Schnittstellenkompatibilität herzustellen. Er ermöglicht die Zusammenarbeit von Klassen, die aufgrund inkompatibler Schnittstellen sonst nicht zusammenarbeiten könnten, indem er die Schnittstelle einer Klasse in eine andere, vom Client erwartete Schnittstelle übersetzt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es stellt sicher, dass nur eine Instanz einer Klasse existiert.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Es ermöglicht die Zusammenarbeit von Klassen mit inkompatiblen Schnittstellen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es trennt die Abstraktion von der Implementierung.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q32",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie müssen entscheiden, ob eine Information in die 'Kontextsicht' oder die 'Bausteinsicht' gehört.",
+      "explanation": "Die Kontextsicht zeigt die Außengrenzen und Nachbarn (externe Systeme, Benutzer). Die Bausteinsicht zeigt die innere Struktur (Komponenten, Pakete) des Systems selbst.",
+      "column_headers": [
+        "Kontextsicht",
+        "Bausteinsicht"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Interne Zerlegung des Systems in Module.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Beziehung zu externen Nachbarsystemen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Definition der Schnittstellen zu Fremdsystemen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Abhängigkeiten zwischen internen Klassenpaketen.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q33",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Metriken eignen sich gut zur quantitativen Bewertung der Wartbarkeit von Code?",
+      "explanation": "Zyklomatische Komplexität (Messung der Pfade/Verzweigungen) und Kopplungsgrad (Coupling) sind etablierte Metriken für Wartbarkeit. Lines of Code (LOC) sagt wenig über Qualität aus. Die Anzahl der Stakeholder ist eine Prozessmetrik.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zyklomatische Komplexität (Cyclomatic Complexity)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Kopplungsgrad (Coupling Metrics, z.B. Efferent/Afferent Coupling)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Reine Anzahl der Codezeilen (Lines of Code)",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Anzahl der Projekt-Stakeholder",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q34",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist der Hauptunterschied zwischen 'Model-View-Controller' (MVC) und 'Model-View-ViewModel' (MVVM)?",
+      "explanation": "Bei MVVM wird ein 'ViewModel' als Bindeglied eingeführt, das spezifisch für die View aufbereitete Daten und Logik enthält. Ein wesentliches Merkmal von MVVM ist das Data-Binding (oft bidirektional), das View und ViewModel synchronisiert, ohne dass sie sich direkt kennen müssen. MVC nutzt klassisch Controller zur Steuerung.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es gibt keinen Unterschied, es sind Synonyme.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "MVVM führt ein ViewModel und Data-Binding ein, um View und Logik stärker zu entkoppeln.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "MVC ist nur für Desktop-Apps, MVVM nur für Web.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q35",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die folgenden Aktivitäten den Phasen 'Entwurf' oder 'Analyse/Bewertung' zu.",
+      "explanation": "Das Festlegen von Mustern und Schnittstellen ist eine konstruktive Tätigkeit (Entwurf). Das Überprüfen mittels ATAM oder Metriken ist eine analytische Tätigkeit (Bewertung).",
+      "column_headers": [
+        "Entwurf",
+        "Analyse/Bewertung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Auswahl des Schichtenmusters für die Grundstruktur.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Durchführung eines ATAM-Workshops.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Definition der öffentlichen API-Methoden.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Messung der zyklomatischen Komplexität.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q36",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Aussagen treffen auf das 'Microservices'-Architekturmuster zu?",
+      "explanation": "Microservices sind unabhängig deploybar, oft nach fachlichen Domänen (Bounded Contexts) geschnitten und fördern technologische Vielfalt (Polyglot Persistence). Ein zentraler Monolith oder eine gemeinsame Datenbank für alle Services sind typische Gegenentwürfe.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sie ermöglichen unabhängiges Deployment einzelner Services.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Sie erfordern zwingend eine gemeinsame, zentrale Datenbank.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Sie sind oft nach fachlichen Fähigkeiten (Business Capabilities) geschnitten.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Sie erlauben den Einsatz unterschiedlicher Technologien pro Service.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Sie vereinfachen das Testen von Gesamtsystem-Transaktionen erheblich.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q37",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist ein 'Architektur-Risiko' (Architectural Risk) in Abgrenzung zu einem 'Projektrisiko'?",
+      "explanation": "Ein Architekturrisiko resultiert aus einer technischen Entscheidung oder Eigenschaft der Architektur (z. B. 'Framework X wird nicht mehr gewartet'), die den Erfolg des Systems gefährdet. Projektrisiken sind organisatorischer Natur (Budget, Personal, Zeitplan).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Der Ausfall des Projektleiters durch Krankheit.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Eine Architekturentscheidung, die potenziell dazu führt, dass Qualitätsanforderungen nicht erfüllt werden.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Eine Kürzung des Gesamtbudgets.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET4-Q38",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Bewerten Sie die folgenden Aussagen zur 'Dokumentation von Entscheidungen'.",
+      "explanation": "Entscheidungen sollten begründet werden (Warum?), um sie nachvollziehbar zu machen. Auch abgelehnte Alternativen sind wertvolle Informationen (Warum nicht X?). Dokumentation hilft, 'Tribal Knowledge' (Kopfwissen) zu vermeiden.",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Nur die finale Entscheidung muss dokumentiert werden, nicht die verworfenen Alternativen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Eine Begründung (Rationale) ist essenziell für die Nachvollziehbarkeit.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Architecture Decision Records (ADRs) sind ein geeignetes Format.",
+          "correct_column_index": 0
+        }
+      ]
+    }
+  ]
+}

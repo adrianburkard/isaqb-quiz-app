@@ -1,0 +1,1185 @@
+{
+  "exam_title": "iSAQB CPSA-F Übungsprüfung - Set 5",
+  "version": "2025.1-set5",
+  "questions": [
+    {
+      "id": "SET5-Q01",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche vier der folgenden Artefakte oder Informationen sind typische Eingaben (Inputs), die Sie benötigen, um mit dem Entwurf einer Softwarearchitektur beginnen zu können?",
+      "explanation": "Um eine Architektur zu entwerfen, benötigen Sie die wesentlichen funktionalen Anforderungen, die Qualitätsziele (NFRs), die organisatorischen und technischen Randbedingungen sowie den Kontext (Schnittstellen zur Umwelt). Detaillierte Testprotokolle oder der komplette Quellcode sind Ergebnisse der Entwicklung, nicht Eingaben für den initialen Entwurf.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wesentliche funktionale Anforderungen",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Die vollständigen Testprotokolle der Vorgängerversion",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Technologische und organisatorische Randbedingungen",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Qualitätsziele und Architekturziele",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Kontextabgrenzung (Schnittstellen zu Nachbarsystemen)",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "Der fertige Quellcode aller Module",
+          "is_correct": false
+        },
+        {
+          "id": "g",
+          "text": "Die Urlaubsanträge des Managements",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q02",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie müssen entscheiden, ob Sie ein 'Modellierungswerkzeug' (z. B. Enterprise Architect, Visual Paradigm) oder ein einfaches 'Mal-/Zeichenwerkzeug' (z. B. Visio, PowerPoint, Draw.io) für die Architekturdokumentation einsetzen. Bewerten Sie die Aussagen.",
+      "explanation": "Modellierungswerkzeuge verwalten ein Modell im Hintergrund (Repository), was Konsistenz bei Änderungen (z. B. Umbenennung einer Klasse in allen Diagrammen) sicherstellt und Validierung ermöglicht. Zeichenwerkzeuge sind oft einfacher zu erlernen und flexibler für Ad-hoc-Skizzen, bieten aber keine semantische Prüfung.",
+      "column_headers": [
+        "Modellierungswerkzeug",
+        "Mal-/Zeichenwerkzeug"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Ermöglicht automatische Konsistenzprüfungen (z. B. Syntax-Checks, Abhängigkeitsanalysen).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Bietet meist eine flachere Lernkurve und höhere Flexibilität für informelle Skizzen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Änderungen an einem Element (z. B. Umbenennung) wirken sich automatisch auf alle Diagramme aus, in denen es verwendet wird.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Jedes Diagramm ist eine isolierte Grafik ohne semantische Verbindung zu anderen Diagrammen.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q03",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist das Hauptziel des 'Acyclic Dependencies Principle' (ADP)?",
+      "explanation": "Das ADP besagt, dass der Abhängigkeitsgraph von Komponenten oder Paketen keine Zyklen enthalten darf (keine Kreisschlüsse). Zyklen führen dazu, dass Komponenten nicht mehr unabhängig voneinander gebaut, getestet oder wiederverwendet werden können, da sie indirekt alle voneinander abhängen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sicherzustellen, dass jede Methode weniger als 10 Zeilen Code hat.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Zu verhindern, dass Abhängigkeitszyklen zwischen Komponenten entstehen, um die Trennbarkeit und Testbarkeit zu wahren.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Zu garantieren, dass alle Abhängigkeiten zur Laufzeit injiziert werden.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q04",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Informationen sollten zwingend in einer gut dokumentierten Schnittstelle (API) enthalten sein?",
+      "explanation": "Eine Schnittstelle muss nicht nur die technische Signatur beschreiben, sondern auch das erwartete Verhalten (Semantik, Vor-/Nachbedingungen), Protokolle für die Nutzung (z. B. Reihenfolge von Aufrufen) und Qualitätsmerkmale (z. B. Durchsatz, Latenz). Interne Implementierungsdetails sind für den Nutzer irrelevant.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Technische Signatur (Methodennamen, Parameter, Datentypen).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Semantik und Verhalten (was tut die Methode?).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Name der Datenbanktabelle, in die intern geschrieben wird.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Nicht-funktionale Eigenschaften (z. B. Antwortzeitgarantien, Verfügbarkeit).",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Der Algorithmus zur Sortierung der Daten.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q05",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die folgenden Szenarien den ISO 25010 Qualitätsmerkmalen 'Zuverlässigkeit' (Reliability) oder 'Sicherheit' (Security) zu.",
+      "explanation": "Verfügbarkeit und Fehlertoleranz (Wiederherstellung nach Absturz) sind Aspekte der Zuverlässigkeit. Schutz vor unbefugtem Zugriff (Vertraulichkeit) und Nachweisbarkeit von Aktionen (Nichtabstreitbarkeit) sind Aspekte der Sicherheit.",
+      "column_headers": [
+        "Zuverlässigkeit",
+        "Sicherheit"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Das System muss auch bei Ausfall einer Festplatte weiterlaufen (Fehlertoleranz).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Es muss sichergestellt sein, dass nur Manager auf die Gehaltsdaten zugreifen können (Vertraulichkeit).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Nach einem Systemabsturz müssen die Daten innerhalb von 5 Minuten wiederhergestellt sein (Wiederherstellbarkeit).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Benutzer können nicht leugnen, eine Bestellung abgeschickt zu haben (Nichtabstreitbarkeit).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q06",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welches Problem löst das 'Facade' (Fassade) Entwurfsmuster primär?",
+      "explanation": "Die Fassade bietet eine vereinfachte, einheitliche Schnittstelle zu einer Menge von Schnittstellen in einem Subsystem. Sie reduziert die Komplexität für den Client, indem sie die interne Komplexität des Subsystems verbirgt und die Kopplung verringert.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es ermöglicht die dynamische Hinzufügung von Verhalten zu einem Objekt.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Es bietet eine vereinfachte Schnittstelle zu einem komplexen Subsystem.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es stellt sicher, dass eine Klasse nur eine Instanz hat.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q07",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche vier Aspekte gehören in das Kapitel 'Bausteinsicht' (Building Block View) einer Architekturdokumentation (z. B. nach arc42)?",
+      "explanation": "Die Bausteinsicht zeigt die statische Zerlegung. Dazu gehören: Hierarchische Zerlegung (Ebene 1, 2, ...), Schnittstellen der Bausteine, Beziehungen/Abhängigkeiten zwischen Bausteinen und ein Mapping auf den Quellcode (Verzeichnis/Paket). Laufzeitszenarien gehören in die Laufzeitsicht, Hardware in die Verteilungssicht.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hierarchische Zerlegung des Systems (Subsysteme, Komponenten).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Schnittstellenbeschreibung der Bausteine.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Sequenzdiagramme für komplexe Abläufe.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Abhängigkeiten zwischen den Bausteinen.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Zuordnung der Bausteine zu Dateisystem-Ordnern oder Paketen.",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "Konfiguration der Firewalls.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q08",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Bewerten Sie die folgenden Aussagen zum Thema 'Architekturmuster' und 'Entwurfsmuster'.",
+      "explanation": "Architekturmuster (z. B. Microservices, Layer) strukturieren das Gesamtsystem. Entwurfsmuster (z. B. Observer, Singleton) lösen Probleme auf Komponentenebene (Detaildesign). Patterns sind keine fertigen Code-Bibliotheken, sondern Konzepte.",
+      "column_headers": [
+        "Richtig",
+        "Falsch"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Architekturmuster strukturieren typischerweise das Gesamtsystem oder große Teilsysteme.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Entwurfsmuster (Design Patterns) beziehen sich meist auf die interne Struktur von Komponenten und deren Beziehungen im Kleinen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Ein Muster ist eine fertig kompilierte Bibliothek, die man einbinden kann.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Die Verwendung von Mustern erschwert die Kommunikation im Team, da sie zu komplex sind.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q09",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist das primäre Ziel einer 'Root-Cause-Analysis' (Ursachenanalyse) im Rahmen einer Architekturbewertung?",
+      "explanation": "Bei der Bewertung (z. B. ATAM) oder beim Debugging von Architekturproblemen geht es darum, nicht nur Symptome zu bekämpfen, sondern die fundamentalen Ursachen (z. B. falsche Annahmen, fehlende Konzepte) zu finden, um nachhaltige Lösungen zu entwickeln.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Den Schuldigen Entwickler zu finden und zu bestrafen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Die tiefere, zugrundeliegende Ursache eines Problems oder Risikos zu identifizieren, statt nur Symptome zu behandeln.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Die Wurzel des Dateisystembaums zu finden.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q10",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Vorteile bietet das Prinzip der 'Hohen Kohäsion' (High Cohesion)?",
+      "explanation": "Hohe Kohäsion bedeutet, dass zusammengehörige Dinge an einem Ort sind. Das erleichtert das Verständnis (Lesbarkeit), vereinfacht Änderungen (da sie lokal begrenzt sind) und erhöht oft die Wiederverwendbarkeit, da der Baustein in sich abgeschlossen ist.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verbesserte Verständlichkeit des Bausteins.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Erhöhte Wahrscheinlichkeit für zyklische Abhängigkeiten.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Vereinfachte Wartung, da Änderungen oft lokal begrenzt bleiben.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Bessere Wiederverwendbarkeit der Komponente.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Maximale Verteilung der Logik über viele Dateien.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q11",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Sie entwerfen ein System für Hochverfügbarkeit. Welche Maßnahmen sind 'Geeignet' und welche 'Weniger geeignet'?",
+      "explanation": "Redundanz (Vermeidung von Single Point of Failure) und Load Balancing sind Standardmaßnahmen für Verfügbarkeit. Ein manueller Neustart ist zu langsam für Hochverfügbarkeit. Eine monolithische Datenbank ist oft ein Flaschenhals und Single Point of Failure.",
+      "column_headers": [
+        "Geeignet",
+        "Weniger geeignet"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Einsatz von redundanten Servern und Load Balancern.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Verlass auf manuellen Neustart durch Administratoren bei Ausfällen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Vermeidung von Single Points of Failure (SPOF).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Nutzung einer einzigen, monolithischen Datenbank für alle Services.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q12",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was beschreibt der Begriff 'Idempotenz' im Kontext von Schnittstellen (z. B. REST API)?",
+      "explanation": "Idempotenz bedeutet, dass das mehrfache Ausführen derselben Operation (z. B. eines API-Aufrufs) das gleiche Ergebnis bzw. den gleichen Serverzustand bewirkt wie das einmalige Ausführen. Das ist wichtig für Fehlertoleranz (Retry-Mechanismen).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dass eine Schnittstelle besonders schnell antwortet.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Dass das mehrfache Ausführen einer Operation denselben Zustand bewirkt wie das einmalige Ausführen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Dass die Schnittstelle passwortgeschützt ist.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q13",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Diagrammtypen eignen sich besonders gut für die Darstellung der 'Verteilungssicht'?",
+      "explanation": "Das UML-Verteilungsdiagramm (Deployment Diagram) ist der Standard. Oft werden auch freie Netzwerktopologie-Diagramme (Infrastruktur-Skizzen) verwendet. Klassendiagramme sind zu feingranular, Aktivitätsdiagramme zeigen Abläufe.",
+      "options": [
+        {
+          "id": "a",
+          "text": "UML Verteilungsdiagramm (Deployment Diagram)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "UML Klassendiagramm",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Netzwerk-Topologie-Diagramm (Infrastruktur)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "UML Aktivitätsdiagramm",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q14",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Unterscheiden Sie zwischen 'Qualitätsanforderungen' und 'Randbedingungen'.",
+      "explanation": "Randbedingungen (Constraints) sind nicht verhandelbare Vorgaben (Budget, Gesetz, vorgegebene Technologie), die den Lösungsraum einschränken. Qualitätsanforderungen (z. B. Antwortzeit, Verfügbarkeit) sind Ziele, die durch die Architektur erreicht werden sollen und oft Abstufungen zulassen.",
+      "column_headers": [
+        "Qualitätsanforderung",
+        "Randbedingung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Das System muss auf dem bestehenden Oracle-Cluster laufen.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Die Antwortzeit bei der Suche muss unter 1 Sekunde liegen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Das Entwicklungsbudget ist auf 500.000 Euro begrenzt.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Das System muss skalierbar sein, um 10.000 gleichzeitige Nutzer zu bedienen.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q15",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welchen Zweck erfüllt das Kapitel 'Risiken und technische Schulden' (Kapitel 11) im arc42-Template?",
+      "explanation": "Dieses Kapitel dient dazu, bekannte Probleme, Risiken und technische Schulden explizit zu machen. Es ermöglicht dem Management und den Entwicklern, diese Risiken zu bewerten, zu priorisieren und Maßnahmen zu planen, statt sie zu ignorieren.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es dient dazu, den Entwicklern die Schuld für schlechten Code zu geben.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Es listet bekannte Architekturrisiken und technische Schulden auf, um Transparenz zu schaffen und Management-Entscheidungen zu ermöglichen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es enthält die Risikobewertung für die finanzielle Bonität des Kunden.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q16",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Aussagen treffen auf das 'State'-Entwurfsmuster (Zustandsmuster) zu?",
+      "explanation": "Das State-Pattern ermöglicht einem Objekt, sein Verhalten zu ändern, wenn sich sein interner Zustand ändert. Es kapselt zustandsspezifisches Verhalten in eigenen Klassen und vermeidet so riesige Switch-Case-Anweisungen. Es ist ideal für Zustandsautomaten.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es erlaubt einem Objekt, sein Verhalten zu ändern, wenn sich sein interner Zustand ändert.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Es lagert zustandsspezifisches Verhalten in separate Klassen aus.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es wird verwendet, um Datenbankzugriffe zu optimieren.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Es hilft, komplexe bedingte Anweisungen (if/switch) für Zustandsübergänge zu vermeiden.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Es stellt sicher, dass nur eine Instanz einer Klasse existiert.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q17",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Bewerten Sie die Eignung der folgenden Kommunikationsmittel für die Architekturdokumentation.",
+      "explanation": "Ein Wiki (z. B. Confluence) ist ideal, da es kollaborativ, versionierbar, durchsuchbar und verlinkbar ist. Ein Word-Dokument auf einem Netzlaufwerk veraltet schnell und ist schwer gemeinsam zu bearbeiten. Code-Kommentare sind gut für Details, aber schlecht für den großen Überblick.",
+      "column_headers": [
+        "Gut geeignet",
+        "Weniger geeignet"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Ein zentrales Wiki (z. B. Confluence) mit Versionierung und Verlinkung.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Ein monolithisches Word-Dokument auf einem versteckten Netzlaufwerk.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Ausschließliche Dokumentation in Code-Kommentaren.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q18",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was ist der Unterschied zwischen 'Internationalisierung' (i18n) und 'Lokalisierung' (L10n)?",
+      "explanation": "Internationalisierung (i18n) ist die technische Vorbereitung der Software, um mehrere Sprachen/Regionen zu unterstützen (z. B. UTF-8 Support, Ressourcen-Dateien). Lokalisierung (L10n) ist der Prozess der Anpassung an eine *konkrete* Region (z. B. Übersetzung der Texte ins Deutsche).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es gibt keinen Unterschied.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Internationalisierung ist die technische Vorbereitung der Software für mehrere Sprachen; Lokalisierung ist die konkrete Anpassung (Übersetzung) für eine Region.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Lokalisierung macht man vor der Internationalisierung.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q19",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Hauptvorteile bietet die 'Statische Codeanalyse' für die Architektursicherung?",
+      "explanation": "Statische Analyse kann automatisiert in der CI-Pipeline laufen und findet Verstöße (z. B. gegen Schichtungsregeln oder zyklische Abhängigkeiten) sehr früh, ohne den Code ausführen zu müssen. Sie kann jedoch keine konzeptionellen Designfehler oder fehlende Business-Logik finden.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sie kann automatisiert und kontinuierlich (CI/CD) durchgeführt werden.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Sie findet Verstöße gegen definierte Abhängigkeitsregeln (z. B. Zyklen).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Sie ersetzt manuelle Code-Reviews vollständig.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Sie prüft, ob die Software die fachlichen Anforderungen erfüllt.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q20",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die folgenden Aufgaben den Rollen 'Softwarearchitekt:in' oder 'Product Owner' zu.",
+      "explanation": "Der Product Owner definiert das 'Was' (Features, Prioritäten, Fachlichkeit) und ROI. Der Architekt definiert das 'Wie' (Struktur, Technologie, technische Qualität).",
+      "column_headers": [
+        "Softwarearchitekt:in",
+        "Product Owner"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Priorisierung des Product Backlogs nach Geschäftswert.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Auswahl des Persistenz-Frameworks.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Definition der Akzeptanzkriterien für User Stories (fachlich).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Sicherstellung der Einhaltung von Architekturprinzipien.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q21",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Im Rahmen eines ATAM-Workshops (Architecture Tradeoff Analysis Method) werden verschiedene Artefakte erzeugt. Ordnen Sie die folgenden Beschreibungen den Begriffen 'Risiko', 'Sensitivitätspunkt' oder 'Trade-off-Punkt' zu.",
+      "explanation": "Ein Sensitivitätspunkt ist eine Eigenschaft, die *ein* Qualitätsmerkmal maßgeblich beeinflusst. Ein Trade-off-Punkt beeinflusst *mehrere* Merkmale gegenläufig (z. B. Sicherheit hoch -> Performance runter). Ein Risiko ist eine Entscheidung, die das Erreichen von Zielen potenziell gefährdet (z. B. Entscheidung noch nicht getroffen oder negative Konsequenzen).",
+      "column_headers": [
+        "Risiko",
+        "Sensitivitätspunkt",
+        "Trade-off-Punkt"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Die Erhöhung der Verschlüsselungsstärke verbessert die Sicherheit, verringert aber die Transaktionsrate.",
+          "correct_column_index": 2
+        },
+        {
+          "id": "b",
+          "text": "Es wurde noch nicht entschieden, wie das System bei einem Datenbankausfall reagieren soll.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Die Größe des internen Message-Buffers hat einen direkten Einfluss auf den Speicherverbrauch.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Die gewählte 32-Bit-Verschlüsselung wird als unsicher für die geforderte Vertraulichkeit eingestuft.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q22",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Teilmerkmale gehören gemäß ISO 25010 zur Hauptkategorie 'Leistungseffizienz' (Performance Efficiency)?",
+      "explanation": "Leistungseffizienz umfasst das Zeitverhalten (Antwortzeiten), den Ressourcenverbrauch (CPU, RAM) und die Kapazität (Grenzwerte, max. Nutzer). 'Verfügbarkeit' gehört zur Zuverlässigkeit, 'Modularität' zur Wartbarkeit.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zeitverhalten (Time behaviour)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Verfügbarkeit (Availability)",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ressourcenverbrauch (Resource utilization)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Kapazität (Capacity)",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Modularität (Modularity)",
+          "is_correct": false
+        },
+        {
+          "id": "f",
+          "text": "Fehlertoleranz (Fault tolerance)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q23",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welche direkte Konsequenz hat die Verletzung des 'Liskov Substitution Principle' (LSP) in einer objektorientierten Architektur?",
+      "explanation": "LSP fordert, dass Unterklassen ihre Basisklassen ersetzen können, ohne das korrekte Verhalten des Programms zu ändern. Wird dies verletzt (z. B. wirft die Unterklasse eine unerwartete Exception oder akzeptiert engere Parameter), muss der Client den konkreten Typ prüfen, was Polymorphie bricht und zu fehleranfälligem Code führt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Der Speicherverbrauch der Anwendung steigt exponentiell an.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Eine Unterklasse kann nicht mehr sicher anstelle ihrer Basisklasse verwendet werden, was zu unerwartetem Laufzeitverhalten führt.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Es entstehen zyklische Abhängigkeiten zwischen den Paketen.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Die Kompilierzeit der Anwendung erhöht sich drastisch.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q24",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Aussagen charakterisieren das 'Observer'-Entwurfsmuster korrekt?",
+      "explanation": "Observer definiert eine 1:n-Abhängigkeit. Das Subjekt (Observable) benachrichtigt alle registrierten Beobachter automatisch bei Änderungen. Dies führt zu einer losen Kopplung zwischen Subjekt und Beobachtern, da das Subjekt die konkreten Klassen der Beobachter nicht kennt (nur das Interface).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es definiert eine Eins-zu-Viele-Abhängigkeit zwischen Objekten.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Das beobachtete Objekt (Subject) muss die konkreten Klassen aller Beobachter kennen.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Änderungen im Subjekt führen zu einer automatischen Benachrichtigung der Beobachter.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Es fördert die lose Kopplung zwischen Datenquelle und Datennutzern.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Es wird primär verwendet, um den Zugriff auf ein Objekt zu kontrollieren (Proxy).",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q25",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Unterscheiden Sie zwischen 'Strikter Schichtung' (Strict Layering) und 'Entspannter Schichtung' (Relaxed Layering). Welche Aussage passt zu welchem Konzept?",
+      "explanation": "Bei strikter Schichtung darf Layer N nur Layer N-1 rufen. Das erhöht die Änderbarkeit, führt aber zu Durchreiche-Code (Performance-Overhead). Bei entspannter Schichtung darf Layer N auf alle Layer < N zugreifen (z. B. UI direkt auf DB), was effizienter sein kann, aber die Kopplung erhöht.",
+      "column_headers": [
+        "Strikte Schichtung",
+        "Entspannte Schichtung"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Eine Schicht darf nur auf die direkt darunterliegende Schicht zugreifen.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Führt oft zu 'Durchreiche-Code' (Pass-Through Code) in den mittleren Schichten.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Eine Schicht darf auf alle tieferliegenden Schichten zugreifen (z.B. UI greift direkt auf Logging-Schicht zu).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Bietet potenziell bessere Laufzeit-Performance durch Umgehung von Zwischenschichten.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q26",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Arten von Informationen gehören spezifisch in den 'Technischen Kontext' (in Abgrenzung zum Fachlichen Kontext)?",
+      "explanation": "Der technische Kontext beschreibt *wie* Daten übertragen werden (Transportprotokolle, physikalische Medien) und *worüber* (Hardware-Schnittstellen). Fachliche Dateninhalte oder Anwendungsfälle gehören in den fachlichen Kontext.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verwendete Transportprotokolle (z. B. TCP/IP, HTTP, MQTT).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Beschreibung der fachlichen Ein- und Ausgabedaten.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Physische Übertragungsmedien und Hardware-Schnittstellen (z. B. RS232, Kabeltypen).",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Liste der fachlichen Stakeholder.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q27",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Was versteht man unter 'Stamp Coupling' (Stempelkopplung) im Gegensatz zu 'Data Coupling'?",
+      "explanation": "Bei Data Coupling werden nur die tatsächlich benötigten Daten (z. B. primitive Typen) übergeben. Bei Stamp Coupling wird eine komplexe Datenstruktur (z. B. ein ganzes 'Customer'-Objekt) übergeben, obwohl der Empfänger nur einen Teil davon (z. B. 'Customer-ID') benötigt. Dies erzeugt eine unnötige Abhängigkeit zur Struktur des komplexen Typs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Es gibt keinen Unterschied, beides beschreibt Datenübergabe.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Bei Stamp Coupling teilen sich Komponenten globale Variablen.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bei Stamp Coupling wird eine komplexe Datenstruktur übergeben, obwohl der Empfänger nur Teile davon benötigt, was zu unnötigen Abhängigkeiten führt.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q28",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Welche vier Elemente sind essenzielle Bestandteile eines vollständig formulierten 'Qualitätsszenarios'?",
+      "explanation": "Ein vollständiges Szenario benötigt: Eine Quelle (wer/was?), einen Stimulus (was passiert?), ein Artefakt (was ist betroffen?), eine Umgebung (unter welchen Bedingungen?), eine Antwort (Reaktion des Systems) und ein Antwortmaß (Messgröße).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stimulus (Auslöser)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Quelle des Stimulus",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Name des Projektleiters",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Antwort (Reaktion des Systems)",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Antwortmaß (Messgröße)",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "Programmiersprache",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q29",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Vergleichen Sie 'Monolithische Architektur' und 'Microservices'. Welche Eigenschaft trifft auf welchen Stil zu?",
+      "explanation": "Microservices setzen auf dezentrale Datenhaltung (Database per Service) und unabhängiges Deployment. Monolithen haben meist eine zentrale Datenbank und werden als eine Einheit deployt (einfacheres Refactoring innerhalb der Codebasis, aber schwerer zu skalieren/deployen).",
+      "column_headers": [
+        "Monolith",
+        "Microservices"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Jedes Modul/Service verwaltet seine eigene Datenbank (Dezentrale Datenhaltung).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Deployment erfolgt als eine einzige, große Einheit.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Technologische Vielfalt (Polyglot) ist einfach umsetzbar.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Refactoring über Modulgrenzen hinweg ist oft einfacher (da alles in einer Codebasis).",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q30",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welche Variante des 'Proxy'-Musters wird verwendet, um teure Objekte erst dann zu erzeugen, wenn sie tatsächlich benötigt werden?",
+      "explanation": "Der 'Virtual Proxy' erzeugt das reale Objekt erst bei Bedarf (Lazy Loading). Der 'Remote Proxy' vertritt ein Objekt in einem anderen Adressraum. Der 'Protection Proxy' kontrolliert Zugriffsrechte.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remote Proxy",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Protection Proxy",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Virtual Proxy",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q31",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Ordnen Sie die folgenden Szenarien den ISO 25010 Merkmalen 'Kompatibilität' (Compatibility) oder 'Portierbarkeit' (Portability) zu.",
+      "explanation": "Kompatibilität betrifft das Zusammenspiel (Interoperabilität) und das Nebeneinander (Koexistenz) mit anderen Systemen. Portierbarkeit betrifft den Wechsel der Umgebung (Installierbarkeit, Adaptierbarkeit an neue OS-Versionen).",
+      "column_headers": [
+        "Kompatibilität",
+        "Portierbarkeit"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Die Software lässt sich problemlos auf Windows, Linux und macOS installieren.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Das System kann Datenformate eines externen Partnersystems ohne Konvertierungsfehler lesen (Interoperabilität).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Die Anwendung läuft stabil auf demselben Server wie drei andere Ressourcen-intensive Dienste (Koexistenz).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Der Wechsel von einer On-Premise-Installation in die Cloud erfordert nur minimale Konfigurationsänderungen.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q32",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Welche zwei Techniken unterstützen die Einhaltung des 'Open-Closed Principle' (OCP)?",
+      "explanation": "OCP (offen für Erweiterung, geschlossen für Änderung) wird oft durch Polymorphie (Interface-Vererbung) und Entwurfsmuster wie 'Strategy' oder 'Decorator' erreicht. Diese erlauben es, neues Verhalten hinzuzufügen (neue Strategie-Klasse), ohne den aufrufenden Code zu ändern.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verwendung von vielen 'if-else' oder 'switch-case' Anweisungen.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Nutzung von Vererbung und Polymorphie (Interfaces/Abstrakte Klassen).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Einsatz des 'Strategy'-Entwurfsmusters.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Direkte Instanziierung konkreter Klassen mit 'new'.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q33",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In einem Architecture Decision Record (ADR) findet sich oft ein Abschnitt 'Consequences' (Konsequenzen). Was ist der Hauptzweck dieses Abschnitts?",
+      "explanation": "Jede Entscheidung hat Vor- und Nachteile (Trade-offs). Der Abschnitt 'Consequences' dokumentiert diese ehrlich: Was wird besser, aber was wird auch schlechter/schwieriger/teurer? Es geht nicht um Bestrafung, sondern um Transparenz der Auswirkungen.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um die Namen der Personen aufzulisten, die die Entscheidung getroffen haben.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Um die positiven und negativen Auswirkungen (Trade-offs) der Entscheidung transparent zu machen.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Um festzulegen, wer bei Fehlentscheidungen bestraft wird.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q34",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 3,
+      "question_text": "Welche drei Artefakte sind direkte Ergebnisse (Outputs) einer ATAM-Bewertung?",
+      "explanation": "ATAM liefert eine priorisierte Liste von Qualitätsanforderungen (Utility Tree), identifizierte Risiken (Risks) und analysierte Sensitivitätspunkte/Trade-off-Punkte. Ein fertiger Quellcode oder ein Projektplan sind *keine* direkten Ergebnisse von ATAM.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eine Liste von identifizierten Risiken.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Der fertige, refaktorierte Quellcode.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Ein priorisierter Qualitätsbaum (Utility Tree).",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Dokumentierte Sensitivitätspunkte und Trade-off-Punkte.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Ein detaillierter Projektplan (Gantt-Chart).",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q35",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Unterscheiden Sie zwischen 'Blackbox-Test' und 'Whitebox-Test'.",
+      "explanation": "Blackbox-Tests prüfen gegen die Schnittstelle/Spezifikation ohne Kenntnis des Codes (Außensicht). Whitebox-Tests nutzen das Wissen über die innere Struktur (Codezweige, Logik) für den Testentwurf (Innensicht).",
+      "column_headers": [
+        "Blackbox-Test",
+        "Whitebox-Test"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Testet das System ausschließlich über die öffentlichen Schnittstellen gegen die Spezifikation.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Berücksichtigt die interne Logik und den Quellcode bei der Erstellung der Testfälle.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Ein Integrations-Test, der nur prüft, ob Services korrekt antworten, ohne deren Code zu kennen.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q36",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Welche drei der folgenden Themen sind typische 'Querschnittliche Konzepte' (Cross-cutting Concepts)?",
+      "explanation": "Sicherheit (Security), Transaktionsmanagement und Logging/Tracing sind klassische Querschnittsthemen, die viele Bausteine betreffen. Die Berechnung einer spezifischen Fachformel (z. B. Lohnsteuer) ist meist eine lokale Domänenlogik.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sicherheit (Authentifizierung/Autorisierung)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Berechnung der Lohnsteuer für einen spezifischen Mitarbeiter",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Transaktionsmanagement",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Zentrales Logging und Tracing",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Layout eines spezifischen Dialogfensters",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q37",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Welches Diagramm eignet sich im C4-Modell am besten, um einen Überblick über die deploybaren Einheiten (Container) und deren Technologien zu geben?",
+      "explanation": "Im C4-Modell (Context, Containers, Components, Code) zeigt das 'Container-Diagramm' die deploybaren Einheiten (z. B. Web-App, Mobile-App, API-Server, Datenbank) und deren Technologien/Interaktionen. Das Kontext-Diagramm ist abstrakter, das Komponenten-Diagramm detaillierter.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kontext-Diagramm (Level 1)",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Container-Diagramm (Level 2)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Klassendiagramm (Level 4)",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "SET5-Q38",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Bewerten Sie die folgenden Review-Methoden hinsichtlich ihrer Formalität.",
+      "explanation": "Die Inspektion ist die formalste Methode (Rollen, Protokoll, Metriken). Ein Walkthrough ist weniger formal (Autor führt durch das Ergebnis). Ein Ad-hoc Review oder Pair Programming ist am wenigsten formal.",
+      "column_headers": [
+        "Sehr formal",
+        "Weniger formal / Informal"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Fagan-Inspektion mit Moderator, Protokollant und definierten Ein-/Ausgangskriterien.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Kollegiales 'Drüberschauen' (Peer Deskcheck).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Architektur-Walkthrough, bei dem der Architekt sein Modell dem Team erklärt.",
+          "correct_column_index": 1
+        }
+      ]
+    }
+  ]
+}

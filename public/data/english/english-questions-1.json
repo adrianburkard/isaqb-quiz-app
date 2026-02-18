@@ -1,0 +1,352 @@
+{
+  "exam_title": "iSAQB CPSA-F Mock Exam - Set 1 (English)",
+  "version": "2025.1-EN",
+  "questions": [
+    {
+      "id": "Q-20-04-01",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "How many definitions of 'software architecture' exist?",
+      "explanation": "There is no single, universally accepted definition. Various organizations (IEEE, SEI) and authors (Bass, Clements, Kazman) provide different definitions, though they generally agree on core concepts like components, relationships, and principles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exactly one for all kinds of systems.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "One for every kind of software system (e.g. 'embedded', 'real-time', 'decision support', 'web', 'batch'...).",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "A dozen or more different definitions.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Q-20-04-02",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following aspects are covered by the term 'software architecture'?",
+      "explanation": "Software architecture primarily concerns the fundamental structures (Components), their relationships and interactions (Interfaces), and the overarching rules or patterns (Cross-cutting concepts). Detailed coding conventions or specific hardware sizing are typically downstream decisions or implementation details.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Components",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Cross-cutting concepts",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "(internal and external) Interfaces",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Coding conventions",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Hardware sizing",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Q-17-13-01",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Which FOUR of the following statements about (crosscutting) concepts are most appropriate?",
+      "explanation": "Concepts (like logging, security, or error handling) ensure consistency (conceptual integrity) across the system. They effectively define constraints for developers and can be agreed upon before implementation. Sometimes a concept is realized by a central building block (e.g., a central logger).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniform usage of concepts reduces coupling between building blocks.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "The definition of appropriate concepts ensures the pattern compliance of the architecture.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Uniform exception handling can be achieved when architects agree with developers upon a suitable concept prior to implementation.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "For each quality goal there should be an explicitly documented concept.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Concepts are a means to increase consistency.",
+          "is_correct": true
+        },
+        {
+          "id": "f",
+          "text": "A concept can define constraints for the implementation of many building blocks.",
+          "is_correct": true
+        },
+        {
+          "id": "g",
+          "text": "A concept might be implemented by a single building block.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Q-17-13-02",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "In your project, three architects and seven developers are working on the documentation of the software architecture. Which methods are appropriate in order to achieve a consistent and adequate documentation, and which are not?",
+      "explanation": "To ensure consistency in documentation across a team, central coordination (by a lead architect) and the use of standardized templates (like arc42) are highly effective. Relying solely on automatic extraction from source code is insufficient for architectural documentation as it misses design decisions, rationale, and high-level concepts.",
+      "column_headers": [
+        "Appropriate",
+        "Not appropriate"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The lead architect coordinates the creation of the documentation.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Identical templates are used for the documentation.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "All parts of the documentation are automatically extracted from the source code.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Q-17-13-03",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 4,
+      "question_text": "Which of the following techniques are best suited to illustrate the workflow or behavior of the system at runtime?",
+      "explanation": "Runtime views describe dynamic behavior. Activity diagrams, Sequence diagrams, and Flowcharts are standard notations for dynamics. A numbered list of steps is a valid simple textual notation. Class diagrams and interface tables describe static structure, not runtime behavior.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flowcharts",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Activity Diagrams",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Depiction of screen flows (sequence of user interactions)",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Sequence diagram",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Linear Venn diagram",
+          "is_correct": false
+        },
+        {
+          "id": "f",
+          "text": "Numbered list of sequential steps",
+          "is_correct": true
+        },
+        {
+          "id": "g",
+          "text": "Tabular description of interfaces",
+          "is_correct": false
+        },
+        {
+          "id": "h",
+          "text": "Class diagrams",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Q-20-04-03",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "What are the most important goals of software architecture?",
+      "explanation": "The primary goals of software architecture are to ensure the system meets its quality requirements (like performance, maintainability, security) and to facilitate communication/understanding among stakeholders. Strict adherence to patterns or cost-effective testing are secondary benefits or means to an end, not the primary goals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Improve accuracy of patterns in structure and implementation.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Achieve quality requirements in a comprehensible way.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Enable cost-effective integration and acceptance tests of the system.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Enable a basic understanding of structures and concepts for the development team and other stakeholders.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Q-17-13-05",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Which of the following statements regarding the information hiding principle are true and which are false?",
+      "explanation": "Information Hiding (Parnas) means modules hide their internal secrets (data formats, algorithms) from others to allow independent development and modification (Flexibility). It involves restricting access to internal details. It actually *supports* bottom-up work by creating stable building blocks.",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Adhering to the information hiding principle increases flexibility for modifications.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Information hiding involves deliberately hiding information from callers or consumers of the building block.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Information hiding makes it harder to work bottom-up.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Information hiding is a derivative of the approach of incremental refinement along the control flow.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Q-20-04-22",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "You document a component of your software architecture. Which information should be contained in your black box description and which information should be avoided?",
+      "explanation": "A Black Box view describes the *external* view: Interfaces (how to interact) and Responsibility (what it does). It must explicitly *hide* the Internal structure and Implementation details (White Box view).",
+      "column_headers": [
+        "Contained",
+        "Avoided"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Interfaces.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Responsibility.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Internal structure.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Hints for the implementation.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Q-20-04-29",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 2,
+      "question_text": "You try to analyze your architecture quantitatively. Which are the TWO most appropriate indicators for architectural problem areas?",
+      "explanation": "High coupling indicates poor modularity and high dependency, making the system rigid. Error clusters (modules with frequent bugs) often indicate structural weaknesses or high complexity. Missing comments or naming conventions are code-level quality issues, not primary architectural metrics.",
+      "options": [
+        {
+          "id": "a",
+          "text": "High coupling of components.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Inappropriate names of public methods.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Missing comments.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Cluster of errors (in certain building blocks).",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Number of test cases per component.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Q-20-04-21",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "What are characteristics of tight (high) or loose (low) coupling?",
+      "explanation": "Tight coupling occurs when components depend directly on each other's internals (shared data structures, shared database tables) or concrete implementations. Loose coupling is achieved by depending on abstractions (interfaces) and the Dependency Inversion Principle.",
+      "column_headers": [
+        "Tight coupling",
+        "Loose coupling"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Building blocks directly call dependent building blocks, i.e., without using indirect calls via interfaces or abstractions.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Building blocks use shared complex data structures.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Building blocks use a shared table (for read- and write operations) within a relational database.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "When designing building blocks, you have consistently applied the dependency inversion principle.",
+          "correct_column_index": 1
+        }
+      ]
+    }
+  ]
+}
