@@ -93,3 +93,12 @@ export interface QuestionScore {
   maxPoints: number;
   isFullyCorrect: boolean;
 }
+
+// User preferences
+export type Theme = 'light' | 'dark' | 'system';
+export type FontSize = 'small' | 'medium' | 'large';
+
+export interface UserPreferences {
+  theme: Theme;
+  fontSize: FontSize;
+}

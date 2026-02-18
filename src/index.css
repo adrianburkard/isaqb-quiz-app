@@ -1,6 +1,38 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Font size scaling */
+:root {
+  --font-scale: 1;
+}
+
+.font-small {
+  --font-scale: 0.875;
+}
+
+.font-medium {
+  --font-scale: 1;
+}
+
+.font-large {
+  --font-scale: 1.125;
+}
+
+html {
+  font-size: calc(16px * var(--font-scale));
+}
+
 body {
   margin: 0;
   min-height: 100vh;
+}
+
+/* Dark mode color overrides */
+.dark {
+  color-scheme: dark;
+}
+
+.dark body {
+  @apply bg-gray-900 text-gray-100;
 }

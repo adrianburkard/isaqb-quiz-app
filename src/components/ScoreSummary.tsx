@@ -10,18 +10,18 @@ export function ScoreSummary({ earnedPoints, maxPoints, onReset, onBack }: Props
   const passed = percentage >= 60;
 
   return (
-    <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-      <h2 className="text-2xl font-bold mb-4">Ergebnis</h2>
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 text-center">
+      <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-gray-100">Ergebnis</h2>
 
       <div
         className={`text-5xl font-bold mb-2 ${
-          passed ? 'text-green-600' : 'text-red-600'
+          passed ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'
         }`}
       >
         {percentage.toFixed(1)}%
       </div>
 
-      <div className="text-gray-600 mb-4">
+      <div className="text-gray-600 dark:text-gray-400 mb-4">
         {earnedPoints.toFixed(2)} von {maxPoints} Punkten
       </div>
 
@@ -33,7 +33,7 @@ export function ScoreSummary({ earnedPoints, maxPoints, onReset, onBack }: Props
         {passed ? 'Bestanden' : 'Nicht bestanden'}
       </div>
 
-      <p className="text-sm text-gray-500 mb-6">
+      <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
         Zum Bestehen werden mindestens 60% benötigt.
       </p>
 
@@ -41,7 +41,7 @@ export function ScoreSummary({ earnedPoints, maxPoints, onReset, onBack }: Props
         {onBack && (
           <button
             onClick={onBack}
-            className="px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
+            className="px-6 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
           >
             Zur Übersicht
           </button>

@@ -24,17 +24,17 @@ export function QuizView({ quizInfo, onBack }: Props) {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div className="text-gray-600">Lade Prüfung...</div>
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
+        <div className="text-gray-600 dark:text-gray-400">Lade Prüfung...</div>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
         <div className="text-center">
-          <div className="text-red-600 mb-4">Fehler: {error}</div>
+          <div className="text-red-600 dark:text-red-400 mb-4">Fehler: {error}</div>
           <button
             onClick={onBack}
             className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
@@ -48,8 +48,8 @@ export function QuizView({ quizInfo, onBack }: Props) {
 
   if (!exam) {
     return (
-      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-        <div className="text-gray-600">Keine Prüfungsdaten gefunden.</div>
+      <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center">
+        <div className="text-gray-600 dark:text-gray-400">Keine Prüfungsdaten gefunden.</div>
       </div>
     );
   }
@@ -57,7 +57,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
   const isComplete = stats.answeredCount === stats.totalQuestions;
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
       <Header
         title={exam.exam_title}
         answeredCount={stats.answeredCount}
@@ -97,7 +97,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
           <div className="mt-6 flex justify-center gap-4">
             <button
               onClick={onBack}
-              className="px-4 py-2 text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              className="px-4 py-2 text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
             >
               Zurück zur Übersicht
             </button>
@@ -111,7 +111,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
                   resetQuiz();
                 }
               }}
-              className="px-4 py-2 text-red-600 border border-red-600 rounded-lg hover:bg-red-50 transition-colors"
+              className="px-4 py-2 text-red-600 dark:text-red-400 border border-red-600 dark:border-red-500 rounded-lg hover:bg-red-50 dark:hover:bg-red-900/30 transition-colors"
             >
               Neu starten
             </button>
@@ -122,7 +122,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
           <div className="mt-6 flex justify-center">
             <button
               onClick={onBack}
-              className="px-4 py-2 text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              className="px-4 py-2 text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
             >
               Zurück zur Übersicht
             </button>

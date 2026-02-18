@@ -26,13 +26,13 @@ export function ClassificationMatrix({ question, answer, onAnswer, showFeedback 
       <table className="w-full border-collapse">
         <thead>
           <tr>
-            <th className="border border-gray-300 p-3 bg-gray-50 text-left min-w-[200px]">
+            <th className="border border-gray-300 dark:border-gray-600 p-3 bg-gray-50 dark:bg-gray-700 text-left min-w-[200px] text-gray-800 dark:text-gray-200">
               Aussage
             </th>
             {question.column_headers.map((header, index) => (
               <th
                 key={index}
-                className="border border-gray-300 p-3 bg-gray-50 text-center min-w-[120px]"
+                className="border border-gray-300 dark:border-gray-600 p-3 bg-gray-50 dark:bg-gray-700 text-center min-w-[120px] text-gray-800 dark:text-gray-200"
               >
                 {header}
               </th>
@@ -44,14 +44,14 @@ export function ClassificationMatrix({ question, answer, onAnswer, showFeedback 
             const selectedCol = rowSelections[row.id];
             const isCorrect = selectedCol === row.correct_column_index;
 
-            let rowBgClass = '';
+            let rowBgClass = 'bg-white dark:bg-gray-800';
             if (showFeedback && selectedCol !== undefined) {
-              rowBgClass = isCorrect ? 'bg-green-50' : 'bg-red-50';
+              rowBgClass = isCorrect ? 'bg-green-50 dark:bg-green-900/40' : 'bg-red-50 dark:bg-red-900/40';
             }
 
             return (
               <tr key={row.id} className={rowBgClass}>
-                <td className="border border-gray-300 p-3">{row.text}</td>
+                <td className="border border-gray-300 dark:border-gray-600 p-3 text-gray-800 dark:text-gray-200">{row.text}</td>
                 {question.column_headers.map((_, colIndex) => {
                   const isSelected = selectedCol === colIndex;
                   const isCorrectColumn = row.correct_column_index === colIndex;
@@ -59,7 +59,7 @@ export function ClassificationMatrix({ question, answer, onAnswer, showFeedback 
                   return (
                     <td
                       key={colIndex}
-                      className="border border-gray-300 p-3 text-center"
+                      className="border border-gray-300 dark:border-gray-600 p-3 text-center"
                     >
                       <div className="flex items-center justify-center gap-2">
                         <input
@@ -71,7 +71,7 @@ export function ClassificationMatrix({ question, answer, onAnswer, showFeedback 
                           className="w-4 h-4 text-blue-600"
                         />
                         {showFeedback && isCorrectColumn && (
-                          <span className="text-green-600 font-bold">✓</span>
+                          <span className="text-green-600 dark:text-green-400 font-bold">✓</span>
                         )}
                       </div>
                     </td>
