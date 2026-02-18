@@ -1,0 +1,1089 @@
+{
+  "exam_title": "iSAQB CPSA-F Practice Exam - Set 5",
+  "version": "2025.1-Set6-Batch1",
+  "questions": [
+    {
+      "id": "Set6-Q01",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In the context of the 'DokChess' engine (from arc42 by Example), the team decided to make the 'Position' object immutable. What was a primary technical benefit of this decision regarding the system's runtime behavior?",
+      "explanation": "Making the Position object immutable makes it significantly easier to implement concurrent algorithms (parallel search) because there is no shared mutable state to synchronize, despite the potential overhead of copying objects.",
+      "options": [
+        {
+          "id": "a",
+          "text": "It reduced the memory consumption significantly.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "It eliminated the need for garbage collection.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "It offered significant advantages for concurrent algorithms (parallelism).",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q02",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "According to the iSAQB glossary and curriculum, which of the following are recognized categories of 'Architecture Decisions'?",
+      "explanation": "Architecture decisions can be structural (components), cross-cutting (concepts/patterns), or non-functional (quality-driven). 'Lunch menu' and 'Office seating' are not architectural categories.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structural Decisions (e.g., decomposition)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Cross-cutting Decisions (e.g., technologies/concepts)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Organizational Decisions (e.g., team lunch menu)",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Quality-driven Decisions (e.g., trade-offs)",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Seating Chart Decisions",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q03",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "In the 'MaMa-CRM' project, various constraints were defined. Classify them as 'Technical Constraint' or 'Organizational Constraint'.",
+      "explanation": "Technical constraints relate to technology choices (Java, Oracle). Organizational constraints relate to budgets, team structure, or timelines.",
+      "column_headers": [
+        "Technical Constraint",
+        "Organizational Constraint"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The system must use an Oracle database due to a holding company license deal.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "The team must consist of 7-10 persons working in 2-4 week iterations.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "The application must run on a recent Java runtime (>1.6).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "The project start date is fixed to early 2014.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q04",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the primary function of the 'Context View' in the 'docToolchain' documentation example?",
+      "explanation": "The Context View depicts the system's boundaries and its relationships with external users (Technical Writers, Contributors) and external systems (Jira, Confluence, Git).",
+      "options": [
+        {
+          "id": "a",
+          "text": "To show the internal Groovy classes used for the build.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To show the system boundaries and external neighbors (users and tools).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To list the hardware requirements for the build server.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q05",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following statements about 'Separation of Concerns' are correct?",
+      "explanation": "Separation of Concerns (SoC) aims to handle different aspects of a problem in distinct sections of the software. It improves maintainability but does not necessarily reduce the number of files; in fact, it often increases them to achieve separation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "It dictates that all code must be in a single file to be easily found.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "It helps to manage complexity by breaking the system into distinct features or layers.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "It ensures that each module addresses a specific, distinct concern.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "It forbids components from communicating with each other.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q06",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Classify the following elements from the 'biking2' architecture as belonging to the 'Building Block View' or 'Runtime View'.",
+      "explanation": "Building Block View describes static structures (Controllers, Repositories). Runtime View describes dynamic behavior (error handling flows, update sequences).",
+      "column_headers": [
+        "Building Block View",
+        "Runtime View"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The 'BikeController' and 'BikeRepository' classes.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "The sequence of events when a new track is uploaded and converted.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "The breakdown of the API into 'bikes', 'tracks', and 'locations' packages.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q07",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which ISO 25010 quality characteristic is most relevant for the 'Foto Max' requirement: 'A user who has not seen the software before must be able to order four different photo products within five minutes'?",
+      "explanation": "This requirement describes Learnability, which is a sub-characteristic of Usability. It focuses on how easy it is for a new user to learn effectively.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reliability",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Usability (Learnability)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Maintainability",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q08",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "In the 'MaMa-CRM' system, flexibility was a key driver. Which THREE architectural decisions supported this flexibility?",
+      "explanation": "MaMa-CRM used a generated persistence layer (from UML), a domain-specific language (DSL) for CSV import/export, and avoided commercial CRM tools to maintain full control and adaptability.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using a Domain Specific Language (DSL) for configurable data imports.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Generating persistence code 100% from a UML model.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Hardcoding all business rules in C++.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Deciding against using a standard commercial CRM tool.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Using a single monolithic Excel sheet for data storage.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q09",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Decide if the following are characteristics of 'Monoliths' or 'Microservices' (based on the Foto Max architecture comparison).",
+      "explanation": "Monoliths are single deployment units and harder to modify modularly. Microservices are independently deployable but introduce distributed complexity.",
+      "column_headers": [
+        "Monolith",
+        "Microservices"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Deployment as a single unit; only works as a whole.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "High degree of decoupling; services can be deployed independently.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Changes to one part may implicitly affect other parts (tight coupling).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Allows distinct technology choices per service (Polyglot).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q10",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What does the 'Information Hiding' principle advise regarding a module's internal data structures?",
+      "explanation": "Information Hiding suggests that internal data structures should be concealed behind a stable interface (public methods), preventing clients from depending on implementation details.",
+      "options": [
+        {
+          "id": "a",
+          "text": "They should be public so all other modules can access them directly.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "They should be hidden behind a stable interface.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "They should be documented in the user manual.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q11",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO statements accurately describe the 'Pipes and Filters' pattern?",
+      "explanation": "Pipes and Filters processes data streams in steps (filters) connected by pipes. Filters are independent and do not share state. It is not primarily for UI management.",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is well-suited for processing data streams.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "It is primarily used for managing complex user interfaces.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Filters are independent and can often be recombined.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "All components access a shared central database directly.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q12",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the following DokChess components to the correct layer type: 'Infrastructure/Technical' vs. 'Domain/Core'.",
+      "explanation": "The 'Engine' and 'Rules' contain the core chess logic (Domain). 'XBoard (Text UI)' and 'Polyglot Adapter' handle technical communication and file formats (Infrastructure).",
+      "column_headers": [
+        "Infrastructure/Technical",
+        "Domain/Core"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Chess Rules (Move validation, checkmate detection).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "XBoard Protocol Adapter (Text UI).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Minimax Algorithm (Move strategy).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q13",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the 'Observer' pattern primarily used for?",
+      "explanation": "The Observer pattern defines a one-to-many dependency where one object (Subject) notifies multiple dependents (Observers) of state changes automatically.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To ensure a class has only one instance.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To notify dependent objects of state changes.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To convert the interface of a class into another interface.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q14",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "In the 'arc42' template, which of the following are typical subsections of 'Section 8: Cross-cutting Concepts'?",
+      "explanation": "Domain Models, Logging/Tracing, and Persistence/Database strategies are typical cross-cutting concepts. 'Employee birthdays' and 'Sales brochures' are not architectural concepts.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Domain Model / Business Data Model",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Logging and Tracing Strategy",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "List of employee birthdays",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Persistence / Database Concepts",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Marketing brochures",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q15",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify the following scenarios from 'HTML Sanity Check' as 'Functional Requirement' or 'Quality Requirement'.",
+      "explanation": "Functional: Checking links, creating reports. Quality: Checking a 100kB file in <10s (Performance/Efficiency).",
+      "column_headers": [
+        "Functional Requirement",
+        "Quality Requirement"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The system shall check HTML files for broken internal links.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "The system shall complete the check of a 100kB file in under 10 seconds.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "The system shall report results in both Console and HTML formats.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "The system must not modify the input files (Safety).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q16",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the primary benefit of using a 'Blackboard' pattern?",
+      "explanation": "The Blackboard pattern is useful for non-deterministic problems where multiple specialized agents (Knowledge Sources) contribute partial solutions to a shared data space (Blackboard) to collaboratively solve the problem.",
+      "options": [
+        {
+          "id": "a",
+          "text": "It guarantees the fastest possible execution time.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "It allows solving non-deterministic problems by combining diverse knowledge sources.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "It strictly enforces a layered structure.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q17",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO statements about 'Coupling' are true?",
+      "explanation": "Coupling is the degree of interdependence between modules. Low coupling is desirable for maintainability. High coupling makes systems fragile.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coupling is the measure of the strength of dependency between components.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Architects generally strive for high coupling.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Loosely coupled systems are generally easier to modify.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Coupling has no impact on testability.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q18",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the diagram type to the correct View: 'Building Block View' or 'Runtime View'.",
+      "explanation": "Class diagrams show static structure (Building Block). Sequence diagrams show dynamic interactions (Runtime).",
+      "column_headers": [
+        "Building Block View",
+        "Runtime View"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "UML Class Diagram showing the hierarchy of 'Checker' classes.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "UML Sequence Diagram showing the 'Report Findings' process.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Component Diagram showing module dependencies.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q19",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the 'Open-Closed Principle'?",
+      "explanation": "Software entities should be open for extension (adding new behavior) but closed for modification (changing existing code), often achieved via inheritance or interfaces.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Software should be open source.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Entities should be open for extension, but closed for modification.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Database connections should be kept open.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q20",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In the 'DokChess' engine, the team used the 'Dependency Injection' (DI) pattern. What was the primary motivation for this architectural decision?",
+      "explanation": "DokChess uses DI to keep modules loosely coupled. This allows the simple replacement of implementations (e.g., swapping the Engine or Rules implementation) and significantly improves testability by allowing mocks to be injected.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To increase the runtime performance of the move calculation.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To enable loose coupling and improve testability by swapping implementations.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To ensure that only one instance of the engine exists (Singleton).",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q21",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "In the 'MaMa-CRM' system, the 'Pipes and Filters' pattern was used in the 'Import Raw File' scenario. Which TWO characteristics apply to this implementation?",
+      "explanation": "The import process uses a dynamically configured chain of filters (e.g., unzip, decrypt) to process incoming files. This allows flexibility in handling different data formats without changing the core logic.",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is used to process data streams (files) in sequential steps.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Filters are tightly coupled and cannot be reordered.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "It allows flexible configuration of processing steps (e.g., compression, encryption).",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "It is used to manage the graphical user interface state.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q22",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify the following elements from the 'docToolchain' architecture as 'Export Task' or 'Generate Task'.",
+      "explanation": "Export Tasks extract data from external tools (Jira, Excel, EA). Generate Tasks create the final output formats (HTML, PDF, DocBook).",
+      "column_headers": [
+        "Export Task",
+        "Generate Task"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "exportJiraIssues (Extracts issues via REST API).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "generatePDF (Uses Asciidoctor PDF plugin).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "exportExcel (Extracts spreadsheets to CSV).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "publishToConfluence (Uploads HTML content to Wiki).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q23",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the 'Docs-as-Code' approach, as implemented by 'docToolchain'?",
+      "explanation": "Docs-as-Code treats documentation like source code: it is written in plain text (e.g., AsciiDoc), managed in version control (Git), and built/generated automatically via build tools (Gradle/Maven).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Writing documentation exclusively in Microsoft Word.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Treating documentation like code (Version Control, Automation, Plain Text).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Embedding all documentation as comments inside Java classes.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q24",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which THREE of the following are risks identified in the 'Foto Max' architecture documentation?",
+      "explanation": "Identified risks included: Porting to .NET 5 failed (R2), obsolete technology (R2), and a global context for image exchange causing data leaks (R5). 'Too many unit tests' is generally not a risk.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porting to .NET 5 was not possible/failed.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Use of obsolete technology (.NET 4.8) in the long run.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Global context for image exchange led to data leaks.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "The development team writes too many unit tests.",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "The hardware is too fast for the software.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q25",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the responsibility to the correct 'biking2' component.",
+      "explanation": "biking2::api is the backend (Spring Boot) handling logic and DB. biking2::spa is the frontend (AngularJS) running in the browser.",
+      "column_headers": [
+        "biking2::api (Backend)",
+        "biking2::spa (Frontend)"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Runs in the user's web browser (AngularJS).",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Connects to the H2 database via JPA.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Calls GPSBabel to convert files.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q26",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In 'DokChess', the 'Adapter' pattern is used for the 'PolyglotOpeningBook'. What is the purpose of this adapter?",
+      "explanation": "The PolyglotOpeningBook class acts as an adapter that reads the binary Polyglot file format and adapts it to the 'OpeningLibrary' interface used by the engine.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To connect the engine to the XBoard protocol.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To adapt the binary Polyglot file format to the 'OpeningLibrary' interface.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To adapt the Java code to C++.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q27",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO statements about 'Architecture Decisions' (ADRs) in 'docToolchain' are correct?",
+      "explanation": "docToolchain documents decisions like using Visual Basic for EA automation (to avoid DLLs) and using Gradle over Maven (for easier maintenance of custom tasks).",
+      "options": [
+        {
+          "id": "a",
+          "text": "It was decided to use Visual Basic Script for Enterprise Architect automation.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "It was decided to support ONLY Maven and drop Gradle.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Support for Maven was dropped in favor of Gradle.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Architecture decisions are never documented.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q28",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "MaMa-CRM uses specific strategies for flexibility. Classify them as 'Data Structure Flexibility' or 'Process Flexibility'.",
+      "explanation": "Data structure flexibility involves handling formats (CSV, XML) and generating persistence. Process flexibility involves rules for activity flow (Drools).",
+      "column_headers": [
+        "Data Structure Flexibility",
+        "Process Flexibility"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Generating persistence code from UML models.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Using a Rule Engine (Drools) to define campaign flows.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Configurable CSV import/export formats.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Defining the order of activities (when <A> then <B>).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q29",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the 'Template Method' pattern used for in 'HtmlSanityCheck' (HtmlSC)?",
+      "explanation": "HtmlSC uses the Template Method pattern to define the skeleton of checking algorithms (performCheck), deferring the specific check logic to subclasses (e.g., MissingImagesChecker).",
+      "options": [
+        {
+          "id": "a",
+          "text": "To create PDF reports.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To define the skeleton of checking algorithms, deferring details to subclasses.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To parse HTML files.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q30",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which of the following are 'Cross-cutting Concepts' documented in 'biking2'?",
+      "explanation": "Standard cross-cutting concepts in biking2 include 'User Interface' (SPA/Angular), 'Transaction Processing' (Spring Boot), and 'Security'. 'Database Tables' are usually part of the data model/building blocks, not a concept itself (though Persistence is).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transaction Processing",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Security (HTTP basic auth)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "A specific database table 'milages'",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "The main() method",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q31",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Identify if the view is a 'Context View' or 'Deployment View' based on the description.",
+      "explanation": "Context view shows external neighbors (business/technical). Deployment view shows infrastructure (nodes, artifacts).",
+      "column_headers": [
+        "Context View",
+        "Deployment View"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Shows the system communicating with 'Daily Fratze' and 'GPSBabel'.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Shows the 'biking2.jar' artifact running on a 'Uberspace Host'.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Shows the 'End Customer' actor interacting with the 'Sales Unit'.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q32",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In 'Foto Max', what was the decided architecture pattern for the new Wizard to improve maintainability?",
+      "explanation": "The Foto Max team decided to move from a Monolith to a 'Modulith' (Modular Monolith) to allow better structure and migration without the full complexity of distributed microservices.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Microservices",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Modulith (Modular Monolith)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Spaghetti Code",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q33",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "What are the TWO primary responsibilities of the 'Text UI' subsystem in 'DokChess'?",
+      "explanation": "The Text UI subsystem implements the XBoard protocol (communication) and validates user input against the rules before passing it to the engine.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calculating the best move (Minimax).",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Implementing the XBoard communication protocol.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Validating user input against game rules.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Loading the opening book.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q34",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Match the term to its definition from the Glossary.",
+      "explanation": "ACID = Atomicity, Consistency, Isolation, Durability. CAP = Consistency, Availability, Partition Tolerance. DRY = Don't Repeat Yourself.",
+      "column_headers": [
+        "ACID",
+        "CAP Theorem",
+        "DRY"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Properties of database transactions.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "You can only have two out of three: Consistency, Availability, Partition Tolerance.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Every piece of knowledge must have a single representation.",
+          "correct_column_index": 2
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q35",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which design principle corresponds to the 'I' in SOLID?",
+      "explanation": "I stands for Interface Segregation Principle: Clients should not be forced to depend on interfaces they do not use.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inversion of Control",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Interface Segregation Principle",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Integration Principle",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q36",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are typical elements of a 'Quality Scenario'?",
+      "explanation": "A quality scenario typically consists of a Stimulus (event), the Artifact (system part), and the Response/Measure. 'The Architect's Name' is not part of the technical scenario definition.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stimulus / Event",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Artifact / Environment",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Response Measure",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "The Architect's Name",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "The Office Layout",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q37",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Classify the constraint from 'MaMa-CRM'.",
+      "explanation": "Using Oracle DB is a technical constraint. Running in background/batch mode is an operational/technical constraint (often dictated by business). Not replacing standard CRM is a business/strategic constraint.",
+      "column_headers": [
+        "Technical Constraint",
+        "Business/Strategic Constraint"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Use Oracle as database (due to license deal).",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "MaMa shall not evolve into a marketable product.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Do not use commercial CRM tools.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set6-Q38",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the main goal of the 'Facade' pattern?",
+      "explanation": "The Facade pattern provides a unified, simplified interface to a set of interfaces in a subsystem, making the subsystem easier to use.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To add behavior dynamically.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To provide a simplified interface to a complex subsystem.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To traverse a collection.",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

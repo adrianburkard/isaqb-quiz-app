@@ -1,0 +1,1084 @@
+{
+  "exam_title": "iSAQB CPSA-F Practice Exam - Set 4",
+  "version": "2025.1-Set5-Batch1",
+  "questions": [
+    {
+      "id": "Set5-Q01",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "According to the definition, what does 'Software Architecture' fundamentally consist of?",
+      "explanation": "Software architecture consists of components (building blocks), the relationships between them, and the principles/guidelines governing their design and evolution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the database schema and the user interface.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Components, their relationships, and guiding principles.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "The complete source code of the application.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q02",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "What are typical tasks of a Software Architect?",
+      "explanation": "Architects clarify requirements, structure the system (building blocks), and evaluate the architecture. They do not typically manage employee salaries or sell the product.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clarifying non-functional requirements (quality goals).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Structuring the system into building blocks.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Managing employee payroll.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Evaluating the architecture against requirements.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Selling the software to customers.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q03",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Classify the following as 'Functional Requirement' or 'Quality Requirement'.",
+      "explanation": "Functional: specific behaviors/functions (calculate, send). Quality: attributes like speed, security, reliability.",
+      "column_headers": [
+        "Functional Requirement",
+        "Quality Requirement"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The system shall calculate the route between two points.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "The calculation must be finished within 0.5 seconds.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Data transmission must be encrypted via TLS.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q04",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What does the 'L' in SOLID stand for?",
+      "explanation": "L stands for Liskov Substitution Principle.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Loose Coupling Principle",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Liskov Substitution Principle",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Layered Architecture Principle",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q05",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are examples of Cross-cutting Concepts?",
+      "explanation": "Logging and Security are classic cross-cutting concerns. A specific customer address or the main method are local implementation details.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Logging strategy",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "A specific customer's address data",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Security / Authorization concept",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "The main() method of the startup class",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q06",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Match the interface type to the description: 'Provided Interface' or 'Required Interface'.",
+      "explanation": "Provided: API offered to others. Required: API needed from others.",
+      "column_headers": [
+        "Provided Interface",
+        "Required Interface"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The set of methods a component offers to its clients.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "The dependencies a component needs to function.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "An API exposed via REST for external consumption.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "A database connection interface that the component calls.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q07",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which pattern involves a placeholder object controlling access to another object?",
+      "explanation": "The Proxy pattern provides a surrogate or placeholder for another object to control access to it (e.g., for lazy loading, access control, or remote access).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proxy",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Observer",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Strategy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q08",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are standard architectural views in arc42?",
+      "explanation": "Building Block View, Runtime View, and Deployment View are the core technical views in arc42. 'Financial View' and 'Office Layout View' are not standard software architecture views.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Building Block View",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Financial View",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Runtime View",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Deployment View",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Office Layout View",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q09",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Evaluate the statements about Coupling and Cohesion.",
+      "explanation": "High cohesion and loose coupling are the goals. High coupling makes systems fragile.",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "We generally strive for loose coupling.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "We generally strive for low cohesion.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "High coupling improves maintainability.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "High cohesion means a component is focused on a single purpose.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q10",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which ISO 25010 characteristic covers 'Interoperability'?",
+      "explanation": "Compatibility includes Co-existence and Interoperability.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reliability",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Compatibility",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Security",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q11",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which tools are commonly used for creating architecture documentation?",
+      "explanation": "Wikis (Confluence) and Modeling Tools (Enterprise Architect) are standard. IDE debuggers are for code analysis, not primarily for creating architecture docs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wikis (e.g., Confluence)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "IDE Debugger",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Modeling Tools (e.g., Enterprise Architect)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Compiler",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q12",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Is the view 'Static' or 'Dynamic'?",
+      "explanation": "Package/Deployment diagrams are static structure. Sequence diagrams are dynamic behavior.",
+      "column_headers": [
+        "Static",
+        "Dynamic"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Package Diagram",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Sequence Diagram",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Deployment Diagram",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q13",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which principle is also known as 'Parnas' Principle'?",
+      "explanation": "David Parnas introduced the principle of Information Hiding (Encapsulation) in modular programming.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Information Hiding",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Dependency Injection",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Continuous Integration",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q14",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "What prerequisites are helpful before starting architectural design?",
+      "explanation": "Understanding the core requirements/goals and the constraints is essential. You don't need the final UI design or every line of code to start architecture.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Known key quality goals.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Complete final User Interface design.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Knowledge of organizational and technical constraints.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Finished source code of all modules.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q15",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the primary responsibility: 'Developer' or 'Architect'.",
+      "explanation": "Architects handle cross-cutting decisions and structure. Developers handle detailed implementation (variable naming, loop logic).",
+      "column_headers": [
+        "Architect",
+        "Developer"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Deciding on the global persistence strategy.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Naming local variables in a specific method.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Defining the public interfaces of subsystems.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q16",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which pattern allows an object to alter its behavior when its internal state changes?",
+      "explanation": "The State pattern allows an object to appear to change its class when its internal state changes, altering its behavior.",
+      "options": [
+        {
+          "id": "a",
+          "text": "State",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Memento",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Decorator",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q17",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which factors influence architecture decisions?",
+      "explanation": "Technical facts, Business goals, and Political/Organizational factors all influence architecture. 'Phase of the moon' does not.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Technical constraints",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Business goals",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Organizational politics",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Phase of the moon",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q18",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Is this 'Loose Coupling' or 'Tight Coupling'?",
+      "explanation": "Direct database access and circular dependencies create tight coupling. Interfaces and messaging promote loose coupling.",
+      "column_headers": [
+        "Loose Coupling",
+        "Tight Coupling"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Component A accesses Component B's database tables directly.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Communication occurs via a message bus with defined events.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Circular dependencies exist between modules.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Dependencies are injected via interfaces.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q19",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the 'Stimulus' in a Quality Scenario?",
+      "explanation": "The stimulus is the event or trigger arriving at the system that requires a response.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The measurement of the response time.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "The event or action that triggers the scenario.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "The artifact being tested.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q20",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "What are 'Architectural Drivers'?",
+      "explanation": "Architectural drivers are the influential requirements (functional, quality, constraints) that shape the architecture.",
+      "options": [
+        {
+          "id": "a",
+          "text": "High-priority quality requirements.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Critical constraints.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "The minor utility functions.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "The color of the office walls.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q21",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign contents to the arc42 section.",
+      "explanation": "Context View (Section 3) shows boundaries/interfaces. Cross-cutting Concepts (Section 8) shows overarching topics like logging/security.",
+      "column_headers": [
+        "Context View",
+        "Cross-cutting Concepts"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Diagram showing the system and its neighbors.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Description of the logging strategy.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "List of external interfaces.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q22",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In software architecture, what is a 'View'?",
+      "explanation": "A view is a representation of a whole system from the perspective of a related set of concerns.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A database table.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "A representation of the system from a specific perspective.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "A user interface window.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q23",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Why is an iterative approach often preferred in architecture design?",
+      "explanation": "Iterative approaches allow for early feedback and handling of uncertainty/changing requirements. They avoid the risk of a 'Big Design Up Front' that might be wrong.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To get early feedback on decisions.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "To prevent any changes later on.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "To handle uncertainty and evolving requirements.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "To write all documentation before writing code.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q24",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify the design strategy.",
+      "explanation": "Top-down decomposes from high level. Bottom-up composes from low level.",
+      "column_headers": [
+        "Top-Down",
+        "Bottom-Up"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Defining subsystems based on high-level goals.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Aggregating existing classes into a new module.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Decomposing a monolith into microservices based on domain boundaries.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Wrapping a legacy library in a new service.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q25",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which pattern is essential for implementing 'Location Transparency' in distributed systems?",
+      "explanation": "The Broker pattern can provide location transparency by handling the communication details and location lookup, so clients don't need to know where servers are located.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Broker",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Singleton",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Iterator",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q26",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "What is 'Refactoring'?",
+      "explanation": "Refactoring improves internal structure without changing external behavior. It is distinct from rewriting or adding features.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adding new features to the system.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Improving the internal structure without changing external behavior.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Rewriting the entire application from scratch.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Cleaning up code to improve maintainability.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q27",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Is this a 'Macro Architecture' or 'Micro Architecture' decision?",
+      "explanation": "Macro Architecture (System Level) affects the whole system (e.g., global style, language choice). Micro Architecture (Building Block Level) affects the internals of a single component.",
+      "column_headers": [
+        "Macro Architecture",
+        "Micro Architecture"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Deciding on the global event-driven style.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Choosing the Strategy pattern for a specific class.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Defining the REST API standards for all services.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q28",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is an 'Architectural Tactic'?",
+      "explanation": "A tactic is a design decision that influences the achievement of a specific quality attribute response (e.g., 'Heartbeat' is a tactic for Availability). It is more granular than a pattern.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A full system structure.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "A design decision that helps achieve a specific quality attribute.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "A project management method.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q29",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which methods are suitable for reviewing software architecture?",
+      "explanation": "Walkthroughs and ATAM are established review methods. 'Compiling' checks syntax, not architecture.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architecture Walkthrough",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "ATAM (Architecture Tradeoff Analysis Method)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Compiling the code",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Running unit tests",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q30",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign to 'Business Context' or 'Technical Context'.",
+      "explanation": "Business Context = Domain/Users. Technical Context = Infrastructure/Transport.",
+      "column_headers": [
+        "Business Context",
+        "Technical Context"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "FTP Server for file upload",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "External Payment Provider (Business Partner)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "SOAP/XML Protocol",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q31",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What does the 'DRY' principle stand for?",
+      "explanation": "DRY stands for Don't Repeat Yourself. Every piece of knowledge must have a single, unambiguous, authoritative representation within a system.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do Repeat Yourself",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Don't Repeat Yourself",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Don't Reject Yesterday",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q32",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO are defining characteristics of Microservices?",
+      "explanation": "Microservices are decentralized (smart endpoints, dumb pipes) and usually have automated deployment/infrastructure. They do not share a single large database.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decentralized data management.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Automated deployment.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Shared monolithic database.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Manual release process.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q33",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify as 'Synchronous' or 'Asynchronous' communication.",
+      "explanation": "REST/HTTP is typically synchronous (request/response). Messaging (Queues/Topics) is typically asynchronous (fire and forget).",
+      "column_headers": [
+        "Synchronous",
+        "Asynchronous"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "REST call (Request/Response)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Publishing a message to a Message Queue",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Direct method call within the same process",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Email notification",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q34",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What does SOA stand for?",
+      "explanation": "SOA stands for Service-Oriented Architecture.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simple Object Access",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Service-Oriented Architecture",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "System of Applications",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q35",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "How can Checklists help in software architecture?",
+      "explanation": "Checklists help ensure nothing is forgotten (completeness) and verify adherence to standards. They don't generate code.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To verify if all quality goals are addressed.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "To automatically generate unit tests.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "To ensure adherence to documentation standards.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "To increase the coupling.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q36",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Identify 'Artifacts' vs 'Nodes' in a Deployment View.",
+      "explanation": "Artifacts are files/executables (WAR, JAR, EXE). Nodes are hardware/runtime environments (Server, Docker Container).",
+      "column_headers": [
+        "Artifact",
+        "Node"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Application Server (Virtual Machine)",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "my-app.war file",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Docker Container Runtime",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q37",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "When does the lifecycle of a software architecture end?",
+      "explanation": "The architecture lifecycle ends when the system is decommissioned/retired. It continues through maintenance and operation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "When the coding starts.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "When the system is deployed to production.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "When the system is decommissioned/retired.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Set5-Q38",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are generally accepted design principles?",
+      "explanation": "Separation of Concerns, Information Hiding, and Dependency Inversion are core design principles. 'Spaghetti Code' and 'Copy-Paste' are anti-patterns.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separation of Concerns",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Information Hiding",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Dependency Inversion",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Spaghetti Code",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Copy-Paste Programming",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

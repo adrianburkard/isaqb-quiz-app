@@ -547,6 +547,543 @@
           "is_correct": false
         }
       ]
+    },
+    {
+      "id": "Set4-Q20",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Assign the following attributes to the correct ISO 25010 category: 'Reliability' or 'Portability'.",
+      "explanation": "Reliability includes Availability and Fault Tolerance. Portability includes Adaptability and Installability.",
+      "column_headers": [
+        "Reliability",
+        "Portability"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Availability",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Adaptability",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Fault Tolerance",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Installability",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q21",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the core concept of the 'Broker' architectural pattern?",
+      "explanation": "The Broker pattern structures distributed systems with decoupled components that interact by remote service invocations. A broker component is responsible for coordinating communication, such as forwarding requests, as well as for transmitting results and exceptions.",
+      "options": [
+        {
+          "id": "a",
+          "text": "All components share a central memory space (blackboard).",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "A central component coordinates communication between decoupled client and server objects.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Data flows through a sequence of processing steps.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q22",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are valid methods for 'Architecture Evaluation'?",
+      "explanation": "ATAM (Architecture Tradeoff Analysis Method), Prototypes/PoCs, and Reviews are standard evaluation methods. 'User Interface Testing' focuses on usability/functionality, not necessarily architectural structure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ATAM (Architecture Tradeoff Analysis Method)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Prototypes / Proof of Concepts",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Reviews (by peers or experts)",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "User Interface Testing",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Marketing Survey",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q23",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Classify the following as 'Top-Down' or 'Bottom-Up' approaches.",
+      "explanation": "Top-Down starts with the big picture/requirements and decomposes. Bottom-Up starts with existing details/code and abstracts upwards.",
+      "column_headers": [
+        "Top-Down",
+        "Bottom-Up"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Deriving the system context from the business requirements.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Analyzing existing database tables to understand the data model.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Grouping existing classes into packages/modules.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q24",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What does the 'Dependency Inversion Principle' typically require?",
+      "explanation": "High-level modules should not depend on low-level modules. Both should depend on abstractions (e.g., interfaces).",
+      "options": [
+        {
+          "id": "a",
+          "text": "High-level modules should depend on low-level modules.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Abstractions should depend on details.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "High-level modules and low-level modules should depend on abstractions.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q25",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following statements about 'Cross-Cutting Concepts' are true?",
+      "explanation": "Concepts ensure consistency across the system and prevent redundancy by defining a standard way to solve recurring problems (like logging or security).",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are relevant for multiple parts of the system.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "They always map 1:1 to a single class.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "They help ensure conceptual integrity (consistency).",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "They are only relevant for the user interface.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q26",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Assign the following elements to 'Business Context' or 'Technical Context'.",
+      "explanation": "Business Context deals with domain actors and logical data exchange. Technical Context deals with transport protocols, hardware, and file formats.",
+      "column_headers": [
+        "Business Context",
+        "Technical Context"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Customer (Human Actor)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "HTTPS / TLS 1.3",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Administrator (Role)",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "JSON over TCP/IP",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q27",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which pattern separates the abstraction from its implementation so that the two can vary independently?",
+      "explanation": "The Bridge pattern decouples an abstraction from its implementation so that the two can vary independently.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adapter",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Bridge",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Strategy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q28",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are benefits of the 'Microservices' architectural style?",
+      "explanation": "Microservices allow for independent deployment (agility) and independent scalability of services. They often *increase* operational complexity compared to a monolith.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Independent scalability of services.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Reduced operational complexity.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Technology diversity (polyglot programming).",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Guaranteed ACID transactions across the whole system.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q29",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Decide if the statement describes 'Architecture' or 'Implementation Details'.",
+      "explanation": "Architecture concerns high-level structure, major decisions, and public interfaces. Implementation details concern local variable names, specific algorithms within a method, and private helper classes.",
+      "column_headers": [
+        "Architecture",
+        "Implementation Details"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The naming convention for private variables inside a method.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "The decision to use a layered style with strict layering.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "The definition of the public interfaces between subsystems.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q30",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is 'Conway's Law'?",
+      "explanation": "Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The number of transistors on a chip doubles every two years.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Organizations design systems that mirror their own communication structure.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Adding manpower to a late software project makes it later.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q31",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are typical 'Constraints' that influence software architecture?",
+      "explanation": "Budget, Time/Deadline, and Regulatory Compliance are external constraints. 'Personal preference' should ideally not be a primary driver compared to business/technical needs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Budget and Time",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Regulatory and Legal Compliance",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Available Skill Set of the Team",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "The architect's favorite color",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "The weather forecast",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q32",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Match the description to the correct diagram type.",
+      "explanation": "Sequence diagrams show time-ordered interactions. Deployment diagrams show physical nodes. Activity diagrams show control flow.",
+      "column_headers": [
+        "Sequence Diagram",
+        "Deployment Diagram",
+        "Activity Diagram"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Shows interaction between objects ordered by time.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Shows mapping of artifacts to hardware nodes.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Shows the flow of control and data between steps.",
+          "correct_column_index": 2
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q33",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the purpose of the 'Solution Strategy' section in arc42?",
+      "explanation": "Section 4 'Solution Strategy' gives a condensed summary of the fundamental decisions and solution ideas to solve the core problems/goals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To list all detailed requirements.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To summarize the fundamental decisions and approaches to meet the goals.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To show the full source code.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q34",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following patterns are primarily used for 'Resilience' (Fault Tolerance)?",
+      "explanation": "Circuit Breaker and Bulkhead are resilience patterns. Circuit Breaker prevents cascading failures. Bulkhead isolates failures to a specific pool. MVC and Factory are design/structural patterns.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Circuit Breaker",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Model-View-Controller",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Bulkhead",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Factory Method",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q35",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Decide if the statement is True or False regarding 'Documentation'.",
+      "explanation": "Documentation should be target-group oriented (different views for different stakeholders). It should not be 'write-only' (useless if no one reads it).",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Documentation should be tailored to the needs of specific stakeholders.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "The best documentation is the one that covers every single line of code.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Architecture documentation complements the source code.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q36",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the goal of the 'Adapter' pattern?",
+      "explanation": "The Adapter pattern converts the interface of a class into another interface clients expect. It lets classes work together that couldn't otherwise because of incompatible interfaces.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To create only one instance of a class.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To convert the interface of a class into another interface the client expects.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To define a family of algorithms.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q37",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which of the following are examples of 'Internal Interfaces' (Building Block View)?",
+      "explanation": "Java interfaces and REST APIs between internal microservices are internal interfaces. The GUI for the end-user is a system boundary/external interface. A power cable is physical, not logical software architecture.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Java interface definition used between two packages.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "The User Interface (GUI) for the end-user.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "A REST API call between two internal microservices.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "The power cable of the server.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q38",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which principle states: 'Software entities should be open for extension, but closed for modification'?",
+      "explanation": "This is the exact definition of the Open-Closed Principle (OCP).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single Responsibility Principle",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Open-Closed Principle",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Liskov Substitution Principle",
+          "is_correct": false
+        }
+      ]
     }
   ]
 }

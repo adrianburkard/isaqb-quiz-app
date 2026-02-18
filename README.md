@@ -1,73 +1,130 @@
-# React + TypeScript + Vite
+# iSAQB CPSA-F Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application for practicing iSAQB Certified Professional for Software Architecture - Foundation Level (CPSA-F) certification exam questions.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Three question types**: Single choice (A-Fragen), Multiple choice (P-Fragen), Classification matrix (K-Fragen)
+- **Exam-style layout**: All questions displayed on one page
+- **Immediate feedback**: Check answers with explanations
+- **Partial scoring**: Points calculated per iSAQB rules
+- **Progress persistence**: Resume where you left off (localStorage)
+- **Multiple quiz sets**: Separate progress tracking per quiz
+- **Multi-language support**: German and English
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js v22.16.0
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Open http://localhost:5173 in your browser.
+
+## Build
+
+```bash
+npm run build
+```
+
+The production build will be in the `dist/` folder.
+
+## Project Structure
+
+```
+quiz-app/
+├── public/
+│   └── data/
+│       ├── german/           # German question sets
+│       └── english/          # English question sets
+├── src/
+│   ├── components/
+│   │   ├── QuizSelection.tsx
+│   │   ├── QuizView.tsx
+│   │   ├── QuestionCard.tsx
+│   │   ├── SingleChoice.tsx
+│   │   ├── MultipleChoice.tsx
+│   │   ├── ClassificationMatrix.tsx
+│   │   ├── Header.tsx
+│   │   └── ScoreSummary.tsx
+│   ├── data/
+│   │   └── quizCatalog.ts    # Quiz registry
+│   ├── hooks/
+│   │   ├── useQuizState.ts
+│   │   └── useQuizProgress.ts
+│   ├── types/
+│   │   └── index.ts
+│   └── utils/
+│       └── scoring.ts
+```
+
+## Adding New Quizzes
+
+1. Add your question JSON file to `public/data/german/` or `public/data/english/`
+2. Register the quiz in `src/data/quizCatalog.ts`:
+
+```typescript
+{
+  id: 'unique-quiz-id',
+  filename: 'german/your-questions.json',
+  title: 'Quiz Title',
+  description: 'Optional description',
+  language: 'de', // or 'en'
+}
+```
+
+## Question JSON Format
+
+```json
+{
+  "exam_title": "Quiz Title",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Question?",
+      "explanation": "Why the answer is correct...",
+      "options": [
+        { "id": "a", "text": "Option A", "is_correct": true },
+        { "id": "b", "text": "Option B", "is_correct": false }
+      ]
+    },
+    {
+      "id": "q2",
+      "type": "multiple_choice",
+      "points": 2,
+      "question_text": "Select all correct answers:",
+      "required_correct_count": 2,
+      "options": [...]
+    },
+    {
+      "id": "q3",
+      "type": "classification_matrix",
+      "points": 3,
+      "question_text": "Classify each item:",
+      "column_headers": ["Category A", "Category B"],
+      "rows": [
+        { "id": "r1", "text": "Item 1", "correct_column_index": 0 }
+      ]
+    }
+  ]
+}
+```
+
+## Tech Stack
+
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
