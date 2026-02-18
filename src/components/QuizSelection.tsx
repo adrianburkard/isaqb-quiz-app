@@ -3,6 +3,7 @@ import { useAllQuizProgress, clearQuizProgress } from '../hooks/useQuizProgress'
 import { useAllBookmarks } from '../hooks/useQuestionMarks';
 import { useQuizHistory } from '../hooks/useQuizHistory';
 import { useSpacedRepetition } from '../hooks/useSpacedRepetition';
+import { useTranslation } from '../i18n';
 import { PreferencesPanel } from './PreferencesPanel';
 import type { QuizInfo, Language } from '../types';
 
@@ -20,6 +21,8 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange, onShow
   const { count: bookmarkCount } = useAllBookmarks();
   const { totalAttempts } = useQuizHistory();
   const { getSummary } = useSpacedRepetition();
+  const { section } = useTranslation(language);
+  const t = section('quizSelection');
   const dueReviews = getSummary().totalDue;
 
   const filteredQuizzes = quizCatalog.filter(
@@ -28,41 +31,11 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange, onShow
 
   const handleReset = (quizId: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    const confirmMessage = language === 'de'
-      ? 'Fortschritt für dieses Quiz wirklich zurücksetzen?'
-      : 'Reset progress for this quiz?';
-    if (window.confirm(confirmMessage)) {
+    if (window.confirm(t.confirmReset)) {
       clearQuizProgress(quizId);
       refresh();
     }
   };
-
-  const labels = {
-    de: {
-      title: 'iSAQB CPSA-F Übungsprüfungen',
-      subtitle: 'Wähle ein Quiz aus, um zu beginnen oder fortzufahren.',
-      answered: 'beantwortet',
-      completed: 'Abgeschlossen',
-      notStarted: 'Noch nicht gestartet',
-      resetTitle: 'Quiz neu starten',
-      bookmarks: 'Lesezeichen',
-      history: 'Verlauf',
-      reviews: 'Wiederholungen',
-    },
-    en: {
-      title: 'iSAQB CPSA-F Practice Exams',
-      subtitle: 'Select a quiz to start or continue.',
-      answered: 'answered',
-      completed: 'Completed',
-      notStarted: 'Not started yet',
-      resetTitle: 'Reset quiz',
-      bookmarks: 'Bookmarks',
-      history: 'History',
-      reviews: 'Reviews',
-    },
-  };
-
-  const t = labels[language];
 
   return (
     <div className="min-h-screen bg-page">

@@ -1,4 +1,5 @@
 import { useAllBookmarks } from '../hooks/useQuestionMarks';
+import { useTranslation } from '../i18n';
 import { quizCatalog } from '../data/quizCatalog';
 import type { Language, QuizInfo } from '../types';
 
@@ -10,33 +11,9 @@ interface Props {
 
 export function BookmarkedQuestions({ language, onSelectQuiz, onBack }: Props) {
   const { bookmarks, removeBookmark, clearAllBookmarks } = useAllBookmarks();
-
-  const labels = {
-    de: {
-      title: 'Lesezeichen',
-      subtitle: 'Gespeicherte Fragen zum Wiederholen',
-      empty: 'Keine Lesezeichen vorhanden',
-      emptyHint: 'Markiere Fragen mit dem Lesezeichen-Symbol, um sie hier zu speichern.',
-      clearAll: 'Alle entfernen',
-      remove: 'Entfernen',
-      back: 'Zurück',
-      goToQuestion: 'Zur Frage',
-      fromQuiz: 'aus',
-    },
-    en: {
-      title: 'Bookmarks',
-      subtitle: 'Saved questions for review',
-      empty: 'No bookmarks yet',
-      emptyHint: 'Mark questions with the bookmark icon to save them here.',
-      clearAll: 'Clear all',
-      remove: 'Remove',
-      back: 'Back',
-      goToQuestion: 'Go to question',
-      fromQuiz: 'from',
-    },
-  };
-
-  const t = labels[language];
+  const { section } = useTranslation(language);
+  const t = section('bookmarks');
+  const common = section('common');
 
   // Group bookmarks by quiz
   const bookmarksByQuiz = bookmarks.reduce(
@@ -58,10 +35,7 @@ export function BookmarkedQuestions({ language, onSelectQuiz, onBack }: Props) {
   };
 
   const handleClearAll = () => {
-    const confirmMessage = language === 'de'
-      ? 'Alle Lesezeichen wirklich entfernen?'
-      : 'Remove all bookmarks?';
-    if (window.confirm(confirmMessage)) {
+    if (window.confirm(t.confirmClearAll)) {
       clearAllBookmarks();
     }
   };
@@ -74,7 +48,7 @@ export function BookmarkedQuestions({ language, onSelectQuiz, onBack }: Props) {
             <button
               onClick={onBack}
               className="p-1 -ml-1 text-muted hover:text-primary hover:bg-hover rounded-lg transition-colors"
-              title={t.back}
+              title={common.back}
             >
               <svg
                 className="w-6 h-6"
@@ -158,7 +132,7 @@ export function BookmarkedQuestions({ language, onSelectQuiz, onBack }: Props) {
                               onClick={() => removeBookmark(bookmark.questionId, bookmark.quizId)}
                               className="text-sm text-muted hover:text-error transition-colors"
                             >
-                              {t.remove}
+                              {common.remove}
                             </button>
                             <button
                               onClick={() => handleGoToQuestion(bookmark.quizId, bookmark.questionId)}

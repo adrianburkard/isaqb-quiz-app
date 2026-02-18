@@ -1,3 +1,6 @@
+import { useTranslation } from '../i18n';
+import type { Language } from '../types';
+
 interface Props {
   formattedTime: string;
   isRunning: boolean;
@@ -5,6 +8,7 @@ interface Props {
   timeRemainingMs: number;
   onPause?: () => void;
   onResume?: () => void;
+  language?: Language;
 }
 
 export function Timer({
@@ -14,7 +18,10 @@ export function Timer({
   timeRemainingMs,
   onPause,
   onResume,
+  language = 'de',
 }: Props) {
+  const { section } = useTranslation(language);
+  const t = section('timer');
   // Warning threshold: 5 minutes
   const isWarning = timeRemainingMs > 0 && timeRemainingMs <= 5 * 60 * 1000;
   // Critical threshold: 1 minute
@@ -51,7 +58,7 @@ export function Timer({
         <button
           onClick={isRunning ? onPause : onResume}
           className="p-1 text-muted hover:text-primary hover:bg-hover rounded transition-colors"
-          title={isRunning ? 'Timer pausieren' : 'Timer fortsetzen'}
+          title={isRunning ? t.pause : t.resume}
         >
           {isRunning ? (
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

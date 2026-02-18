@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { usePreferences } from '../hooks/usePreferences';
+import { useTranslation } from '../i18n';
 import type { Theme, FontSize, Language } from '../types';
 
 interface Props {
@@ -10,33 +11,8 @@ export function PreferencesPanel({ language }: Props) {
   const { preferences, setTheme, setFontSize } = usePreferences();
   const [isOpen, setIsOpen] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
-
-  const labels = {
-    de: {
-      settings: 'Einstellungen',
-      theme: 'Erscheinungsbild',
-      light: 'Hell',
-      dark: 'Dunkel',
-      system: 'System',
-      fontSize: 'Schriftgröße',
-      small: 'Klein',
-      medium: 'Mittel',
-      large: 'Groß',
-    },
-    en: {
-      settings: 'Settings',
-      theme: 'Appearance',
-      light: 'Light',
-      dark: 'Dark',
-      system: 'System',
-      fontSize: 'Font Size',
-      small: 'Small',
-      medium: 'Medium',
-      large: 'Large',
-    },
-  };
-
-  const t = labels[language];
+  const { section } = useTranslation(language);
+  const t = section('preferences');
 
   // Close on click outside
   useEffect(() => {

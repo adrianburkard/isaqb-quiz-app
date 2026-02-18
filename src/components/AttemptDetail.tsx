@@ -1,5 +1,6 @@
+import { useTranslation } from '../i18n';
 import type { QuizAttempt } from '../types/history';
-import type { Language, Question } from '../types';
+import type { Language } from '../types';
 
 interface Props {
   attempt: QuizAttempt;
@@ -7,54 +8,11 @@ interface Props {
   onBack: () => void;
 }
 
-const typeLabels: Record<Language, Record<Question['type'], string>> = {
-  de: {
-    single_choice: 'A-Frage',
-    multiple_choice: 'P-Frage',
-    classification_matrix: 'K-Frage',
-  },
-  en: {
-    single_choice: 'Single',
-    multiple_choice: 'Multiple',
-    classification_matrix: 'Matrix',
-  },
-};
-
 export function AttemptDetail({ attempt, language, onBack }: Props) {
-  const labels = {
-    de: {
-      back: 'Zurück',
-      passed: 'Bestanden',
-      failed: 'Nicht bestanden',
-      practice: 'Übungsmodus',
-      exam: 'Prüfungsmodus',
-      duration: 'Dauer',
-      score: 'Punkte',
-      questions: 'Fragen',
-      correct: 'Richtig',
-      partial: 'Teilweise',
-      incorrect: 'Falsch',
-      timeSpent: 'Zeit',
-      questionResults: 'Ergebnisse nach Frage',
-    },
-    en: {
-      back: 'Back',
-      passed: 'Passed',
-      failed: 'Failed',
-      practice: 'Practice Mode',
-      exam: 'Exam Mode',
-      duration: 'Duration',
-      score: 'Score',
-      questions: 'Questions',
-      correct: 'Correct',
-      partial: 'Partial',
-      incorrect: 'Incorrect',
-      timeSpent: 'Time',
-      questionResults: 'Results by Question',
-    },
-  };
-
-  const t = labels[language];
+  const { section } = useTranslation(language);
+  const t = section('attemptDetail');
+  const common = section('common');
+  const questionTypes = section('questionTypes');
 
   const formatDuration = (ms: number): string => {
     const minutes = Math.floor(ms / 60000);
@@ -88,7 +46,7 @@ export function AttemptDetail({ attempt, language, onBack }: Props) {
             <button
               onClick={onBack}
               className="p-1 -ml-1 text-muted hover:text-primary hover:bg-hover rounded-lg transition-colors"
-              title={t.back}
+              title={common.back}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -178,10 +136,10 @@ export function AttemptDetail({ attempt, language, onBack }: Props) {
                 <div className="flex-1">
                   <div className="flex items-center gap-2">
                     <span className="font-medium text-primary">
-                      {language === 'de' ? 'Frage' : 'Q'} {index + 1}
+                      {common.question} {index + 1}
                     </span>
                     <span className="px-1.5 py-0.5 bg-muted text-secondary text-xs rounded">
-                      {typeLabels[language][result.questionType]}
+                      {questionTypes[result.questionType]}
                     </span>
                   </div>
                 </div>

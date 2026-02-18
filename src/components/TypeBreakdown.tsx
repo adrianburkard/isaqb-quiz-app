@@ -1,43 +1,16 @@
+import { useTranslation } from '../i18n';
 import type { TypeStats } from '../types/history';
-import type { Language, Question } from '../types';
+import type { Language } from '../types';
 
 interface Props {
   stats: TypeStats[];
   language: Language;
 }
 
-const typeLabels: Record<Language, Record<Question['type'], string>> = {
-  de: {
-    single_choice: 'A-Fragen (Einzelauswahl)',
-    multiple_choice: 'P-Fragen (Mehrfachauswahl)',
-    classification_matrix: 'K-Fragen (Zuordnung)',
-  },
-  en: {
-    single_choice: 'Single Choice',
-    multiple_choice: 'Multiple Choice',
-    classification_matrix: 'Classification Matrix',
-  },
-};
-
 export function TypeBreakdown({ stats, language }: Props) {
-  const labels = {
-    de: {
-      correct: 'Richtig',
-      partial: 'Teilweise',
-      incorrect: 'Falsch',
-      avgTime: 'Ø Zeit',
-      accuracy: 'Genauigkeit',
-    },
-    en: {
-      correct: 'Correct',
-      partial: 'Partial',
-      incorrect: 'Incorrect',
-      avgTime: 'Avg Time',
-      accuracy: 'Accuracy',
-    },
-  };
-
-  const t = labels[language];
+  const { section } = useTranslation(language);
+  const t = section('typeBreakdown');
+  const questionTypes = section('questionTypes');
 
   const formatTime = (ms: number): string => {
     const seconds = Math.round(ms / 1000);
@@ -70,7 +43,7 @@ export function TypeBreakdown({ stats, language }: Props) {
           <div key={stat.type} className="space-y-2">
             <div className="flex items-center justify-between">
               <span className="font-medium text-primary text-sm">
-                {typeLabels[language][stat.type]}
+                {questionTypes[`${stat.type}_long` as keyof typeof questionTypes] ?? questionTypes[stat.type]}
               </span>
               <div className="flex items-center gap-4 text-xs text-secondary">
                 <span>{t.avgTime}: {formatTime(stat.averageTimeMs)}</span>

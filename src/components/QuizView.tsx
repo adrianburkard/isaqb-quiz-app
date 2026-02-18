@@ -5,6 +5,7 @@ import { useTimer } from '../hooks/useTimer';
 import { useQuestionMarks } from '../hooks/useQuestionMarks';
 import { useQuestionTiming } from '../hooks/useQuestionTiming';
 import { useQuizHistory } from '../hooks/useQuizHistory';
+import { useTranslation } from '../i18n';
 import { Header } from './Header';
 import { QuestionCard } from './QuestionCard';
 import { QuestionNav } from './QuestionNav';
@@ -21,6 +22,10 @@ interface Props {
 }
 
 export function QuizView({ quizInfo, onBack }: Props) {
+  const { section } = useTranslation(quizInfo.language);
+  const t = section('quizView');
+  const common = section('common');
+
   const {
     exam,
     answers,
@@ -41,7 +46,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
 
   const questionRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   const [feedbackRevealed, setFeedbackRevealed] = useState(false);
 
   const isExamMode = settings.mode === 'exam';
@@ -200,11 +205,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
 
   // Handle exam submission
   const handleSubmitExam = () => {
-    const confirmMessage = quizInfo.language === 'de'
-      ? 'Möchten Sie die Prüfung abgeben? Ihre Antworten werden ausgewertet.'
-      : 'Do you want to submit the exam? Your answers will be evaluated.';
-
-    if (window.confirm(confirmMessage)) {
+    if (window.confirm(t.confirmSubmit)) {
       timer.pause();
       setFeedbackRevealed(true);
     }
@@ -212,11 +213,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
 
   // Handle reset
   const handleReset = () => {
-    const confirmMessage = quizInfo.language === 'de'
-      ? 'Möchten Sie wirklich neu starten? Ihr Fortschritt wird gelöscht.'
-      : 'Do you want to restart? Your progress will be deleted.';
-
-    if (window.confirm(confirmMessage)) {
+    if (window.confirm(t.confirmRestart)) {
       timer.reset();
       setFeedbackRevealed(false);
       attemptSavedRef.current = false;
@@ -229,7 +226,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-page flex items-center justify-center">
-        <div className="text-secondary">Lade Prüfung...</div>
+        <div className="text-secondary">{t.loadingExam}</div>
       </div>
     );
   }
@@ -238,12 +235,12 @@ export function QuizView({ quizInfo, onBack }: Props) {
     return (
       <div className="min-h-screen bg-page flex items-center justify-center">
         <div className="text-center">
-          <div className="text-error mb-4">Fehler: {error}</div>
+          <div className="text-error mb-4">{common.error}: {error}</div>
           <button
             onClick={onBack}
             className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
           >
-            Zurück zur Übersicht
+            {common.backToOverview}
           </button>
         </div>
       </div>
@@ -253,7 +250,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
   if (!exam) {
     return (
       <div className="min-h-screen bg-page flex items-center justify-center">
-        <div className="text-secondary">Keine Prüfungsdaten gefunden.</div>
+        <div className="text-secondary">{t.noExamData}</div>
       </div>
     );
   }
@@ -297,6 +294,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
         onBack={onBack}
         showNav={showNav}
         onToggleNav={() => setShowNav(!showNav)}
+        language={quizInfo.language}
         questionNav={
           <QuestionNav
             questions={orderedQuestions}
@@ -305,6 +303,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
             currentIndex={currentIndex}
             flaggedQuestions={questionMarks.flaggedQuestions}
             showFeedback={!isExamMode || feedbackRevealed}
+            language={quizInfo.language}
           />
         }
       />
@@ -320,6 +319,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
               timeRemainingMs={timer.timeRemainingMs}
               onPause={timer.pause}
               onResume={timer.start}
+              language={quizInfo.language}
             />
           </div>
         </div>
@@ -334,9 +334,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               <span className="font-medium">
-                {quizInfo.language === 'de'
-                  ? 'Prüfungsmodus: Feedback wird erst nach Abgabe angezeigt'
-                  : 'Exam Mode: Feedback will be shown after submission'}
+                {t.examModeInfo}
               </span>
             </div>
           </div>
@@ -349,6 +347,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
               maxPoints={stats.maxPoints}
               onReset={handleReset}
               onBack={onBack}
+              language={quizInfo.language}
             />
           </div>
         )}
@@ -371,6 +370,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
                 onToggleFlag={() => questionMarks.toggleFlag(question.id)}
                 isBookmarked={questionMarks.isBookmarked(question.id)}
                 onToggleBookmark={() => questionMarks.toggleBookmark(question.id, question.question_text)}
+                language={quizInfo.language}
               />
             </div>
           ))}
@@ -383,7 +383,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
               onClick={onBack}
               className="px-4 py-2 text-secondary border border-default rounded-lg hover:bg-hover transition-colors"
             >
-              {quizInfo.language === 'de' ? 'Zurück zur Übersicht' : 'Back to Overview'}
+              {common.backToOverview}
             </button>
             <button
               onClick={handleSubmitExam}
@@ -393,9 +393,7 @@ export function QuizView({ quizInfo, onBack }: Props) {
                   : 'bg-blue-500 text-white hover:bg-blue-600'
               }`}
             >
-              {quizInfo.language === 'de'
-                ? allAnswered ? 'Prüfung abgeben' : 'Vorzeitig abgeben'
-                : allAnswered ? 'Submit Exam' : 'Submit Early'}
+{allAnswered ? t.submitExam : t.submitEarly}
             </button>
           </div>
         )}
@@ -407,13 +405,13 @@ export function QuizView({ quizInfo, onBack }: Props) {
               onClick={onBack}
               className="px-4 py-2 text-secondary border border-default rounded-lg hover:bg-hover transition-colors"
             >
-              Zurück zur Übersicht
+              {common.backToOverview}
             </button>
             <button
               onClick={handleReset}
               className="px-4 py-2 text-error border border-error rounded-lg hover:bg-error transition-colors"
             >
-              Neu starten
+              {common.restart}
             </button>
           </div>
         )}
@@ -424,13 +422,13 @@ export function QuizView({ quizInfo, onBack }: Props) {
               onClick={onBack}
               className="px-4 py-2 text-secondary border border-default rounded-lg hover:bg-hover transition-colors"
             >
-              {quizInfo.language === 'de' ? 'Zurück zur Übersicht' : 'Back to Overview'}
+              {common.backToOverview}
             </button>
           </div>
         )}
       </main>
 
-      <BackToTop />
+      <BackToTop language={quizInfo.language} />
     </div>
   );
 }

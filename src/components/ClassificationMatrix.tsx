@@ -1,13 +1,17 @@
-import type { ClassificationMatrixQuestion, ClassificationMatrixAnswer } from '../types';
+import { useTranslation } from '../i18n';
+import type { ClassificationMatrixQuestion, ClassificationMatrixAnswer, Language } from '../types';
 
 interface Props {
   question: ClassificationMatrixQuestion;
   answer: ClassificationMatrixAnswer;
   onAnswer: (answer: ClassificationMatrixAnswer) => void;
   showFeedback: boolean;
+  language?: Language;
 }
 
-export function ClassificationMatrix({ question, answer, onAnswer, showFeedback }: Props) {
+export function ClassificationMatrix({ question, answer, onAnswer, showFeedback, language = 'de' }: Props) {
+  const { section } = useTranslation(language);
+  const t = section('classificationMatrix');
   const rowSelections = answer.rowSelections;
 
   const handleCellChange = (rowId: string, columnIndex: number) => {
@@ -78,7 +82,7 @@ export function ClassificationMatrix({ question, answer, onAnswer, showFeedback 
         <thead>
           <tr>
             <th className="border border-strong p-3 bg-muted text-left min-w-50 text-primary">
-              Aussage
+              {t.statement}
             </th>
             {question.column_headers.map((header, index) => (
               <th

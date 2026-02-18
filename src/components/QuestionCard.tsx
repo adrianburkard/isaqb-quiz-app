@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from '../i18n';
 import type {
   Question,
   Answer,
@@ -6,18 +7,13 @@ import type {
   MultipleChoiceAnswer,
   ClassificationMatrixAnswer,
   QuestionScore,
+  Language,
 } from '../types';
 import { SingleChoice } from './SingleChoice';
 import { MultipleChoice } from './MultipleChoice';
 import { ClassificationMatrix } from './ClassificationMatrix';
 import { FlagButton } from './FlagButton';
 import { BookmarkButton } from './BookmarkButton';
-
-const typeLabels: Record<Question['type'], string> = {
-  single_choice: 'A-Frage',
-  multiple_choice: 'P-Frage',
-  classification_matrix: 'K-Frage',
-};
 
 interface Props {
   question: Question;
@@ -32,6 +28,7 @@ interface Props {
   onToggleFlag?: () => void;
   isBookmarked?: boolean;
   onToggleBookmark?: () => void;
+  language?: Language;
 }
 
 function getInitialAnswer(question: Question): Answer {
@@ -70,7 +67,12 @@ export function QuestionCard({
   onToggleFlag,
   isBookmarked = false,
   onToggleBookmark,
+  language = 'de',
 }: Props) {
+  const { t, section } = useTranslation(language);
+  const questionTypes = section('questionTypes');
+  const questionCardLabels = section('questionCard');
+  const common = section('common');
   const isSubmitted = score !== null;
   const [draftAnswer, setDraftAnswer] = useState<Answer>(() =>
     submittedAnswer ?? getInitialAnswer(question)
@@ -118,6 +120,7 @@ export function QuestionCard({
             answer={currentAnswer as SingleChoiceAnswer}
             onAnswer={handleAnswerChange}
             showFeedback={showFeedback}
+            language={language}
           />
         );
       case 'multiple_choice':
@@ -127,6 +130,7 @@ export function QuestionCard({
             answer={currentAnswer as MultipleChoiceAnswer}
             onAnswer={handleAnswerChange}
             showFeedback={showFeedback}
+            language={language}
           />
         );
       case 'classification_matrix':
@@ -136,6 +140,7 @@ export function QuestionCard({
             answer={currentAnswer as ClassificationMatrixAnswer}
             onAnswer={handleAnswerChange}
             showFeedback={showFeedback}
+            language={language}
           />
         );
     }
@@ -146,18 +151,18 @@ export function QuestionCard({
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">
           <span className="text-lg font-bold text-primary">
-            Frage {questionNumber}
+            {questionCardLabels.question} {questionNumber}
           </span>
           <span className="px-2 py-1 bg-muted text-secondary text-xs rounded">
-            {typeLabels[question.type]}
+            {questionTypes[question.type]}
           </span>
           {/* Flag and Bookmark buttons */}
           <div className="flex items-center gap-1">
             {onToggleFlag && (
-              <FlagButton isFlagged={isFlagged} onToggle={onToggleFlag} size="sm" />
+              <FlagButton isFlagged={isFlagged} onToggle={onToggleFlag} size="sm" language={language} />
             )}
             {onToggleBookmark && (
-              <BookmarkButton isBookmarked={isBookmarked} onToggle={onToggleBookmark} size="sm" />
+              <BookmarkButton isBookmarked={isBookmarked} onToggle={onToggleBookmark} size="sm" language={language} />
             )}
           </div>
         </div>
@@ -172,17 +177,17 @@ export function QuestionCard({
                     : 'text-error'
               }`}
             >
-              {score.earnedPoints} / {score.maxPoints} Punkte
+              {t('questionCard.pointsDisplay', { earned: score.earnedPoints, max: score.maxPoints })}
             </span>
           )}
           {isSubmitted && examMode && !feedbackRevealed && (
             <span className="text-blue-500 text-sm font-medium">
-              Beantwortet
+              {common.answered}
             </span>
           )}
           {!isSubmitted && (
             <span className="text-muted text-sm">
-              {question.points} {question.points === 1 ? 'Punkt' : 'Punkte'}
+              {question.points} {common.points}
             </span>
           )}
         </div>
@@ -209,7 +214,7 @@ export function QuestionCard({
               />
             </svg>
             <div>
-              <p className="font-medium text-success-strong mb-1">Erklärung</p>
+              <p className="font-medium text-success-strong mb-1">{questionCardLabels.explanation}</p>
               <p className="text-success text-sm">{question.explanation}</p>
             </div>
           </div>
@@ -227,7 +232,7 @@ export function QuestionCard({
                 : 'bg-muted text-muted cursor-not-allowed'
             }`}
           >
-            {examMode ? 'Speichern' : 'Antwort prüfen'}
+            {examMode ? questionCardLabels.save : questionCardLabels.checkAnswer}
           </button>
         </div>
       )}

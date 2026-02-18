@@ -1,4 +1,5 @@
 import { useQuizHistory, calculateTypeStats, getBestAttempt, getAveragePercentage } from '../hooks/useQuizHistory';
+import { useTranslation } from '../i18n';
 import { TypeBreakdown } from './TypeBreakdown';
 import type { Language } from '../types';
 import type { QuizAttempt } from '../types/history';
@@ -11,49 +12,9 @@ interface Props {
 
 export function HistoryView({ language, onViewAttempt, onBack }: Props) {
   const { attempts, deleteAttempt, clearHistory } = useQuizHistory();
-
-  const labels = {
-    de: {
-      title: 'Verlauf',
-      subtitle: 'Deine vergangenen Versuche',
-      empty: 'Noch keine Versuche',
-      emptyHint: 'Schließe ein Quiz ab, um deinen Fortschritt zu sehen.',
-      clearAll: 'Verlauf löschen',
-      delete: 'Löschen',
-      view: 'Details',
-      back: 'Zurück',
-      passed: 'Bestanden',
-      failed: 'Nicht bestanden',
-      practice: 'Übung',
-      exam: 'Prüfung',
-      duration: 'Dauer',
-      stats: 'Statistiken nach Fragentyp',
-      best: 'Bester Versuch',
-      average: 'Durchschnitt',
-      attempts: 'Versuche',
-    },
-    en: {
-      title: 'History',
-      subtitle: 'Your past attempts',
-      empty: 'No attempts yet',
-      emptyHint: 'Complete a quiz to see your progress.',
-      clearAll: 'Clear history',
-      delete: 'Delete',
-      view: 'Details',
-      back: 'Back',
-      passed: 'Passed',
-      failed: 'Failed',
-      practice: 'Practice',
-      exam: 'Exam',
-      duration: 'Duration',
-      stats: 'Statistics by Question Type',
-      best: 'Best attempt',
-      average: 'Average',
-      attempts: 'attempts',
-    },
-  };
-
-  const t = labels[language];
+  const { section } = useTranslation(language);
+  const t = section('history');
+  const common = section('common');
 
   const formatDuration = (ms: number): string => {
     const minutes = Math.floor(ms / 60000);
@@ -76,20 +37,14 @@ export function HistoryView({ language, onViewAttempt, onBack }: Props) {
   };
 
   const handleClearAll = () => {
-    const confirmMessage = language === 'de'
-      ? 'Gesamten Verlauf wirklich löschen?'
-      : 'Delete all history?';
-    if (window.confirm(confirmMessage)) {
+    if (window.confirm(t.confirmClearAll)) {
       clearHistory();
     }
   };
 
   const handleDelete = (attemptId: string, e: React.MouseEvent) => {
     e.stopPropagation();
-    const confirmMessage = language === 'de'
-      ? 'Diesen Versuch wirklich löschen?'
-      : 'Delete this attempt?';
-    if (window.confirm(confirmMessage)) {
+    if (window.confirm(t.confirmDelete)) {
       deleteAttempt(attemptId);
     }
   };
@@ -106,7 +61,7 @@ export function HistoryView({ language, onViewAttempt, onBack }: Props) {
             <button
               onClick={onBack}
               className="p-1 -ml-1 text-muted hover:text-primary hover:bg-hover rounded-lg transition-colors"
-              title={t.back}
+              title={common.back}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -216,7 +171,7 @@ export function HistoryView({ language, onViewAttempt, onBack }: Props) {
                       <button
                         onClick={(e) => handleDelete(attempt.id, e)}
                         className="p-2 text-muted hover:text-error hover:bg-hover rounded-lg transition-colors"
-                        title={t.delete}
+                        title={common.delete}
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />

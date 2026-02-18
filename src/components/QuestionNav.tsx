@@ -1,4 +1,5 @@
-import type { Question, QuestionScore } from '../types';
+import { useTranslation } from '../i18n';
+import type { Question, QuestionScore, Language } from '../types';
 
 interface Props {
   questions: Question[];
@@ -7,6 +8,7 @@ interface Props {
   currentIndex?: number;
   flaggedQuestions?: Set<string>;
   showFeedback?: boolean; // In exam mode, only show correct/incorrect after reveal
+  language?: Language;
 }
 
 export function QuestionNav({
@@ -16,7 +18,9 @@ export function QuestionNav({
   currentIndex,
   flaggedQuestions,
   showFeedback = true,
+  language = 'de',
 }: Props) {
+  const { t } = useTranslation(language);
   return (
     <div className="flex flex-wrap gap-1">
       {questions.map((q, index) => {
@@ -52,8 +56,8 @@ export function QuestionNav({
               ${bgClass} ${isAnswered ? 'text-white' : 'text-secondary'}
               ${isCurrent ? 'ring-2 ring-blue-500' : ''}
             `}
-            title={`Frage ${index + 1}${isFlagged ? ' (markiert)' : ''}`}
-            aria-label={`Zu Frage ${index + 1} springen${isFlagged ? ' (markiert zur Überprüfung)' : ''}`}
+            title={t('questionNav.jumpTo', { num: index + 1 }) + (isFlagged ? ` (${t('questionNav.flagged')})` : '')}
+            aria-label={t('questionNav.jumpTo', { num: index + 1 }) + (isFlagged ? ` (${t('questionNav.flaggedForReview')})` : '')}
           >
             {index + 1}
             {isFlagged && (

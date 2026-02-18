@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from '../i18n';
 import type { Language } from '../types';
 import type { FocusModeConfig } from '../types/learning';
 
@@ -31,43 +32,9 @@ export function FocusModeSetup({
 }: Props) {
   const [selectedMode, setSelectedMode] = useState<'incorrect' | 'flagged' | 'bookmarked' | 'custom'>('incorrect');
   const [customIds, setCustomIds] = useState<Set<string>>(new Set());
-
-  const labels = {
-    de: {
-      title: 'Fokus-Modus',
-      subtitle: 'Wähle aus, welche Fragen du wiederholen möchtest',
-      incorrectLabel: 'Falsch beantwortete Fragen',
-      incorrectDesc: 'Fragen, die beim letzten Versuch falsch waren',
-      flaggedLabel: 'Markierte Fragen',
-      flaggedDesc: 'Fragen, die du zur Überprüfung markiert hast',
-      bookmarkedLabel: 'Lesezeichen',
-      bookmarkedDesc: 'Fragen, die du mit Lesezeichen versehen hast',
-      customLabel: 'Benutzerdefiniert',
-      customDesc: 'Wähle spezifische Kategorien aus',
-      noQuestions: 'Keine Fragen verfügbar',
-      questions: 'Fragen',
-      start: 'Starten',
-      cancel: 'Abbrechen',
-    },
-    en: {
-      title: 'Focus Mode',
-      subtitle: 'Choose which questions to review',
-      incorrectLabel: 'Incorrect Questions',
-      incorrectDesc: 'Questions answered incorrectly in the last attempt',
-      flaggedLabel: 'Flagged Questions',
-      flaggedDesc: 'Questions you flagged for review',
-      bookmarkedLabel: 'Bookmarked Questions',
-      bookmarkedDesc: 'Questions you bookmarked',
-      customLabel: 'Custom',
-      customDesc: 'Select specific categories',
-      noQuestions: 'No questions available',
-      questions: 'questions',
-      start: 'Start',
-      cancel: 'Cancel',
-    },
-  };
-
-  const t = labels[language];
+  const { section } = useTranslation(language);
+  const t = section('focusMode');
+  const common = section('common');
 
   const getQuestionIds = (): string[] => {
     switch (selectedMode) {
@@ -239,7 +206,7 @@ export function FocusModeSetup({
           <div className="mt-6 pt-4 border-t border-default">
             <div className="text-center text-sm text-secondary mb-4">
               {canStart
-                ? `${getQuestionCount()} ${t.questions}`
+                ? `${getQuestionCount()} ${common.questions}`
                 : t.noQuestions
               }
             </div>
@@ -249,7 +216,7 @@ export function FocusModeSetup({
                 onClick={onCancel}
                 className="flex-1 px-4 py-2 border border-default text-secondary rounded-lg hover:bg-hover transition-colors"
               >
-                {t.cancel}
+                {common.cancel}
               </button>
               <button
                 onClick={handleStart}
@@ -260,7 +227,7 @@ export function FocusModeSetup({
                     : 'bg-gray-300 text-gray-500 cursor-not-allowed dark:bg-gray-700 dark:text-gray-500'
                 }`}
               >
-                {t.start}
+                {common.start}
               </button>
             </div>
           </div>

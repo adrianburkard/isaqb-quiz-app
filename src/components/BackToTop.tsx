@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from '../i18n';
+import type { Language } from '../types';
 
 interface Props {
   threshold?: number;
+  language?: Language;
 }
 
-export function BackToTop({ threshold = 400 }: Props) {
+export function BackToTop({ threshold = 400, language = 'de' }: Props) {
+  const { t } = useTranslation(language);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -28,8 +32,8 @@ export function BackToTop({ threshold = 400 }: Props) {
     <button
       onClick={scrollToTop}
       className="fixed bottom-6 right-6 p-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition-all z-50"
-      aria-label="Zurück nach oben"
-      title="Zurück nach oben"
+      aria-label={t('backToTop')}
+      title={t('backToTop')}
     >
       <svg
         className="w-6 h-6"

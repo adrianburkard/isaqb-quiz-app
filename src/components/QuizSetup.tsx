@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from '../i18n';
 import type { QuizSettings, QuizMode, Language } from '../types';
 
 interface Props {
@@ -22,49 +23,9 @@ export function QuizSetup({
   const [timerEnabled, setTimerEnabled] = useState(false);
   const [timerMinutes, setTimerMinutes] = useState(DEFAULT_TIMER_MINUTES);
   const [randomOrder, setRandomOrder] = useState(false);
-
-  const labels = {
-    de: {
-      title: 'Quiz-Einstellungen',
-      subtitle: quizTitle,
-      questionCount: `${questionCount} Fragen`,
-      modeLabel: 'Modus',
-      practiceMode: 'Übungsmodus',
-      practiceDesc: 'Sofortiges Feedback nach jeder Frage',
-      examMode: 'Prüfungsmodus',
-      examDesc: 'Feedback erst am Ende der Prüfung',
-      timerLabel: 'Zeitlimit',
-      timerEnabled: 'Mit Zeitlimit',
-      timerDisabled: 'Ohne Zeitlimit',
-      minutes: 'Minuten',
-      orderLabel: 'Reihenfolge',
-      sequential: 'Original-Reihenfolge',
-      random: 'Zufällige Reihenfolge',
-      start: 'Quiz starten',
-      cancel: 'Abbrechen',
-    },
-    en: {
-      title: 'Quiz Settings',
-      subtitle: quizTitle,
-      questionCount: `${questionCount} questions`,
-      modeLabel: 'Mode',
-      practiceMode: 'Practice Mode',
-      practiceDesc: 'Immediate feedback after each question',
-      examMode: 'Exam Mode',
-      examDesc: 'Feedback only at the end of the exam',
-      timerLabel: 'Time Limit',
-      timerEnabled: 'With time limit',
-      timerDisabled: 'No time limit',
-      minutes: 'minutes',
-      orderLabel: 'Order',
-      sequential: 'Original order',
-      random: 'Random order',
-      start: 'Start Quiz',
-      cancel: 'Cancel',
-    },
-  };
-
-  const t = labels[language];
+  const { t, section } = useTranslation(language);
+  const labels = section('quizSetup');
+  const common = section('common');
 
   const handleStart = () => {
     onStart({
@@ -79,14 +40,14 @@ export function QuizSetup({
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <div className="bg-card rounded-xl shadow-xl max-w-md w-full max-h-[90vh] overflow-y-auto">
         <div className="p-6">
-          <h2 className="text-xl font-bold text-primary mb-1">{t.title}</h2>
-          <p className="text-secondary text-sm mb-1">{t.subtitle}</p>
-          <p className="text-muted text-xs mb-6">{t.questionCount}</p>
+          <h2 className="text-xl font-bold text-primary mb-1">{labels.title}</h2>
+          <p className="text-secondary text-sm mb-1">{quizTitle}</p>
+          <p className="text-muted text-xs mb-6">{t('quizSetup.questionCount', { count: questionCount })}</p>
 
           {/* Mode Selection */}
           <div className="mb-6">
             <label className="block text-sm font-medium text-primary mb-3">
-              {t.modeLabel}
+              {labels.modeLabel}
             </label>
             <div className="space-y-2">
               <label
@@ -105,8 +66,8 @@ export function QuizSetup({
                   className="mt-1"
                 />
                 <div>
-                  <div className="font-medium text-primary">{t.practiceMode}</div>
-                  <div className="text-sm text-secondary">{t.practiceDesc}</div>
+                  <div className="font-medium text-primary">{labels.practiceMode}</div>
+                  <div className="text-sm text-secondary">{labels.practiceDesc}</div>
                 </div>
               </label>
               <label
@@ -125,8 +86,8 @@ export function QuizSetup({
                   className="mt-1"
                 />
                 <div>
-                  <div className="font-medium text-primary">{t.examMode}</div>
-                  <div className="text-sm text-secondary">{t.examDesc}</div>
+                  <div className="font-medium text-primary">{labels.examMode}</div>
+                  <div className="text-sm text-secondary">{labels.examDesc}</div>
                 </div>
               </label>
             </div>
@@ -135,7 +96,7 @@ export function QuizSetup({
           {/* Timer Setting */}
           <div className="mb-6">
             <label className="block text-sm font-medium text-primary mb-3">
-              {t.timerLabel}
+              {labels.timerLabel}
             </label>
             <div className="space-y-3">
               <label className="flex items-center gap-3 cursor-pointer">
@@ -146,7 +107,7 @@ export function QuizSetup({
                   className="w-4 h-4"
                 />
                 <span className="text-primary">
-                  {timerEnabled ? t.timerEnabled : t.timerDisabled}
+                  {timerEnabled ? labels.timerEnabled : labels.timerDisabled}
                 </span>
               </label>
               {timerEnabled && (
@@ -159,7 +120,7 @@ export function QuizSetup({
                     onChange={(e) => setTimerMinutes(parseInt(e.target.value, 10) || DEFAULT_TIMER_MINUTES)}
                     className="w-20 px-3 py-2 border border-default rounded-lg bg-card text-primary"
                   />
-                  <span className="text-secondary">{t.minutes}</span>
+                  <span className="text-secondary">{labels.minutes}</span>
                 </div>
               )}
             </div>
@@ -168,7 +129,7 @@ export function QuizSetup({
           {/* Order Setting */}
           <div className="mb-8">
             <label className="block text-sm font-medium text-primary mb-3">
-              {t.orderLabel}
+              {labels.orderLabel}
             </label>
             <div className="space-y-2">
               <label className="flex items-center gap-3 cursor-pointer">
@@ -178,7 +139,7 @@ export function QuizSetup({
                   checked={!randomOrder}
                   onChange={() => setRandomOrder(false)}
                 />
-                <span className="text-primary">{t.sequential}</span>
+                <span className="text-primary">{labels.sequential}</span>
               </label>
               <label className="flex items-center gap-3 cursor-pointer">
                 <input
@@ -187,7 +148,7 @@ export function QuizSetup({
                   checked={randomOrder}
                   onChange={() => setRandomOrder(true)}
                 />
-                <span className="text-primary">{t.random}</span>
+                <span className="text-primary">{labels.random}</span>
               </label>
             </div>
           </div>
@@ -198,13 +159,13 @@ export function QuizSetup({
               onClick={onCancel}
               className="flex-1 px-4 py-2 text-secondary border border-default rounded-lg hover:bg-hover transition-colors"
             >
-              {t.cancel}
+              {common.cancel}
             </button>
             <button
               onClick={handleStart}
               className="flex-1 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium"
             >
-              {t.start}
+              {labels.start}
             </button>
           </div>
         </div>

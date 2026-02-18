@@ -1,13 +1,17 @@
-import type { MultipleChoiceQuestion, MultipleChoiceAnswer } from '../types';
+import { useTranslation } from '../i18n';
+import type { MultipleChoiceQuestion, MultipleChoiceAnswer, Language } from '../types';
 
 interface Props {
   question: MultipleChoiceQuestion;
   answer: MultipleChoiceAnswer;
   onAnswer: (answer: MultipleChoiceAnswer) => void;
   showFeedback: boolean;
+  language?: Language;
 }
 
-export function MultipleChoice({ question, answer, onAnswer, showFeedback }: Props) {
+export function MultipleChoice({ question, answer, onAnswer, showFeedback, language = 'de' }: Props) {
+  const { t, section } = useTranslation(language);
+  const common = section('common');
   const selectedIds = answer.selectedOptionIds;
 
   const handleChange = (optionId: string, checked: boolean) => {
@@ -23,7 +27,7 @@ export function MultipleChoice({ question, answer, onAnswer, showFeedback }: Pro
   return (
     <div className="space-y-2">
       <p className="text-sm text-secondary mb-3">
-        Wahlen Sie {question.required_correct_count} Antworten aus.
+        {t('multipleChoice.selectCount', { count: question.required_correct_count })}
       </p>
       {question.options.map((option) => {
         const isSelected = selectedIds.includes(option.id);
@@ -61,10 +65,10 @@ export function MultipleChoice({ question, answer, onAnswer, showFeedback }: Pro
             />
             <span className="flex-1">{option.text}</span>
             {showFeedback && option.is_correct && (
-              <span className="ml-2 text-success font-medium">Richtig</span>
+              <span className="ml-2 text-success font-medium">{common.correct}</span>
             )}
             {showFeedback && !option.is_correct && isSelected && (
-              <span className="ml-2 text-error font-medium">Falsch</span>
+              <span className="ml-2 text-error font-medium">{common.incorrect}</span>
             )}
           </label>
         );

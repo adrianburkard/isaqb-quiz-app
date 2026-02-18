@@ -1,4 +1,5 @@
 import { useSpacedRepetition } from '../hooks/useSpacedRepetition';
+import { useTranslation } from '../i18n';
 import { quizCatalog } from '../data/quizCatalog';
 import type { Language } from '../types';
 import type { QuestionLearningState } from '../types/learning';
@@ -11,51 +12,9 @@ interface Props {
 
 export function SpacedRepetitionView({ language, onStartReview, onBack }: Props) {
   const { getDueForReview, getSummary, getStats, clearAllLearning } = useSpacedRepetition();
-
-  const labels = {
-    de: {
-      title: 'Wiederholungen',
-      subtitle: 'Fällige Fragen basierend auf Spaced Repetition',
-      back: 'Zurück',
-      noDue: 'Keine Wiederholungen fällig',
-      noDueDesc: 'Beantworte Fragen in den Quiz, um Wiederholungen zu planen.',
-      overdue: 'überfällig',
-      dueToday: 'heute fällig',
-      totalDue: 'insgesamt fällig',
-      startReview: 'Wiederholung starten',
-      questions: 'Fragen',
-      stats: 'Statistiken',
-      mastered: 'Gemeistert',
-      learning: 'In Arbeit',
-      newOrReset: 'Neu/Zurückgesetzt',
-      total: 'Gesamt',
-      avgEase: 'Durchschnittliche Leichtigkeit',
-      clearAll: 'Alle Daten löschen',
-      clearConfirm: 'Alle Lernfortschritte wirklich löschen?',
-    },
-    en: {
-      title: 'Reviews',
-      subtitle: 'Due questions based on spaced repetition',
-      back: 'Back',
-      noDue: 'No reviews due',
-      noDueDesc: 'Answer questions in quizzes to schedule reviews.',
-      overdue: 'overdue',
-      dueToday: 'due today',
-      totalDue: 'total due',
-      startReview: 'Start Review',
-      questions: 'questions',
-      stats: 'Statistics',
-      mastered: 'Mastered',
-      learning: 'Learning',
-      newOrReset: 'New/Reset',
-      total: 'Total',
-      avgEase: 'Average Ease',
-      clearAll: 'Clear All Data',
-      clearConfirm: 'Delete all learning progress?',
-    },
-  };
-
-  const t = labels[language];
+  const { section } = useTranslation(language);
+  const t = section('spacedRepetition');
+  const common = section('common');
 
   const summary = getSummary();
   const stats = getStats();
@@ -69,7 +28,7 @@ export function SpacedRepetitionView({ language, onStartReview, onBack }: Props)
   });
 
   const handleClearAll = () => {
-    if (window.confirm(t.clearConfirm)) {
+    if (window.confirm(t.confirmClear)) {
       clearAllLearning();
     }
   };
@@ -82,7 +41,7 @@ export function SpacedRepetitionView({ language, onStartReview, onBack }: Props)
             <button
               onClick={onBack}
               className="p-1 -ml-1 text-muted hover:text-primary hover:bg-hover rounded-lg transition-colors"
-              title={t.back}
+              title={common.back}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -134,7 +93,7 @@ export function SpacedRepetitionView({ language, onStartReview, onBack }: Props)
                     <div>
                       <h3 className="font-medium text-primary">{quizTitle}</h3>
                       <p className="text-sm text-secondary">
-                        {questions.length} {t.questions}
+                        {questions.length} {common.questions}
                       </p>
                     </div>
                     <button

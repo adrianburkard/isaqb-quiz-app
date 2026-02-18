@@ -1,13 +1,17 @@
-import type { SingleChoiceQuestion, SingleChoiceAnswer } from '../types';
+import { useTranslation } from '../i18n';
+import type { SingleChoiceQuestion, SingleChoiceAnswer, Language } from '../types';
 
 interface Props {
   question: SingleChoiceQuestion;
   answer: SingleChoiceAnswer;
   onAnswer: (answer: SingleChoiceAnswer) => void;
   showFeedback: boolean;
+  language?: Language;
 }
 
-export function SingleChoice({ question, answer, onAnswer, showFeedback }: Props) {
+export function SingleChoice({ question, answer, onAnswer, showFeedback, language = 'de' }: Props) {
+  const { section } = useTranslation(language);
+  const common = section('common');
   const handleChange = (optionId: string) => {
     if (showFeedback) return;
     onAnswer({ selectedOptionId: optionId });
@@ -49,7 +53,7 @@ export function SingleChoice({ question, answer, onAnswer, showFeedback }: Props
             />
             <span className="flex-1">{option.text}</span>
             {showFeedback && option.is_correct && (
-              <span className="ml-2 text-success font-medium">Richtig</span>
+              <span className="ml-2 text-success font-medium">{common.correct}</span>
             )}
           </label>
         );

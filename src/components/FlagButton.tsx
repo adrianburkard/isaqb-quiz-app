@@ -1,10 +1,16 @@
+import { useTranslation } from '../i18n';
+import type { Language } from '../types';
+
 interface Props {
   isFlagged: boolean;
   onToggle: () => void;
   size?: 'sm' | 'md';
+  language?: Language;
 }
 
-export function FlagButton({ isFlagged, onToggle, size = 'md' }: Props) {
+export function FlagButton({ isFlagged, onToggle, size = 'md', language = 'de' }: Props) {
+  const { section } = useTranslation(language);
+  const t = section('flag');
   const sizeClasses = size === 'sm' ? 'w-4 h-4' : 'w-5 h-5';
   const buttonClasses = size === 'sm' ? 'p-1' : 'p-1.5';
 
@@ -19,8 +25,8 @@ export function FlagButton({ isFlagged, onToggle, size = 'md' }: Props) {
           ? 'text-orange-500 bg-orange-100 dark:bg-orange-900/30 hover:bg-orange-200 dark:hover:bg-orange-900/50'
           : 'text-muted hover:text-orange-500 hover:bg-hover'
       }`}
-      title={isFlagged ? 'Markierung entfernen' : 'Zur Überprüfung markieren'}
-      aria-label={isFlagged ? 'Markierung entfernen' : 'Zur Überprüfung markieren'}
+      title={isFlagged ? t.remove : t.add}
+      aria-label={isFlagged ? t.remove : t.add}
     >
       <svg
         className={sizeClasses}

@@ -1,4 +1,6 @@
 import type { ReactNode } from 'react';
+import { useTranslation } from '../i18n';
+import type { Language } from '../types';
 
 interface Props {
   title: string;
@@ -11,6 +13,7 @@ interface Props {
   questionNav?: ReactNode;
   showNav?: boolean;
   onToggleNav?: () => void;
+  language?: Language;
 }
 
 export function Header({
@@ -24,7 +27,11 @@ export function Header({
   questionNav,
   showNav = true,
   onToggleNav,
+  language = 'de',
 }: Props) {
+  const { section } = useTranslation(language);
+  const t = section('header');
+  const common = section('common');
   return (
     <header className="bg-header shadow-sm sticky top-0 z-20">
       <div className="max-w-4xl mx-auto px-4 py-4">
@@ -33,7 +40,7 @@ export function Header({
             <button
               onClick={onBack}
               className="p-1 -ml-1 text-muted hover:text-primary hover:bg-hover rounded-lg transition-colors"
-              title="Zurück zur Übersicht"
+              title={t.backToOverview}
             >
               <svg
                 className="w-6 h-6"
@@ -56,11 +63,11 @@ export function Header({
         <div className="flex items-center justify-between text-sm">
           <div className="flex items-center gap-4">
             <span className="text-secondary">
-              {answeredCount} / {totalCount} beantwortet
+              {answeredCount} / {totalCount} {common.answered}
             </span>
             {showScore && (
               <span className="font-medium text-blue-600">
-                {earnedPoints.toFixed(2)} / {maxPoints} Punkte
+                {earnedPoints.toFixed(2)} / {maxPoints} {common.points}
               </span>
             )}
           </div>
@@ -69,7 +76,7 @@ export function Header({
             <button
               onClick={onToggleNav}
               className="p-1 text-muted hover:text-primary hover:bg-hover rounded-lg transition-colors"
-              title={showNav ? 'Navigation ausblenden' : 'Navigation einblenden'}
+              title={showNav ? t.hideNav : t.showNav}
             >
               <svg
                 className="w-5 h-5"
