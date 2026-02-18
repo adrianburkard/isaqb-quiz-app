@@ -77,6 +77,17 @@ export interface ClassificationMatrixAnswer {
 
 export type Answer = SingleChoiceAnswer | MultipleChoiceAnswer | ClassificationMatrixAnswer;
 
+// Quiz mode
+export type QuizMode = 'practice' | 'exam';
+
+// Quiz settings for exam simulation
+export interface QuizSettings {
+  mode: QuizMode;
+  timerEnabled: boolean;
+  timerMinutes: number;
+  randomOrder: boolean;
+}
+
 // Quiz state for localStorage
 export interface QuizProgress {
   examVersion: string;
@@ -85,6 +96,23 @@ export interface QuizProgress {
   lastUpdatedAt: string;
   totalQuestions: number;
   maxPoints: number;
+  settings?: QuizSettings;
+  questionOrder?: string[]; // Question IDs in display order (for random mode)
+  timeRemainingMs?: number; // For timer persistence
+  flaggedQuestions?: string[]; // Question IDs flagged for review (session-specific)
+}
+
+// Bookmarked question (global, cross-quiz)
+export interface BookmarkedQuestion {
+  questionId: string;
+  quizId: string;
+  questionText: string; // Cached for display without loading quiz
+  bookmarkedAt: string;
+}
+
+// Global bookmarks storage
+export interface BookmarksData {
+  bookmarks: BookmarkedQuestion[];
 }
 
 // Scoring result for a question

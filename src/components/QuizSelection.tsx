@@ -1,5 +1,7 @@
 import { quizCatalog, languageLabels } from '../data/quizCatalog';
 import { useAllQuizProgress, clearQuizProgress } from '../hooks/useQuizProgress';
+import { useAllBookmarks } from '../hooks/useQuestionMarks';
+import { useQuizHistory } from '../hooks/useQuizHistory';
 import { PreferencesPanel } from './PreferencesPanel';
 import type { QuizInfo, Language } from '../types';
 
@@ -7,10 +9,14 @@ interface Props {
   onSelectQuiz: (quiz: QuizInfo) => void;
   language: Language;
   onLanguageChange: (language: Language) => void;
+  onShowBookmarks?: () => void;
+  onShowHistory?: () => void;
 }
 
-export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Props) {
+export function QuizSelection({ onSelectQuiz, language, onLanguageChange, onShowBookmarks, onShowHistory }: Props) {
   const { summaries, refresh } = useAllQuizProgress();
+  const { count: bookmarkCount } = useAllBookmarks();
+  const { totalAttempts } = useQuizHistory();
 
   const filteredQuizzes = quizCatalog.filter(
     (quiz) => quiz.language === language
@@ -35,6 +41,8 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
       completed: 'Abgeschlossen',
       notStarted: 'Noch nicht gestartet',
       resetTitle: 'Quiz neu starten',
+      bookmarks: 'Lesezeichen',
+      history: 'Verlauf',
     },
     en: {
       title: 'iSAQB CPSA-F Practice Exams',
@@ -43,6 +51,8 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
       completed: 'Completed',
       notStarted: 'Not started yet',
       resetTitle: 'Reset quiz',
+      bookmarks: 'Bookmarks',
+      history: 'History',
     },
   };
 
@@ -54,7 +64,61 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
         <div className="max-w-4xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-2xl font-bold text-primary">{t.title}</h1>
-            <PreferencesPanel language={language} />
+            <div className="flex items-center gap-2">
+              {onShowBookmarks && (
+                <button
+                  onClick={onShowBookmarks}
+                  className="relative p-2 text-muted hover:text-blue-500 hover:bg-hover rounded-lg transition-colors"
+                  title={t.bookmarks}
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill={bookmarkCount > 0 ? 'currentColor' : 'none'}
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+                    />
+                  </svg>
+                  {bookmarkCount > 0 && (
+                    <span className="absolute -top-1 -right-1 w-4 h-4 bg-blue-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center">
+                      {bookmarkCount > 9 ? '9+' : bookmarkCount}
+                    </span>
+                  )}
+                </button>
+              )}
+              {onShowHistory && (
+                <button
+                  onClick={onShowHistory}
+                  className="relative p-2 text-muted hover:text-green-500 hover:bg-hover rounded-lg transition-colors"
+                  title={t.history}
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+                    />
+                  </svg>
+                  {totalAttempts > 0 && (
+                    <span className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center">
+                      {totalAttempts > 9 ? '9+' : totalAttempts}
+                    </span>
+                  )}
+                </button>
+              )}
+              <PreferencesPanel language={language} />
+            </div>
           </div>
           <p className="text-secondary mb-4">{t.subtitle}</p>
 

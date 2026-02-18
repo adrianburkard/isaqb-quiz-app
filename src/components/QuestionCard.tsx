@@ -10,6 +10,8 @@ import type {
 import { SingleChoice } from './SingleChoice';
 import { MultipleChoice } from './MultipleChoice';
 import { ClassificationMatrix } from './ClassificationMatrix';
+import { FlagButton } from './FlagButton';
+import { BookmarkButton } from './BookmarkButton';
 
 const typeLabels: Record<Question['type'], string> = {
   single_choice: 'A-Frage',
@@ -23,6 +25,13 @@ interface Props {
   submittedAnswer: Answer | null;
   score: QuestionScore | null;
   onSubmit: (answer: Answer) => void;
+  examMode?: boolean; // If true, don't show feedback until explicitly revealed
+  feedbackRevealed?: boolean; // In exam mode, whether feedback has been revealed
+  // Question marking
+  isFlagged?: boolean;
+  onToggleFlag?: () => void;
+  isBookmarked?: boolean;
+  onToggleBookmark?: () => void;
 }
 
 function getInitialAnswer(question: Question): Answer {
@@ -55,17 +64,27 @@ export function QuestionCard({
   submittedAnswer,
   score,
   onSubmit,
+  examMode = false,
+  feedbackRevealed = false,
+  isFlagged = false,
+  onToggleFlag,
+  isBookmarked = false,
+  onToggleBookmark,
 }: Props) {
   const isSubmitted = score !== null;
   const [draftAnswer, setDraftAnswer] = useState<Answer>(() =>
     submittedAnswer ?? getInitialAnswer(question)
   );
 
+  // In practice mode, show feedback when submitted
+  // In exam mode, only show feedback when explicitly revealed
+  const showFeedback = examMode ? feedbackRevealed : isSubmitted;
+
   const currentAnswer = isSubmitted ? submittedAnswer! : draftAnswer;
   const canSubmit = !isSubmitted && isAnswerComplete(question, draftAnswer);
 
   let borderColor = 'border-l-gray-300';
-  if (isSubmitted) {
+  if (showFeedback && score) {
     if (score.isFullyCorrect) {
       borderColor = 'border-l-green-500';
     } else if (score.earnedPoints > 0) {
@@ -73,6 +92,9 @@ export function QuestionCard({
     } else {
       borderColor = 'border-l-red-500';
     }
+  } else if (isSubmitted && examMode) {
+    // In exam mode, show blue border for answered questions
+    borderColor = 'border-l-blue-500';
   }
 
   const handleAnswerChange = (answer: Answer) => {
@@ -95,7 +117,7 @@ export function QuestionCard({
             question={question}
             answer={currentAnswer as SingleChoiceAnswer}
             onAnswer={handleAnswerChange}
-            showFeedback={isSubmitted}
+            showFeedback={showFeedback}
           />
         );
       case 'multiple_choice':
@@ -104,7 +126,7 @@ export function QuestionCard({
             question={question}
             answer={currentAnswer as MultipleChoiceAnswer}
             onAnswer={handleAnswerChange}
-            showFeedback={isSubmitted}
+            showFeedback={showFeedback}
           />
         );
       case 'classification_matrix':
@@ -113,7 +135,7 @@ export function QuestionCard({
             question={question}
             answer={currentAnswer as ClassificationMatrixAnswer}
             onAnswer={handleAnswerChange}
-            showFeedback={isSubmitted}
+            showFeedback={showFeedback}
           />
         );
     }
@@ -129,9 +151,18 @@ export function QuestionCard({
           <span className="px-2 py-1 bg-muted text-secondary text-xs rounded">
             {typeLabels[question.type]}
           </span>
+          {/* Flag and Bookmark buttons */}
+          <div className="flex items-center gap-1">
+            {onToggleFlag && (
+              <FlagButton isFlagged={isFlagged} onToggle={onToggleFlag} size="sm" />
+            )}
+            {onToggleBookmark && (
+              <BookmarkButton isBookmarked={isBookmarked} onToggle={onToggleBookmark} size="sm" />
+            )}
+          </div>
         </div>
         <div className="flex items-center gap-2">
-          {isSubmitted && (
+          {showFeedback && score && (
             <span
               className={`font-medium ${
                 score.isFullyCorrect
@@ -142,6 +173,11 @@ export function QuestionCard({
               }`}
             >
               {score.earnedPoints} / {score.maxPoints} Punkte
+            </span>
+          )}
+          {isSubmitted && examMode && !feedbackRevealed && (
+            <span className="text-blue-500 text-sm font-medium">
+              Beantwortet
             </span>
           )}
           {!isSubmitted && (
@@ -156,7 +192,7 @@ export function QuestionCard({
 
       {renderQuestion()}
 
-      {isSubmitted && question.explanation && (
+      {showFeedback && question.explanation && (
         <div className="mt-4 p-4 bg-success border border-success rounded-lg">
           <div className="flex gap-2">
             <svg
@@ -191,7 +227,7 @@ export function QuestionCard({
                 : 'bg-muted text-muted cursor-not-allowed'
             }`}
           >
-            Antwort prufen
+            {examMode ? 'Speichern' : 'Antwort prüfen'}
           </button>
         </div>
       )}
