@@ -3,7 +3,7 @@
   "version": "2025.1-expert",
   "questions": [
     {
-      "id": "SET3-Q01",
+      "id": "de-practice-03-q001",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 4,
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "id": "SET3-Q02",
+      "id": "de-practice-03-q002",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie arbeiten in einem sicherheitskritischen Projekt. Bewerten Sie die folgenden Aussagen zur 'Sicherheit' (Security) nach ISO 25010 als 'Richtig' oder 'Falsch'.",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "id": "SET3-Q03",
+      "id": "de-practice-03-q003",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -111,7 +111,7 @@
       ]
     },
     {
-      "id": "SET3-Q04",
+      "id": "de-practice-03-q004",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welches Ziel verfolgt das 'Stable Dependencies Principle' (SDP) in der Paket-Architektur?",
@@ -140,7 +140,7 @@
       ]
     },
     {
-      "id": "SET3-Q05",
+      "id": "de-practice-03-q005",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie müssen entscheiden, welche Informationen in das Kapitel 'Laufzeitsicht' und welche in die 'Bausteinsicht' der Architekturdokumentation gehören. Treffen Sie die Zuordnung.",
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "id": "SET3-Q06",
+      "id": "de-practice-03-q006",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -208,7 +208,7 @@
       ]
     },
     {
-      "id": "SET3-Q07",
+      "id": "de-practice-03-q007",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist der Kern des 'Proxy'-Entwurfsmusters?",
@@ -232,7 +232,7 @@
       ]
     },
     {
-      "id": "SET3-Q08",
+      "id": "de-practice-03-q008",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Bewerten Sie die folgenden Aussagen zu 'Architekturbewertungen' (wie ATAM oder Reviews).",
@@ -260,7 +260,7 @@
       ]
     },
     {
-      "id": "SET3-Q09",
+      "id": "de-practice-03-q009",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 4,
@@ -305,7 +305,7 @@
       ]
     },
     {
-      "id": "SET3-Q10",
+      "id": "de-practice-03-q010",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was verstehen Sie unter dem Begriff 'Konzeptionelle Integrität'?",
@@ -334,7 +334,7 @@
       ]
     },
     {
-      "id": "SET3-Q11",
+      "id": "de-practice-03-q011",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie entscheiden sich für das 'Observer'-Pattern. Welche Eigenschaften treffen zu, welche nicht?",
@@ -367,7 +367,7 @@
       ]
     },
     {
-      "id": "SET3-Q12",
+      "id": "de-practice-03-q012",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -402,7 +402,7 @@
       ]
     },
     {
-      "id": "SET3-Q13",
+      "id": "de-practice-03-q013",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist der Hauptzweck der 'Kontextabgrenzung' (Context View) im Gegensatz zur 'Bausteinsicht'?",
@@ -426,7 +426,7 @@
       ]
     },
     {
-      "id": "SET3-Q14",
+      "id": "de-practice-03-q014",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Ordnen Sie die folgenden Szenarien den Qualitätsmerkmalen 'Benutzbarkeit' (Usability) oder 'Performance' (Leistungseffizienz) zu.",
@@ -459,7 +459,7 @@
       ]
     },
     {
-      "id": "SET3-Q15",
+      "id": "de-practice-03-q015",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -489,7 +489,7 @@
       ]
     },
     {
-      "id": "SET3-Q16",
+      "id": "de-practice-03-q016",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welche Rolle spielt das 'Gesetz von Conway' (Conway's Law) bei der Planung von Softwarearchitekturen in großen Organisationen?",
@@ -513,7 +513,7 @@
       ]
     },
     {
-      "id": "SET3-Q17",
+      "id": "de-practice-03-q017",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie wollen die Qualität 'Wartbarkeit' verbessern. Welche Maßnahmen sind dafür 'Geeignet' und welche 'Ungeeignet'?",
@@ -546,7 +546,7 @@
       ]
     },
     {
-      "id": "SET3-Q18",
+      "id": "de-practice-03-q018",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -581,7 +581,7 @@
       ]
     },
     {
-      "id": "SET3-Q19",
+      "id": "de-practice-03-q019",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist ein 'Qualitätsbaum' (Quality Attribute Utility Tree) primär?",
@@ -605,7 +605,7 @@
       ]
     },
     {
-      "id": "SET3-Q20",
+      "id": "de-practice-03-q020",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Entscheiden Sie bei folgenden Aussagen zum 'Template Method'-Muster, ob sie wahr oder falsch sind.",
@@ -633,7 +633,7 @@
       ]
     },
     {
-      "id": "SET3-Q21",
+      "id": "de-practice-03-q021",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -673,7 +673,7 @@
       ]
     },
     {
-      "id": "SET3-Q22",
+      "id": "de-practice-03-q022",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie arbeiten an einem Altsystem (Legacy). Entscheiden Sie für die folgenden Tätigkeiten, ob es sich um 'Refactoring' oder um 'Re-Engineering / Redesign' handelt.",
@@ -706,7 +706,7 @@
       ]
     },
     {
-      "id": "SET3-Q23",
+      "id": "de-practice-03-q023",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist das Hauptmerkmal des 'Strategy'-Entwurfsmusters?",
@@ -735,7 +735,7 @@
       ]
     },
     {
-      "id": "SET3-Q24",
+      "id": "de-practice-03-q024",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 3,
@@ -775,7 +775,7 @@
       ]
     },
     {
-      "id": "SET3-Q25",
+      "id": "de-practice-03-q025",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Bewerten Sie die folgenden Aussagen zum Thema 'Architekturmuster' als Richtig oder Falsch.",
@@ -808,7 +808,7 @@
       ]
     },
     {
-      "id": "SET3-Q26",
+      "id": "de-practice-03-q026",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was beschreibt der Begriff 'Architekturerosion' (Architectural Erosion)?",
@@ -837,7 +837,7 @@
       ]
     },
     {
-      "id": "SET3-Q27",
+      "id": "de-practice-03-q027",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 4,
@@ -877,7 +877,7 @@
       ]
     },
     {
-      "id": "SET3-Q28",
+      "id": "de-practice-03-q028",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie entwerfen ein verteiltes System. Ordnen Sie die folgenden Probleme den Kategorien 'Latenz' oder 'Bandbreite' zu.",
@@ -910,7 +910,7 @@
       ]
     },
     {
-      "id": "SET3-Q29",
+      "id": "de-practice-03-q029",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welches Entwurfsmuster (Pattern) trennt die Abstraktion von ihrer Implementierung, sodass beide unabhängig voneinander variiert werden können?",
@@ -939,7 +939,7 @@
       ]
     },
     {
-      "id": "SET3-Q30",
+      "id": "de-practice-03-q030",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -974,7 +974,7 @@
       ]
     },
     {
-      "id": "SET3-Q31",
+      "id": "de-practice-03-q031",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "In arc42 können Sie zwischen 'fachlichem Kontext' und 'technischem Kontext' unterscheiden. Ordnen Sie die Elemente zu.",
@@ -1007,7 +1007,7 @@
       ]
     },
     {
-      "id": "SET3-Q32",
+      "id": "de-practice-03-q032",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -1042,7 +1042,7 @@
       ]
     },
     {
-      "id": "SET3-Q33",
+      "id": "de-practice-03-q033",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist der Hauptvorteil des 'Dependency Injection' (DI) Prinzips für das Testen von Software?",
@@ -1071,7 +1071,7 @@
       ]
     },
     {
-      "id": "SET3-Q34",
+      "id": "de-practice-03-q034",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Unterscheiden Sie zwischen 'Whitebox'- und 'Blackbox'-Sichtweisen auf einen Baustein.",
@@ -1104,7 +1104,7 @@
       ]
     },
     {
-      "id": "SET3-Q35",
+      "id": "de-practice-03-q035",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -1134,7 +1134,7 @@
       ]
     },
     {
-      "id": "SET3-Q36",
+      "id": "de-practice-03-q036",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was besagt das 'Single Responsibility Principle' (SRP)?",
@@ -1158,7 +1158,7 @@
       ]
     },
     {
-      "id": "SET3-Q37",
+      "id": "de-practice-03-q037",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Welche Review-Methode ist 'formell' und welche eher 'informell'?",
@@ -1186,7 +1186,7 @@
       ]
     },
     {
-      "id": "SET3-Q38",
+      "id": "de-practice-03-q038",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,

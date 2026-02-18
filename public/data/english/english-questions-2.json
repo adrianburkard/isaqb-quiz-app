@@ -3,7 +3,7 @@
   "version": "2025.1-Set3-Batch1",
   "questions": [
     {
-      "id": "Set3-Q01",
+      "id": "en-practice-02-q001",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the primary difference between a 'Layer' and a 'Tier' in software architecture?",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "Set3-Q02",
+      "id": "en-practice-02-q002",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "id": "Set3-Q03",
+      "id": "en-practice-02-q003",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Determine whether the following are 'Functional Requirements' or 'Constraints'.",
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "id": "Set3-Q04",
+      "id": "en-practice-02-q004",
       "type": "single_choice",
       "points": 1,
       "question_text": "In the context of documentation, what does the 'Golden Rule' of arc42 suggest?",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "id": "Set3-Q05",
+      "id": "en-practice-02-q005",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "id": "Set3-Q06",
+      "id": "en-practice-02-q006",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Classify the following architectural views as 'Static' or 'Dynamic'.",
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "id": "Set3-Q07",
+      "id": "en-practice-02-q007",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the core idea of 'Domain-Driven Design' (DDD)?",
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "id": "Set3-Q08",
+      "id": "en-practice-02-q008",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 2,
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "id": "Set3-Q09",
+      "id": "en-practice-02-q009",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Evaluate the following statements regarding 'Technical Debt'.",
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "id": "Set3-Q10",
+      "id": "en-practice-02-q010",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the 'Interface Segregation Principle' (the 'I' in SOLID)?",
@@ -288,7 +288,7 @@
       ]
     },
     {
-      "id": "Set3-Q11",
+      "id": "en-practice-02-q011",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "id": "Set3-Q12",
+      "id": "en-practice-02-q012",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Decide whether the following concepts relate to 'Security' or 'Safety'.",
@@ -356,7 +356,7 @@
       ]
     },
     {
-      "id": "Set3-Q13",
+      "id": "en-practice-02-q013",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the primary role of the 'Presentation Layer' in a Layered Architecture?",
@@ -380,7 +380,7 @@
       ]
     },
     {
-      "id": "Set3-Q14",
+      "id": "en-practice-02-q014",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -410,7 +410,7 @@
       ]
     },
     {
-      "id": "Set3-Q15",
+      "id": "en-practice-02-q015",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Assign the following diagrams to their UML type: 'Structure Diagram' or 'Behavior Diagram'.",
@@ -443,7 +443,7 @@
       ]
     },
     {
-      "id": "Set3-Q16",
+      "id": "en-practice-02-q016",
       "type": "single_choice",
       "points": 1,
       "question_text": "In the 'Broker' pattern, what is the role of the 'Stub' (or Proxy)?",
@@ -467,7 +467,7 @@
       ]
     },
     {
-      "id": "Set3-Q17",
+      "id": "en-practice-02-q017",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -502,7 +502,7 @@
       ]
     },
     {
-      "id": "Set3-Q18",
+      "id": "en-practice-02-q018",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Determine if the following statements about 'Loose Coupling' are True or False.",
@@ -530,7 +530,7 @@
       ]
     },
     {
-      "id": "Set3-Q19",
+      "id": "en-practice-02-q019",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the main goal of the 'Singleton' design pattern?",
@@ -554,7 +554,7 @@
       ]
     },
     {
-      "id": "Set3-Q20",
+      "id": "en-practice-02-q020",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Classify the following statements about 'Architecture Decisions' as True or False.",
@@ -587,7 +587,7 @@
       ]
     },
     {
-      "id": "Set3-Q21",
+      "id": "en-practice-02-q021",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which design pattern would you use to notify a variable number of objects about a state change in another object?",
@@ -611,7 +611,7 @@
       ]
     },
     {
-      "id": "Set3-Q22",
+      "id": "en-practice-02-q022",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -641,7 +641,7 @@
       ]
     },
     {
-      "id": "Set3-Q23",
+      "id": "en-practice-02-q023",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign the following examples to the correct interface type: 'Provided Interface' or 'Required Interface'.",
@@ -669,7 +669,7 @@
       ]
     },
     {
-      "id": "Set3-Q24",
+      "id": "en-practice-02-q024",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the primary purpose of a 'Building Block View' (Whitebox)?",
@@ -693,7 +693,7 @@
       ]
     },
     {
-      "id": "Set3-Q25",
+      "id": "en-practice-02-q025",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -728,7 +728,7 @@
       ]
     },
     {
-      "id": "Set3-Q26",
+      "id": "en-practice-02-q026",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Decide whether the following statements about 'Architecture Patterns' are True or False.",
@@ -761,7 +761,7 @@
       ]
     },
     {
-      "id": "Set3-Q27",
+      "id": "en-practice-02-q027",
       "type": "single_choice",
       "points": 1,
       "question_text": "What does the 'S' in SOLID stand for?",
@@ -785,7 +785,7 @@
       ]
     },
     {
-      "id": "Set3-Q28",
+      "id": "en-practice-02-q028",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -815,7 +815,7 @@
       ]
     },
     {
-      "id": "Set3-Q29",
+      "id": "en-practice-02-q029",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign the following tasks to the correct role: 'Software Architect' or 'Project Manager'.",
@@ -843,7 +843,7 @@
       ]
     },
     {
-      "id": "Set3-Q30",
+      "id": "en-practice-02-q030",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which UML diagram is best suited to show the physical deployment of artifacts to nodes?",
@@ -867,7 +867,7 @@
       ]
     },
     {
-      "id": "Set3-Q31",
+      "id": "en-practice-02-q031",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -902,7 +902,7 @@
       ]
     },
     {
-      "id": "Set3-Q32",
+      "id": "en-practice-02-q032",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Classify the following statements regarding 'Design Principles' as True or False.",
@@ -935,7 +935,7 @@
       ]
     },
     {
-      "id": "Set3-Q33",
+      "id": "en-practice-02-q033",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the relationship between 'Architecture' and 'Design'?",
@@ -959,7 +959,7 @@
       ]
     },
     {
-      "id": "Set3-Q34",
+      "id": "en-practice-02-q034",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -989,7 +989,7 @@
       ]
     },
     {
-      "id": "Set3-Q35",
+      "id": "en-practice-02-q035",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Identify which of the following are 'Functional' or 'Non-Functional' (Quality) requirements.",
@@ -1017,7 +1017,7 @@
       ]
     },
     {
-      "id": "Set3-Q36",
+      "id": "en-practice-02-q036",
       "type": "single_choice",
       "points": 1,
       "question_text": "In the context of software architecture, what is a 'Trade-off'?",
@@ -1041,7 +1041,7 @@
       ]
     },
     {
-      "id": "Set3-Q37",
+      "id": "en-practice-02-q037",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -1076,7 +1076,7 @@
       ]
     },
     {
-      "id": "Set3-Q38",
+      "id": "en-practice-02-q038",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Assign the following descriptions to the correct arc42 section.",

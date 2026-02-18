@@ -3,7 +3,7 @@
   "version": "2025.1-generated",
   "questions": [
     {
-      "id": "SET1-Q01",
+      "id": "de-practice-01-q001",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welche der folgenden Aussagen definiert den Begriff 'Softwarearchitektur' am treffendsten?",
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "id": "SET1-Q02",
+      "id": "de-practice-01-q002",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -67,7 +67,7 @@
       ]
     },
     {
-      "id": "SET1-Q03",
+      "id": "de-practice-01-q003",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Ordnen Sie die folgenden Begriffe den Kategorien 'Qualitätsmerkmal nach ISO 25010' oder 'Architekturmuster' zu.",
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "id": "SET1-Q04",
+      "id": "de-practice-01-q004",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist das Ziel des Prinzips 'Lose Kopplung' (Low Coupling)?",
@@ -124,7 +124,7 @@
       ]
     },
     {
-      "id": "SET1-Q05",
+      "id": "de-practice-01-q005",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "id": "SET1-Q06",
+      "id": "de-practice-01-q006",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "In welchem Kapitel des arc42-Templates würden Sie die folgenden Informationen verorten?",
@@ -188,7 +188,7 @@
       ]
     },
     {
-      "id": "SET1-Q07",
+      "id": "de-practice-01-q007",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was verstehen Sie unter dem 'Dependency Inversion Principle' (DIP) aus den SOLID-Prinzipien?",
@@ -212,7 +212,7 @@
       ]
     },
     {
-      "id": "SET1-Q08",
+      "id": "de-practice-01-q008",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -247,7 +247,7 @@
       ]
     },
     {
-      "id": "SET1-Q09",
+      "id": "de-practice-01-q009",
       "type": "single_choice",
       "points": 1,
       "question_text": "Bei der Bewertung von Softwarearchitekturen mittels ATAM (Architecture Tradeoff Analysis Method) spielen 'Szenarien' eine wichtige Rolle. Was ist ein 'Qualitätsszenario'?",
@@ -271,7 +271,7 @@
       ]
     },
     {
-      "id": "SET1-Q10",
+      "id": "de-practice-01-q010",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Entscheiden Sie für folgende Aussagen, ob sie das Prinzip 'Hohe Kohäsion' (High Cohesion) oder 'Lose Kopplung' (Low Coupling) beschreiben.",
@@ -299,7 +299,7 @@
       ]
     },
     {
-      "id": "SET1-Q11",
+      "id": "de-practice-01-q011",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "id": "SET1-Q12",
+      "id": "de-practice-01-q012",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welches Entwurfsmuster (Design Pattern) eignet sich am besten, um die Erzeugung komplexer Objekte von deren Repräsentation zu trennen?",
@@ -353,7 +353,7 @@
       ]
     },
     {
-      "id": "SET1-Q13",
+      "id": "de-practice-01-q013",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Welche der folgenden Risiken sind typischerweise 'Projektrisiken' und welche sind explizite 'Architekturrisiken'?",
@@ -381,7 +381,7 @@
       ]
     },
     {
-      "id": "SET1-Q14",
+      "id": "de-practice-01-q014",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 3,
@@ -416,7 +416,7 @@
       ]
     },
     {
-      "id": "SET1-Q15",
+      "id": "de-practice-01-q015",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welche Aussage zum 'Conway's Law' ist korrekt?",
@@ -440,7 +440,7 @@
       ]
     },
     {
-      "id": "SET1-Q16",
+      "id": "de-practice-01-q016",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Ordnen Sie die Eigenschaften den Begriffen 'Top-Down' und 'Bottom-Up' Entwurf zu.",
@@ -468,7 +468,7 @@
       ]
     },
     {
-      "id": "SET1-Q17",
+      "id": "de-practice-01-q017",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -498,7 +498,7 @@
       ]
     },
     {
-      "id": "SET1-Q18",
+      "id": "de-practice-01-q018",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist eine 'Architekturentscheidung' (Architectural Decision) im Gegensatz zu einer normalen Designentscheidung?",
@@ -522,7 +522,7 @@
       ]
     },
     {
-      "id": "SET1-Q19",
+      "id": "de-practice-01-q019",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Welche Beschreibung passt zu 'Vertikale Schichtung' (Vertical Slicing) und welche zu 'Horizontale Schichtung' (Layers)?",
@@ -545,7 +545,7 @@
       ]
     },
     {
-      "id": "SET1-Q20",
+      "id": "de-practice-01-q020",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -575,7 +575,7 @@
       ]
     },
     {
-      "id": "SET1-Q21",
+      "id": "de-practice-01-q021",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist im Kontext der ATAM-Methode (Architecture Tradeoff Analysis Method) unter einem 'Sensitivitätspunkt' (Sensitivity Point) zu verstehen?",
@@ -604,7 +604,7 @@
       ]
     },
     {
-      "id": "SET1-Q22",
+      "id": "de-practice-01-q022",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -639,7 +639,7 @@
       ]
     },
     {
-      "id": "SET1-Q23",
+      "id": "de-practice-01-q023",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Ordnen Sie die folgenden Szenarien den Begriffen 'Funktionale Anforderung' und 'Qualitätsanforderung' zu.",
@@ -667,7 +667,7 @@
       ]
     },
     {
-      "id": "SET1-Q24",
+      "id": "de-practice-01-q024",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welchen Zweck erfüllt das Kapitel 'Lösungsstrategie' im arc42-Template?",
@@ -691,7 +691,7 @@
       ]
     },
     {
-      "id": "SET1-Q25",
+      "id": "de-practice-01-q025",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 3,
@@ -726,7 +726,7 @@
       ]
     },
     {
-      "id": "SET1-Q26",
+      "id": "de-practice-01-q026",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Welches Entwurfsmuster (Pattern) löst welches Problem?",
@@ -755,7 +755,7 @@
       ]
     },
     {
-      "id": "SET1-Q27",
+      "id": "de-practice-01-q027",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was besagt das 'Open-Closed Principle' (OCP)?",
@@ -779,7 +779,7 @@
       ]
     },
     {
-      "id": "SET1-Q28",
+      "id": "de-practice-01-q028",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -809,7 +809,7 @@
       ]
     },
     {
-      "id": "SET1-Q29",
+      "id": "de-practice-01-q029",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist ein 'Qualitätsbaum' (Utility Tree) im Rahmen von ATAM?",
@@ -833,7 +833,7 @@
       ]
     },
     {
-      "id": "SET1-Q30",
+      "id": "de-practice-01-q030",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Sind die folgenden Aussagen über 'Architecture Decision Records' (ADRs) wahr oder falsch?",
@@ -861,7 +861,7 @@
       ]
     },
     {
-      "id": "SET1-Q31",
+      "id": "de-practice-01-q031",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -891,7 +891,7 @@
       ]
     },
     {
-      "id": "SET1-Q32",
+      "id": "de-practice-01-q032",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist das Hauptziel des 'Dependency Injection' (DI) Musters?",
@@ -915,7 +915,7 @@
       ]
     },
     {
-      "id": "SET1-Q33",
+      "id": "de-practice-01-q033",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Entscheiden Sie, ob folgende Eigenschaften eher zu einer 'Monolithischen Architektur' oder zu 'Microservices' passen.",
@@ -943,7 +943,7 @@
       ]
     },
     {
-      "id": "SET1-Q34",
+      "id": "de-practice-01-q034",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welche Aussage trifft auf 'Technische Schulden' (Technical Debt) zu?",
@@ -967,7 +967,7 @@
       ]
     },
     {
-      "id": "SET1-Q35",
+      "id": "de-practice-01-q035",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -997,7 +997,7 @@
       ]
     },
     {
-      "id": "SET1-Q36",
+      "id": "de-practice-01-q036",
       "type": "single_choice",
       "points": 1,
       "question_text": "Warum ist es wichtig, Annahmen (Assumptions) explizit zu dokumentieren?",
@@ -1021,7 +1021,7 @@
       ]
     },
     {
-      "id": "SET1-Q37",
+      "id": "de-practice-01-q037",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Ordnen Sie die Begriffe den Kategorien 'Statische Sicht' und 'Dynamische Sicht' zu.",
@@ -1049,7 +1049,7 @@
       ]
     },
     {
-      "id": "SET1-Q38",
+      "id": "de-practice-01-q038",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was versteht man unter 'Pipes and Filters'?",

@@ -3,7 +3,7 @@
   "version": "2025.1-Set4-Batch1",
   "questions": [
     {
-      "id": "Set4-Q01",
+      "id": "en-practice-03-q001",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the primary focus of the 'Repository' pattern in Domain-Driven Design?",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "Set4-Q02",
+      "id": "en-practice-03-q002",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "id": "Set4-Q03",
+      "id": "en-practice-03-q003",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Classify the following as 'Whitebox' or 'Blackbox' views of a component.",
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "id": "Set4-Q04",
+      "id": "en-practice-03-q004",
       "type": "single_choice",
       "points": 1,
       "question_text": "What does the 'I' in SOLID stand for?",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "id": "Set4-Q05",
+      "id": "en-practice-03-q005",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "id": "Set4-Q06",
+      "id": "en-practice-03-q006",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign the following concerns to the correct view: 'Deployment View' or 'Runtime View'.",
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "id": "Set4-Q07",
+      "id": "en-practice-03-q007",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which pattern provides a unified interface to a set of interfaces in a subsystem?",
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "id": "Set4-Q08",
+      "id": "en-practice-03-q008",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 2,
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "id": "Set4-Q09",
+      "id": "en-practice-03-q009",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Determine if the following are 'Functional Requirements' or 'Constraints'.",
@@ -264,7 +264,7 @@
       ]
     },
     {
-      "id": "Set4-Q10",
+      "id": "en-practice-03-q010",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the main goal of the 'Model-View-Controller' (MVC) pattern?",
@@ -288,7 +288,7 @@
       ]
     },
     {
-      "id": "Set4-Q11",
+      "id": "en-practice-03-q011",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "id": "Set4-Q12",
+      "id": "en-practice-03-q012",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Decide if the following concepts relate to 'High Cohesion' or 'Low Cohesion'.",
@@ -351,7 +351,7 @@
       ]
     },
     {
-      "id": "Set4-Q13",
+      "id": "en-practice-03-q013",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the primary benefit of 'Architecture Decision Records' (ADRs)?",
@@ -375,7 +375,7 @@
       ]
     },
     {
-      "id": "Set4-Q14",
+      "id": "en-practice-03-q014",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -405,7 +405,7 @@
       ]
     },
     {
-      "id": "Set4-Q15",
+      "id": "en-practice-03-q015",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Match the UML diagram to its category: 'Structure' or 'Behavior'.",
@@ -438,7 +438,7 @@
       ]
     },
     {
-      "id": "Set4-Q16",
+      "id": "en-practice-03-q016",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the purpose of the 'Context View'?",
@@ -462,7 +462,7 @@
       ]
     },
     {
-      "id": "Set4-Q17",
+      "id": "en-practice-03-q017",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -497,7 +497,7 @@
       ]
     },
     {
-      "id": "Set4-Q18",
+      "id": "en-practice-03-q018",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Decide if the statement relates to 'Microservices' or 'Monolith'.",
@@ -525,7 +525,7 @@
       ]
     },
     {
-      "id": "Set4-Q19",
+      "id": "en-practice-03-q019",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is 'Technical Debt'?",
@@ -549,7 +549,7 @@
       ]
     },
     {
-      "id": "Set4-Q20",
+      "id": "en-practice-03-q020",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Assign the following attributes to the correct ISO 25010 category: 'Reliability' or 'Portability'.",
@@ -582,7 +582,7 @@
       ]
     },
     {
-      "id": "Set4-Q21",
+      "id": "en-practice-03-q021",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the core concept of the 'Broker' architectural pattern?",
@@ -606,7 +606,7 @@
       ]
     },
     {
-      "id": "Set4-Q22",
+      "id": "en-practice-03-q022",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -641,7 +641,7 @@
       ]
     },
     {
-      "id": "Set4-Q23",
+      "id": "en-practice-03-q023",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Classify the following as 'Top-Down' or 'Bottom-Up' approaches.",
@@ -669,7 +669,7 @@
       ]
     },
     {
-      "id": "Set4-Q24",
+      "id": "en-practice-03-q024",
       "type": "single_choice",
       "points": 1,
       "question_text": "What does the 'Dependency Inversion Principle' typically require?",
@@ -693,7 +693,7 @@
       ]
     },
     {
-      "id": "Set4-Q25",
+      "id": "en-practice-03-q025",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -723,7 +723,7 @@
       ]
     },
     {
-      "id": "Set4-Q26",
+      "id": "en-practice-03-q026",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Assign the following elements to 'Business Context' or 'Technical Context'.",
@@ -756,7 +756,7 @@
       ]
     },
     {
-      "id": "Set4-Q27",
+      "id": "en-practice-03-q027",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which pattern separates the abstraction from its implementation so that the two can vary independently?",
@@ -780,7 +780,7 @@
       ]
     },
     {
-      "id": "Set4-Q28",
+      "id": "en-practice-03-q028",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -810,7 +810,7 @@
       ]
     },
     {
-      "id": "Set4-Q29",
+      "id": "en-practice-03-q029",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Decide if the statement describes 'Architecture' or 'Implementation Details'.",
@@ -838,7 +838,7 @@
       ]
     },
     {
-      "id": "Set4-Q30",
+      "id": "en-practice-03-q030",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is 'Conway's Law'?",
@@ -862,7 +862,7 @@
       ]
     },
     {
-      "id": "Set4-Q31",
+      "id": "en-practice-03-q031",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -897,7 +897,7 @@
       ]
     },
     {
-      "id": "Set4-Q32",
+      "id": "en-practice-03-q032",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Match the description to the correct diagram type.",
@@ -926,7 +926,7 @@
       ]
     },
     {
-      "id": "Set4-Q33",
+      "id": "en-practice-03-q033",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the purpose of the 'Solution Strategy' section in arc42?",
@@ -950,7 +950,7 @@
       ]
     },
     {
-      "id": "Set4-Q34",
+      "id": "en-practice-03-q034",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -980,7 +980,7 @@
       ]
     },
     {
-      "id": "Set4-Q35",
+      "id": "en-practice-03-q035",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Decide if the statement is True or False regarding 'Documentation'.",
@@ -1008,7 +1008,7 @@
       ]
     },
     {
-      "id": "Set4-Q36",
+      "id": "en-practice-03-q036",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the goal of the 'Adapter' pattern?",
@@ -1032,7 +1032,7 @@
       ]
     },
     {
-      "id": "Set4-Q37",
+      "id": "en-practice-03-q037",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -1062,7 +1062,7 @@
       ]
     },
     {
-      "id": "Set4-Q38",
+      "id": "en-practice-03-q038",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which principle states: 'Software entities should be open for extension, but closed for modification'?",

@@ -3,7 +3,7 @@
   "version": "2025.1-Set5-Batch1",
   "questions": [
     {
-      "id": "Set5-Q01",
+      "id": "en-practice-04-q001",
       "type": "single_choice",
       "points": 1,
       "question_text": "According to the definition, what does 'Software Architecture' fundamentally consist of?",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "Set5-Q02",
+      "id": "en-practice-04-q002",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "id": "Set5-Q03",
+      "id": "en-practice-04-q003",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Classify the following as 'Functional Requirement' or 'Quality Requirement'.",
@@ -90,7 +90,7 @@
       ]
     },
     {
-      "id": "Set5-Q04",
+      "id": "en-practice-04-q004",
       "type": "single_choice",
       "points": 1,
       "question_text": "What does the 'L' in SOLID stand for?",
@@ -114,7 +114,7 @@
       ]
     },
     {
-      "id": "Set5-Q05",
+      "id": "en-practice-04-q005",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -144,7 +144,7 @@
       ]
     },
     {
-      "id": "Set5-Q06",
+      "id": "en-practice-04-q006",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Match the interface type to the description: 'Provided Interface' or 'Required Interface'.",
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "id": "Set5-Q07",
+      "id": "en-practice-04-q007",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which pattern involves a placeholder object controlling access to another object?",
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "id": "Set5-Q08",
+      "id": "en-practice-04-q008",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -236,7 +236,7 @@
       ]
     },
     {
-      "id": "Set5-Q09",
+      "id": "en-practice-04-q009",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Evaluate the statements about Coupling and Cohesion.",
@@ -269,7 +269,7 @@
       ]
     },
     {
-      "id": "Set5-Q10",
+      "id": "en-practice-04-q010",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which ISO 25010 characteristic covers 'Interoperability'?",
@@ -293,7 +293,7 @@
       ]
     },
     {
-      "id": "Set5-Q11",
+      "id": "en-practice-04-q011",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "id": "Set5-Q12",
+      "id": "en-practice-04-q012",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Is the view 'Static' or 'Dynamic'?",
@@ -351,7 +351,7 @@
       ]
     },
     {
-      "id": "Set5-Q13",
+      "id": "en-practice-04-q013",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which principle is also known as 'Parnas' Principle'?",
@@ -375,7 +375,7 @@
       ]
     },
     {
-      "id": "Set5-Q14",
+      "id": "en-practice-04-q014",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -405,7 +405,7 @@
       ]
     },
     {
-      "id": "Set5-Q15",
+      "id": "en-practice-04-q015",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign the primary responsibility: 'Developer' or 'Architect'.",
@@ -433,7 +433,7 @@
       ]
     },
     {
-      "id": "Set5-Q16",
+      "id": "en-practice-04-q016",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which pattern allows an object to alter its behavior when its internal state changes?",
@@ -457,7 +457,7 @@
       ]
     },
     {
-      "id": "Set5-Q17",
+      "id": "en-practice-04-q017",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -487,7 +487,7 @@
       ]
     },
     {
-      "id": "Set5-Q18",
+      "id": "en-practice-04-q018",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Is this 'Loose Coupling' or 'Tight Coupling'?",
@@ -520,7 +520,7 @@
       ]
     },
     {
-      "id": "Set5-Q19",
+      "id": "en-practice-04-q019",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the 'Stimulus' in a Quality Scenario?",
@@ -544,7 +544,7 @@
       ]
     },
     {
-      "id": "Set5-Q20",
+      "id": "en-practice-04-q020",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -574,7 +574,7 @@
       ]
     },
     {
-      "id": "Set5-Q21",
+      "id": "en-practice-04-q021",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign contents to the arc42 section.",
@@ -602,7 +602,7 @@
       ]
     },
     {
-      "id": "Set5-Q22",
+      "id": "en-practice-04-q022",
       "type": "single_choice",
       "points": 1,
       "question_text": "In software architecture, what is a 'View'?",
@@ -626,7 +626,7 @@
       ]
     },
     {
-      "id": "Set5-Q23",
+      "id": "en-practice-04-q023",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -656,7 +656,7 @@
       ]
     },
     {
-      "id": "Set5-Q24",
+      "id": "en-practice-04-q024",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Classify the design strategy.",
@@ -689,7 +689,7 @@
       ]
     },
     {
-      "id": "Set5-Q25",
+      "id": "en-practice-04-q025",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which pattern is essential for implementing 'Location Transparency' in distributed systems?",
@@ -713,7 +713,7 @@
       ]
     },
     {
-      "id": "Set5-Q26",
+      "id": "en-practice-04-q026",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -743,7 +743,7 @@
       ]
     },
     {
-      "id": "Set5-Q27",
+      "id": "en-practice-04-q027",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Is this a 'Macro Architecture' or 'Micro Architecture' decision?",
@@ -771,7 +771,7 @@
       ]
     },
     {
-      "id": "Set5-Q28",
+      "id": "en-practice-04-q028",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is an 'Architectural Tactic'?",
@@ -795,7 +795,7 @@
       ]
     },
     {
-      "id": "Set5-Q29",
+      "id": "en-practice-04-q029",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -825,7 +825,7 @@
       ]
     },
     {
-      "id": "Set5-Q30",
+      "id": "en-practice-04-q030",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign to 'Business Context' or 'Technical Context'.",
@@ -853,7 +853,7 @@
       ]
     },
     {
-      "id": "Set5-Q31",
+      "id": "en-practice-04-q031",
       "type": "single_choice",
       "points": 1,
       "question_text": "What does the 'DRY' principle stand for?",
@@ -877,7 +877,7 @@
       ]
     },
     {
-      "id": "Set5-Q32",
+      "id": "en-practice-04-q032",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -907,7 +907,7 @@
       ]
     },
     {
-      "id": "Set5-Q33",
+      "id": "en-practice-04-q033",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Classify as 'Synchronous' or 'Asynchronous' communication.",
@@ -940,7 +940,7 @@
       ]
     },
     {
-      "id": "Set5-Q34",
+      "id": "en-practice-04-q034",
       "type": "single_choice",
       "points": 1,
       "question_text": "What does SOA stand for?",
@@ -964,7 +964,7 @@
       ]
     },
     {
-      "id": "Set5-Q35",
+      "id": "en-practice-04-q035",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -994,7 +994,7 @@
       ]
     },
     {
-      "id": "Set5-Q36",
+      "id": "en-practice-04-q036",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Identify 'Artifacts' vs 'Nodes' in a Deployment View.",
@@ -1022,7 +1022,7 @@
       ]
     },
     {
-      "id": "Set5-Q37",
+      "id": "en-practice-04-q037",
       "type": "single_choice",
       "points": 1,
       "question_text": "When does the lifecycle of a software architecture end?",
@@ -1046,7 +1046,7 @@
       ]
     },
     {
-      "id": "Set5-Q38",
+      "id": "en-practice-04-q038",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,

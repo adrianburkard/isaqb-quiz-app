@@ -3,7 +3,7 @@
   "version": "2025.1-hard",
   "questions": [
     {
-      "id": "SET2-Q01",
+      "id": "de-practice-02-q001",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 4,
@@ -48,7 +48,7 @@
       ]
     },
     {
-      "id": "SET2-Q02",
+      "id": "de-practice-02-q002",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie sind Architekt in einem Projekt, das eine alte Monolith-Anwendung in Microservices migriert. Bewerten Sie die folgenden Aussagen bezüglich der Kopplung und Kohäsion für dieses Szenario als 'Richtig' oder 'Falsch'.",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "id": "SET2-Q03",
+      "id": "de-practice-02-q003",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "id": "SET2-Q04",
+      "id": "de-practice-02-q004",
       "type": "single_choice",
       "points": 1,
       "question_text": "In einem Projekt stellen Sie fest, dass die 'Time-to-Market' das wichtigste Geschäftsziel ist. Welche architektonische Konsequenz ist am wahrscheinlichsten abzuleiten?",
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "id": "SET2-Q05",
+      "id": "de-practice-02-q005",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Ordnen Sie die folgenden Aufgaben der Rolle 'Softwarearchitekt:in' oder 'Projektleiter:in' zu. (Gehen Sie von einer klassischen Rollenverteilung aus).",
@@ -178,7 +178,7 @@
       ]
     },
     {
-      "id": "SET2-Q06",
+      "id": "de-practice-02-q006",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "id": "SET2-Q07",
+      "id": "de-practice-02-q007",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welches Problem adressiert das 'Interface Segregation Principle' (ISP) aus den SOLID-Prinzipien primär?",
@@ -247,7 +247,7 @@
       ]
     },
     {
-      "id": "SET2-Q08",
+      "id": "de-practice-02-q008",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie entscheiden sich für das Muster 'Schichtenarchitektur' (Layers). Welche Aussagen zu den Vor- und Nachteilen sind in diesem Kontext zutreffend?",
@@ -280,7 +280,7 @@
       ]
     },
     {
-      "id": "SET2-Q09",
+      "id": "de-practice-02-q009",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -315,7 +315,7 @@
       ]
     },
     {
-      "id": "SET2-Q10",
+      "id": "de-practice-02-q010",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist im Kontext von ATAM (Architecture Tradeoff Analysis Method) ein 'Trade-off Point'?",
@@ -344,7 +344,7 @@
       ]
     },
     {
-      "id": "SET2-Q11",
+      "id": "de-practice-02-q011",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie dokumentieren eine Schnittstelle. Welche Informationen sind für den Konsumenten der Schnittstelle essenziell und welche sind interne Details?",
@@ -377,7 +377,7 @@
       ]
     },
     {
-      "id": "SET2-Q12",
+      "id": "de-practice-02-q012",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -412,7 +412,7 @@
       ]
     },
     {
-      "id": "SET2-Q13",
+      "id": "de-practice-02-q013",
       "type": "single_choice",
       "points": 1,
       "question_text": "In arc42 Kapitel 8 werden 'Querschnittskonzepte' beschrieben. Was ist das Hauptziel dieses Kapitels?",
@@ -441,7 +441,7 @@
       ]
     },
     {
-      "id": "SET2-Q14",
+      "id": "de-practice-02-q014",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie bewerten ein System hinsichtlich seiner 'Wartbarkeit' (Maintainability). Ordnen Sie die folgenden Metriken/Eigenschaften zu: Indikator für GUTE Wartbarkeit vs. Indikator für SCHLECHTE Wartbarkeit.",
@@ -474,7 +474,7 @@
       ]
     },
     {
-      "id": "SET2-Q15",
+      "id": "de-practice-02-q015",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -509,7 +509,7 @@
       ]
     },
     {
-      "id": "SET2-Q16",
+      "id": "de-practice-02-q016",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welche Aussage beschreibt das 'Dependency Rule' in der 'Clean Architecture' (nach Robert C. Martin) korrekt?",
@@ -533,7 +533,7 @@
       ]
     },
     {
-      "id": "SET2-Q17",
+      "id": "de-practice-02-q017",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Bewerten Sie die Eignung folgender Kommunikationsformen für die Architekturarbeit.",
@@ -561,7 +561,7 @@
       ]
     },
     {
-      "id": "SET2-Q18",
+      "id": "de-practice-02-q018",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -596,7 +596,7 @@
       ]
     },
     {
-      "id": "SET2-Q19",
+      "id": "de-practice-02-q019",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist der Hauptunterschied zwischen einem 'Microkernel' (Plugin-Architektur) und einer 'Monolithischen Architektur'?",
@@ -620,7 +620,7 @@
       ]
     },
     {
-      "id": "SET2-Q20",
+      "id": "de-practice-02-q020",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 4,
@@ -660,7 +660,7 @@
       ]
     },
     {
-      "id": "SET2-Q21",
+      "id": "de-practice-02-q021",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie bereiten einen ATAM-Workshop (Architecture Tradeoff Analysis Method) vor. Ordnen Sie die folgenden Elemente den ATAM-Konzepten 'Output/Ergebnis' oder 'Input/Eingabe' zu.",
@@ -693,7 +693,7 @@
       ]
     },
     {
-      "id": "SET2-Q22",
+      "id": "de-practice-02-q022",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 3,
@@ -733,7 +733,7 @@
       ]
     },
     {
-      "id": "SET2-Q23",
+      "id": "de-practice-02-q023",
       "type": "single_choice",
       "points": 1,
       "question_text": "In einem Projekt stellen Sie fest, dass Änderungen an der Benutzeroberfläche häufig Anpassungen an der Datenbankstruktur erfordern und umgekehrt. Welches architektonische Prinzip ist hier höchstwahrscheinlich verletzt?",
@@ -762,7 +762,7 @@
       ]
     },
     {
-      "id": "SET2-Q24",
+      "id": "de-practice-02-q024",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 4,
@@ -807,7 +807,7 @@
       ]
     },
     {
-      "id": "SET2-Q25",
+      "id": "de-practice-02-q025",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Bewerten Sie die folgenden Aussagen im Kontext des 'Dependency Inversion Principle' (DIP) als Richtig oder Falsch.",
@@ -840,7 +840,7 @@
       ]
     },
     {
-      "id": "SET2-Q26",
+      "id": "de-practice-02-q026",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -870,7 +870,7 @@
       ]
     },
     {
-      "id": "SET2-Q27",
+      "id": "de-practice-02-q027",
       "type": "single_choice",
       "points": 1,
       "question_text": "In arc42 Kapitel 3 ('Kontextabgrenzung') wird zwischen fachlichem und technischem Kontext unterschieden. Was ist der Kerninhalt des 'Technischen Kontexts'?",
@@ -899,7 +899,7 @@
       ]
     },
     {
-      "id": "SET2-Q28",
+      "id": "de-practice-02-q028",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Ordnen Sie die folgenden Diagrammtypen der passenden Architektursicht zu (Bausteinsicht vs. Laufzeitsicht).",
@@ -927,7 +927,7 @@
       ]
     },
     {
-      "id": "SET2-Q29",
+      "id": "de-practice-02-q029",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -967,7 +967,7 @@
       ]
     },
     {
-      "id": "SET2-Q30",
+      "id": "de-practice-02-q030",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist ein 'Qualitätsbaum' (Quality Attribute Utility Tree) und wozu dient er?",
@@ -996,7 +996,7 @@
       ]
     },
     {
-      "id": "SET2-Q31",
+      "id": "de-practice-02-q031",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie müssen entscheiden, ob eine Information in die 'Bausteinsicht' oder die 'Verteilungssicht' gehört. Treffen Sie die Zuordnung.",
@@ -1029,7 +1029,7 @@
       ]
     },
     {
-      "id": "SET2-Q32",
+      "id": "de-practice-02-q032",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -1064,7 +1064,7 @@
       ]
     },
     {
-      "id": "SET2-Q33",
+      "id": "de-practice-02-q033",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welche Konsequenz hat die Verletzung des 'Liskov Substitution Principle' (LSP)?",
@@ -1088,7 +1088,7 @@
       ]
     },
     {
-      "id": "SET2-Q34",
+      "id": "de-practice-02-q034",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Ordnen Sie die folgenden Aufgaben den Rollen 'Softwarearchitekt:in' oder 'Entwickler:in' zu (primäre Verantwortung).",
@@ -1121,7 +1121,7 @@
       ]
     },
     {
-      "id": "SET2-Q35",
+      "id": "de-practice-02-q035",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -1156,7 +1156,7 @@
       ]
     },
     {
-      "id": "SET2-Q36",
+      "id": "de-practice-02-q036",
       "type": "single_choice",
       "points": 1,
       "question_text": "Was ist das Hauptziel des 'Open-Closed Principle' (OCP)?",
@@ -1180,7 +1180,7 @@
       ]
     },
     {
-      "id": "SET2-Q37",
+      "id": "de-practice-02-q037",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie entwerfen eine Schnittstelle. Welche Eigenschaften sind 'Wünschenswert' und welche 'Zu vermeiden'?",
@@ -1213,7 +1213,7 @@
       ]
     },
     {
-      "id": "SET2-Q38",
+      "id": "de-practice-02-q038",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,

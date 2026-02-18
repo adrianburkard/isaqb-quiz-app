@@ -3,7 +3,7 @@
   "version": "Official-Mock-2025.2",
   "questions": [
     {
-      "id": "MOCK-Q01",
+      "id": "de-mock-01-q001",
       "type": "single_choice",
       "points": 1,
       "question_text": "Wie viele Definitionen des Begriffes 'Softwarearchitektur' gibt es?",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "MOCK-Q02",
+      "id": "de-mock-01-q002",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "id": "MOCK-Q03",
+      "id": "de-mock-01-q003",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 4,
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "id": "MOCK-Q04",
+      "id": "de-mock-01-q004",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Bei Ihrem Projekt arbeiten drei Architekt:innen und sieben Entwickler:innen an der Dokumentation der Softwarearchitektur. Welche Methoden eignen sich zur Gewährleistung einer konsistenten und zweckmäßigen Dokumentation und welche nicht?",
@@ -135,7 +135,7 @@
       ]
     },
     {
-      "id": "MOCK-Q05",
+      "id": "de-mock-01-q005",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 4,
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "id": "MOCK-Q06",
+      "id": "de-mock-01-q006",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -220,7 +220,7 @@
       ]
     },
     {
-      "id": "MOCK-Q07",
+      "id": "de-mock-01-q007",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Welche der folgenden Aussagen zum Entwurfsprinzip 'Information Hiding' sind richtig und welche falsch?",
@@ -253,7 +253,7 @@
       ]
     },
     {
-      "id": "MOCK-Q08",
+      "id": "de-mock-01-q008",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -283,7 +283,7 @@
       ]
     },
     {
-      "id": "MOCK-Q09",
+      "id": "de-mock-01-q009",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Stellen Sie sich vor, Sie sind Softwarearchitekt:in für eine große und verteilte Geschäftsanwendung im Banken- oder Versicherungsbereich. Welche der folgenden Aussagen sind für diese Situation richtig und welche falsch?",
@@ -311,7 +311,7 @@
       ]
     },
     {
-      "id": "MOCK-Q10",
+      "id": "de-mock-01-q010",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -346,7 +346,7 @@
       ]
     },
     {
-      "id": "MOCK-Q11",
+      "id": "de-mock-01-q011",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -381,7 +381,7 @@
       ]
     },
     {
-      "id": "MOCK-Q12",
+      "id": "de-mock-01-q012",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Welche der folgenden Aussagen zu Architekturentscheidungen sind wahr, welche falsch?",
@@ -414,7 +414,7 @@
       ]
     },
     {
-      "id": "MOCK-Q13",
+      "id": "de-mock-01-q013",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Geben Sie für jede der folgenden Aussagen an, ob sie richtig oder falsch ist.",
@@ -447,7 +447,7 @@
       ]
     },
     {
-      "id": "MOCK-Q14",
+      "id": "de-mock-01-q014",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Geben Sie an, welche der folgenden Aussagen zu Projektzielen und Architekturzielen richtig und welche falsch sind.",
@@ -480,7 +480,7 @@
       ]
     },
     {
-      "id": "MOCK-Q15",
+      "id": "de-mock-01-q015",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -515,7 +515,7 @@
       ]
     },
     {
-      "id": "MOCK-Q16",
+      "id": "de-mock-01-q016",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -550,7 +550,7 @@
       ]
     },
     {
-      "id": "MOCK-Q17",
+      "id": "de-mock-01-q017",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -590,7 +590,7 @@
       ]
     },
     {
-      "id": "MOCK-Q18",
+      "id": "de-mock-01-q018",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -620,7 +620,7 @@
       ]
     },
     {
-      "id": "MOCK-Q19",
+      "id": "de-mock-01-q019",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -655,7 +655,7 @@
       ]
     },
     {
-      "id": "MOCK-Q20",
+      "id": "de-mock-01-q020",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -685,7 +685,7 @@
       ]
     },
     {
-      "id": "MOCK-Q21",
+      "id": "de-mock-01-q021",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welche der folgenden Eigenschaften lässt sich am ehesten durch eine Schichtenarchitektur verbessern?",
@@ -714,7 +714,7 @@
       ]
     },
     {
-      "id": "MOCK-Q22",
+      "id": "de-mock-01-q022",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -744,7 +744,7 @@
       ]
     },
     {
-      "id": "MOCK-Q23",
+      "id": "de-mock-01-q023",
       "type": "single_choice",
       "points": 1,
       "question_text": "Welche Ziele versuchen Sie mit dem Dependency-Inversion-Prinzip zu erreichen?",
@@ -768,7 +768,7 @@
       ]
     },
     {
-      "id": "MOCK-Q24",
+      "id": "de-mock-01-q024",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Was sind die Eigenschaften von enger (hoher) bzw. loser (niedriger) Kopplung?",
@@ -801,7 +801,7 @@
       ]
     },
     {
-      "id": "MOCK-Q25",
+      "id": "de-mock-01-q025",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -836,7 +836,7 @@
       ]
     },
     {
-      "id": "MOCK-Q26",
+      "id": "de-mock-01-q026",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Sie können Aspekte Ihrer Softwarearchitektur mündlich und/oder schriftlich kommunizieren. In welchem Zusammenhang stehen diese Möglichkeiten zueinander?",
@@ -869,7 +869,7 @@
       ]
     },
     {
-      "id": "MOCK-Q27",
+      "id": "de-mock-01-q027",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Welche der folgenden Aussagen zu Notationen für Architektursichten sind richtig und welche falsch?",
@@ -902,7 +902,7 @@
       ]
     },
     {
-      "id": "MOCK-Q28",
+      "id": "de-mock-01-q028",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -932,7 +932,7 @@
       ]
     },
     {
-      "id": "MOCK-Q29",
+      "id": "de-mock-01-q029",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -967,7 +967,7 @@
       ]
     },
     {
-      "id": "MOCK-Q30",
+      "id": "de-mock-01-q030",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -997,7 +997,7 @@
       ]
     },
     {
-      "id": "MOCK-Q31",
+      "id": "de-mock-01-q031",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Was sind Richtlinien für ein gutes Schnittstellen-Design? Kreuzen Sie an, welche der folgenden Aussagen richtig und welche falsch sind.",
@@ -1035,7 +1035,7 @@
       ]
     },
     {
-      "id": "MOCK-Q32",
+      "id": "de-mock-01-q032",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Eine Definition lautet: 'Softwarearchitektur ist die Summe aller während der Entwicklung gefällten Entscheidungen'. Kreuzen Sie an, welche der folgenden Aussagen zu Architektur-/Designentscheidungen richtig und welche falsch sind.",
@@ -1068,7 +1068,7 @@
       ]
     },
     {
-      "id": "MOCK-Q33",
+      "id": "de-mock-01-q033",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Welche der folgenden Aussagen sind typische Gründe zur Einführung einer Architekturdokumentation und welche nicht?",
@@ -1111,7 +1111,7 @@
       ]
     },
     {
-      "id": "MOCK-Q34",
+      "id": "de-mock-01-q034",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Welche der folgenden Eigenschaftspaare stehen üblicherweise miteinander in Konflikt und welche nicht?",
@@ -1144,7 +1144,7 @@
       ]
     },
     {
-      "id": "MOCK-Q35",
+      "id": "de-mock-01-q035",
       "type": "single_choice",
       "points": 1,
       "question_text": "ISO 25010 enthält allgemeine Qualitätseigenschaften für Softwaresysteme. Wie können Qualitätsanforderungen zu diesen Eigenschaften konkretisiert werden?",
@@ -1173,7 +1173,7 @@
       ]
     },
     {
-      "id": "MOCK-Q36",
+      "id": "de-mock-01-q036",
       "type": "multiple_choice",
       "points": 2,
       "required_correct_count": 4,
@@ -1213,7 +1213,7 @@
       ]
     },
     {
-      "id": "MOCK-Q37",
+      "id": "de-mock-01-q037",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -1248,7 +1248,7 @@
       ]
     },
     {
-      "id": "MOCK-Q38",
+      "id": "de-mock-01-q038",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,

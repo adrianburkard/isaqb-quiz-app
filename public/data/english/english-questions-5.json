@@ -3,7 +3,7 @@
   "version": "2025.1-Set6-Batch1",
   "questions": [
     {
-      "id": "Set6-Q01",
+      "id": "en-practice-05-q001",
       "type": "single_choice",
       "points": 1,
       "question_text": "In the context of the 'DokChess' engine (from arc42 by Example), the team decided to make the 'Position' object immutable. What was a primary technical benefit of this decision regarding the system's runtime behavior?",
@@ -27,7 +27,7 @@
       ]
     },
     {
-      "id": "Set6-Q02",
+      "id": "en-practice-05-q002",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -62,7 +62,7 @@
       ]
     },
     {
-      "id": "Set6-Q03",
+      "id": "en-practice-05-q003",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "In the 'MaMa-CRM' project, various constraints were defined. Classify them as 'Technical Constraint' or 'Organizational Constraint'.",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "Set6-Q04",
+      "id": "en-practice-05-q004",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the primary function of the 'Context View' in the 'docToolchain' documentation example?",
@@ -119,7 +119,7 @@
       ]
     },
     {
-      "id": "Set6-Q05",
+      "id": "en-practice-05-q005",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -149,7 +149,7 @@
       ]
     },
     {
-      "id": "Set6-Q06",
+      "id": "en-practice-05-q006",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Classify the following elements from the 'biking2' architecture as belonging to the 'Building Block View' or 'Runtime View'.",
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "id": "Set6-Q07",
+      "id": "en-practice-05-q007",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which ISO 25010 quality characteristic is most relevant for the 'Foto Max' requirement: 'A user who has not seen the software before must be able to order four different photo products within five minutes'?",
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "id": "Set6-Q08",
+      "id": "en-practice-05-q008",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -236,7 +236,7 @@
       ]
     },
     {
-      "id": "Set6-Q09",
+      "id": "en-practice-05-q009",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Decide if the following are characteristics of 'Monoliths' or 'Microservices' (based on the Foto Max architecture comparison).",
@@ -269,7 +269,7 @@
       ]
     },
     {
-      "id": "Set6-Q10",
+      "id": "en-practice-05-q010",
       "type": "single_choice",
       "points": 1,
       "question_text": "What does the 'Information Hiding' principle advise regarding a module's internal data structures?",
@@ -293,7 +293,7 @@
       ]
     },
     {
-      "id": "Set6-Q11",
+      "id": "en-practice-05-q011",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -323,7 +323,7 @@
       ]
     },
     {
-      "id": "Set6-Q12",
+      "id": "en-practice-05-q012",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign the following DokChess components to the correct layer type: 'Infrastructure/Technical' vs. 'Domain/Core'.",
@@ -351,7 +351,7 @@
       ]
     },
     {
-      "id": "Set6-Q13",
+      "id": "en-practice-05-q013",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the 'Observer' pattern primarily used for?",
@@ -375,7 +375,7 @@
       ]
     },
     {
-      "id": "Set6-Q14",
+      "id": "en-practice-05-q014",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -410,7 +410,7 @@
       ]
     },
     {
-      "id": "Set6-Q15",
+      "id": "en-practice-05-q015",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Classify the following scenarios from 'HTML Sanity Check' as 'Functional Requirement' or 'Quality Requirement'.",
@@ -443,7 +443,7 @@
       ]
     },
     {
-      "id": "Set6-Q16",
+      "id": "en-practice-05-q016",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the primary benefit of using a 'Blackboard' pattern?",
@@ -467,7 +467,7 @@
       ]
     },
     {
-      "id": "Set6-Q17",
+      "id": "en-practice-05-q017",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -497,7 +497,7 @@
       ]
     },
     {
-      "id": "Set6-Q18",
+      "id": "en-practice-05-q018",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign the diagram type to the correct View: 'Building Block View' or 'Runtime View'.",
@@ -525,7 +525,7 @@
       ]
     },
     {
-      "id": "Set6-Q19",
+      "id": "en-practice-05-q019",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the 'Open-Closed Principle'?",
@@ -549,7 +549,7 @@
       ]
     },
     {
-      "id": "Set6-Q20",
+      "id": "en-practice-05-q020",
       "type": "single_choice",
       "points": 1,
       "question_text": "In the 'DokChess' engine, the team used the 'Dependency Injection' (DI) pattern. What was the primary motivation for this architectural decision?",
@@ -573,7 +573,7 @@
       ]
     },
     {
-      "id": "Set6-Q21",
+      "id": "en-practice-05-q021",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -603,7 +603,7 @@
       ]
     },
     {
-      "id": "Set6-Q22",
+      "id": "en-practice-05-q022",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Classify the following elements from the 'docToolchain' architecture as 'Export Task' or 'Generate Task'.",
@@ -636,7 +636,7 @@
       ]
     },
     {
-      "id": "Set6-Q23",
+      "id": "en-practice-05-q023",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the 'Docs-as-Code' approach, as implemented by 'docToolchain'?",
@@ -660,7 +660,7 @@
       ]
     },
     {
-      "id": "Set6-Q24",
+      "id": "en-practice-05-q024",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -695,7 +695,7 @@
       ]
     },
     {
-      "id": "Set6-Q25",
+      "id": "en-practice-05-q025",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Assign the responsibility to the correct 'biking2' component.",
@@ -723,7 +723,7 @@
       ]
     },
     {
-      "id": "Set6-Q26",
+      "id": "en-practice-05-q026",
       "type": "single_choice",
       "points": 1,
       "question_text": "In 'DokChess', the 'Adapter' pattern is used for the 'PolyglotOpeningBook'. What is the purpose of this adapter?",
@@ -747,7 +747,7 @@
       ]
     },
     {
-      "id": "Set6-Q27",
+      "id": "en-practice-05-q027",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -777,7 +777,7 @@
       ]
     },
     {
-      "id": "Set6-Q28",
+      "id": "en-practice-05-q028",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "MaMa-CRM uses specific strategies for flexibility. Classify them as 'Data Structure Flexibility' or 'Process Flexibility'.",
@@ -810,7 +810,7 @@
       ]
     },
     {
-      "id": "Set6-Q29",
+      "id": "en-practice-05-q029",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the 'Template Method' pattern used for in 'HtmlSanityCheck' (HtmlSC)?",
@@ -834,7 +834,7 @@
       ]
     },
     {
-      "id": "Set6-Q30",
+      "id": "en-practice-05-q030",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -864,7 +864,7 @@
       ]
     },
     {
-      "id": "Set6-Q31",
+      "id": "en-practice-05-q031",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Identify if the view is a 'Context View' or 'Deployment View' based on the description.",
@@ -892,7 +892,7 @@
       ]
     },
     {
-      "id": "Set6-Q32",
+      "id": "en-practice-05-q032",
       "type": "single_choice",
       "points": 1,
       "question_text": "In 'Foto Max', what was the decided architecture pattern for the new Wizard to improve maintainability?",
@@ -916,7 +916,7 @@
       ]
     },
     {
-      "id": "Set6-Q33",
+      "id": "en-practice-05-q033",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 2,
@@ -946,7 +946,7 @@
       ]
     },
     {
-      "id": "Set6-Q34",
+      "id": "en-practice-05-q034",
       "type": "classification_matrix",
       "points": 2,
       "question_text": "Match the term to its definition from the Glossary.",
@@ -975,7 +975,7 @@
       ]
     },
     {
-      "id": "Set6-Q35",
+      "id": "en-practice-05-q035",
       "type": "single_choice",
       "points": 1,
       "question_text": "Which design principle corresponds to the 'I' in SOLID?",
@@ -999,7 +999,7 @@
       ]
     },
     {
-      "id": "Set6-Q36",
+      "id": "en-practice-05-q036",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
@@ -1034,7 +1034,7 @@
       ]
     },
     {
-      "id": "Set6-Q37",
+      "id": "en-practice-05-q037",
       "type": "classification_matrix",
       "points": 1,
       "question_text": "Classify the constraint from 'MaMa-CRM'.",
@@ -1062,7 +1062,7 @@
       ]
     },
     {
-      "id": "Set6-Q38",
+      "id": "en-practice-05-q038",
       "type": "single_choice",
       "points": 1,
       "question_text": "What is the main goal of the 'Facade' pattern?",
