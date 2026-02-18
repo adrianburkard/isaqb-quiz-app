@@ -59,8 +59,9 @@ quiz-app/
 │   ├── data/
 │   │   └── quizCatalog.ts    # Quiz registry
 │   ├── hooks/
-│   │   ├── useQuizState.ts
-│   │   └── useQuizProgress.ts
+│   │   ├── useLocalStorage.ts
+│   │   ├── useQuizProgress.ts
+│   │   └── useQuizState.ts
 │   ├── types/
 │   │   └── index.ts
 │   └── utils/
@@ -74,9 +75,9 @@ quiz-app/
 
 ```typescript
 {
-  id: 'unique-quiz-id',
-  filename: 'german/your-questions.json',
-  title: 'Quiz Title',
+  id: 'de-practice-01',  // pattern: {lang}-{type}-{number}
+  filename: 'german/german-questions-1.json',
+  title: 'Set 1',
   description: 'Optional description',
   language: 'de', // or 'en'
 }
@@ -87,10 +88,10 @@ quiz-app/
 ```json
 {
   "exam_title": "Quiz Title",
-  "version": "1.0",
+  "version": "de-practice-01-v1.0",
   "questions": [
     {
-      "id": "q1",
+      "id": "de-practice-01-q001",
       "type": "single_choice",
       "points": 1,
       "question_text": "Question?",
@@ -101,7 +102,7 @@ quiz-app/
       ]
     },
     {
-      "id": "q2",
+      "id": "de-practice-01-q002",
       "type": "multiple_choice",
       "points": 2,
       "question_text": "Select all correct answers:",
@@ -109,7 +110,7 @@ quiz-app/
       "options": [...]
     },
     {
-      "id": "q3",
+      "id": "de-practice-01-q003",
       "type": "classification_matrix",
       "points": 3,
       "question_text": "Classify each item:",
@@ -124,7 +125,7 @@ quiz-app/
 
 ## Tech Stack
 
-- React 18
-- TypeScript
-- Vite
-- Tailwind CSS
+- React 19
+- TypeScript 5.9
+- Vite 7
+- Tailwind CSS 4
