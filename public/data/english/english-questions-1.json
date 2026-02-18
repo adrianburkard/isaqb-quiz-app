@@ -1,225 +1,256 @@
 {
-  "exam_title": "iSAQB CPSA-F Mock Exam - Set 1 (English)",
-  "version": "2025.1-EN",
+  "exam_title": "iSAQB CPSA-F Practice Exam Set 1",
+  "version": "2025.1-Set2-Batch1",
   "questions": [
     {
-      "id": "Q-20-04-01",
+      "id": "Set2-Q01",
       "type": "single_choice",
       "points": 1,
-      "question_text": "How many definitions of 'software architecture' exist?",
-      "explanation": "There is no single, universally accepted definition. Various organizations (IEEE, SEI) and authors (Bass, Clements, Kazman) provide different definitions, though they generally agree on core concepts like components, relationships, and principles.",
+      "question_text": "According to the iSAQB curriculum, what is a primary characteristic of a 'Black Box' view of a building block?",
+      "explanation": "A Black Box view hides the internal structure and implementation details, focusing solely on the externally visible interface and responsibility. It adheres to the Information Hiding principle.",
       "options": [
         {
           "id": "a",
-          "text": "Exactly one for all kinds of systems.",
+          "text": "It shows the internal sub-components and their relationships.",
           "is_correct": false
         },
         {
           "id": "b",
-          "text": "One for every kind of software system (e.g. 'embedded', 'real-time', 'decision support', 'web', 'batch'...).",
-          "is_correct": false
+          "text": "It hides the internal structure and focuses on the interface and responsibility.",
+          "is_correct": true
         },
         {
           "id": "c",
-          "text": "A dozen or more different definitions.",
-          "is_correct": true
+          "text": "It describes the deployment infrastructure of the building block.",
+          "is_correct": false
         }
       ]
     },
     {
-      "id": "Q-20-04-02",
+      "id": "Set2-Q02",
       "type": "multiple_choice",
       "points": 1,
       "required_correct_count": 3,
-      "question_text": "Which of the following aspects are covered by the term 'software architecture'?",
-      "explanation": "Software architecture primarily concerns the fundamental structures (Components), their relationships and interactions (Interfaces), and the overarching rules or patterns (Cross-cutting concepts). Detailed coding conventions or specific hardware sizing are typically downstream decisions or implementation details.",
+      "question_text": "Which of the following are explicitly listed as responsibilities of a software architect in the CPSA-F curriculum?",
+      "explanation": "Architects must clarify requirements/constraints, design the structure (building blocks), and communicate decisions. Project management tasks like budget negotiation or hiring are typically outside the core architectural role.",
       "options": [
         {
           "id": "a",
-          "text": "Components",
+          "text": "Clarify and scrutinize requirements and constraints.",
           "is_correct": true
         },
         {
           "id": "b",
-          "text": "Cross-cutting concepts",
-          "is_correct": true
-        },
-        {
-          "id": "c",
-          "text": "(internal and external) Interfaces",
-          "is_correct": true
-        },
-        {
-          "id": "d",
-          "text": "Coding conventions",
-          "is_correct": false
-        },
-        {
-          "id": "e",
-          "text": "Hardware sizing",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "id": "Q-17-13-01",
-      "type": "multiple_choice",
-      "points": 2,
-      "required_correct_count": 4,
-      "question_text": "Which FOUR of the following statements about (crosscutting) concepts are most appropriate?",
-      "explanation": "Concepts (like logging, security, or error handling) ensure consistency (conceptual integrity) across the system. They effectively define constraints for developers and can be agreed upon before implementation. Sometimes a concept is realized by a central building block (e.g., a central logger).",
-      "options": [
-        {
-          "id": "a",
-          "text": "Uniform usage of concepts reduces coupling between building blocks.",
-          "is_correct": false
-        },
-        {
-          "id": "b",
-          "text": "The definition of appropriate concepts ensures the pattern compliance of the architecture.",
+          "text": "Negotiate employee salaries and team budgets.",
           "is_correct": false
         },
         {
           "id": "c",
-          "text": "Uniform exception handling can be achieved when architects agree with developers upon a suitable concept prior to implementation.",
+          "text": "Make structure-relevant decisions regarding system decomposition.",
           "is_correct": true
         },
         {
           "id": "d",
-          "text": "For each quality goal there should be an explicitly documented concept.",
+          "text": "Perform manual black-box testing for all releases.",
           "is_correct": false
         },
         {
           "id": "e",
-          "text": "Concepts are a means to increase consistency.",
-          "is_correct": true
-        },
-        {
-          "id": "f",
-          "text": "A concept can define constraints for the implementation of many building blocks.",
-          "is_correct": true
-        },
-        {
-          "id": "g",
-          "text": "A concept might be implemented by a single building block.",
+          "text": "Communicate architectural decisions to stakeholders.",
           "is_correct": true
         }
       ]
     },
     {
-      "id": "Q-17-13-02",
+      "id": "Set2-Q03",
       "type": "classification_matrix",
-      "points": 1,
-      "question_text": "In your project, three architects and seven developers are working on the documentation of the software architecture. Which methods are appropriate in order to achieve a consistent and adequate documentation, and which are not?",
-      "explanation": "To ensure consistency in documentation across a team, central coordination (by a lead architect) and the use of standardized templates (like arc42) are highly effective. Relying solely on automatic extraction from source code is insufficient for architectural documentation as it misses design decisions, rationale, and high-level concepts.",
+      "points": 2,
+      "question_text": "Classify the following scenarios as either 'Functional Requirement' or 'Quality Requirement' (Non-Functional Requirement).",
+      "explanation": "Functional requirements describe *what* the system does (features, data processing). Quality requirements describe *how well* it does it (performance, security, availability).",
       "column_headers": [
-        "Appropriate",
-        "Not appropriate"
+        "Functional Requirement",
+        "Quality Requirement"
       ],
       "rows": [
         {
           "id": "a",
-          "text": "The lead architect coordinates the creation of the documentation.",
+          "text": "The system must calculate the sales tax correctly for all 50 states.",
           "correct_column_index": 0
         },
         {
           "id": "b",
-          "text": "Identical templates are used for the documentation.",
+          "text": "The system must respond to search queries within 200ms.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "User passwords must be encrypted using at least AES-256.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "The system must allow users to export their profile data as a PDF.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q04",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the primary goal of the 'Dependency Inversion Principle' (the 'D' in SOLID)?",
+      "explanation": "Dependency Inversion states that high-level modules should not depend on low-level modules; both should depend on abstractions. This reduces coupling and increases testability.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To ensure that all classes have only one responsibility.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To allow high-level modules to depend on abstractions rather than concrete implementations.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To prevent inheritance cycles in the class hierarchy.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q05",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following patterns are best suited for achieving high flexibility and decoupling in distributed systems?",
+      "explanation": "Microservices and Broker (or Messaging) patterns are specifically designed to decouple components in distributed systems. Monolithic and simple Layered architectures often entail tighter coupling.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Monolithic Architecture",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Microservices",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Broker / Messaging",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Direct Database Access from UI",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q06",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the following documentation elements to the correct architectural view: 'Building Block View' or 'Runtime View'.",
+      "explanation": "The Building Block View (Static View) describes the static code structure (modules, components). The Runtime View (Dynamic View) describes how they interact over time (sequences, data flow).",
+      "column_headers": [
+        "Building Block View",
+        "Runtime View"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Sequence Diagram showing the login process.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Class Diagram showing the hierarchy of domain objects.",
           "correct_column_index": 0
         },
         {
           "id": "c",
-          "text": "All parts of the documentation are automatically extracted from the source code.",
+          "text": "Package Diagram showing module dependencies.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Activity Diagram illustrating a business workflow.",
           "correct_column_index": 1
         }
       ]
     },
     {
-      "id": "Q-17-13-03",
-      "type": "multiple_choice",
-      "points": 2,
-      "required_correct_count": 4,
-      "question_text": "Which of the following techniques are best suited to illustrate the workflow or behavior of the system at runtime?",
-      "explanation": "Runtime views describe dynamic behavior. Activity diagrams, Sequence diagrams, and Flowcharts are standard notations for dynamics. A numbered list of steps is a valid simple textual notation. Class diagrams and interface tables describe static structure, not runtime behavior.",
+      "id": "Set2-Q07",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In the context of ISO 25010, which quality attribute covers 'Confidentiality', 'Integrity', and 'Authenticity'?",
+      "explanation": "ISO 25010 defines 'Security' as the characteristic that includes confidentiality, integrity, non-repudiation, accountability, and authenticity.",
       "options": [
         {
           "id": "a",
-          "text": "Flowcharts",
-          "is_correct": true
+          "text": "Reliability",
+          "is_correct": false
         },
         {
           "id": "b",
-          "text": "Activity Diagrams",
+          "text": "Security",
           "is_correct": true
         },
         {
           "id": "c",
-          "text": "Depiction of screen flows (sequence of user interactions)",
+          "text": "Maintainability",
           "is_correct": false
         },
         {
           "id": "d",
-          "text": "Sequence diagram",
+          "text": "Usability",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q08",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are typical 'Cross-Cutting Concepts' in software architecture?",
+      "explanation": "Logging, Exception Handling, and Security (Authentication/Authorization) are classic cross-cutting concerns because they affect multiple parts of the system. 'The User's specific password' is data, not a concept.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Logging and Monitoring",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Exception and Error Handling",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "A specific user's password",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Security (Authentication/Authorization)",
           "is_correct": true
         },
         {
           "id": "e",
-          "text": "Linear Venn diagram",
-          "is_correct": false
-        },
-        {
-          "id": "f",
-          "text": "Numbered list of sequential steps",
-          "is_correct": true
-        },
-        {
-          "id": "g",
-          "text": "Tabular description of interfaces",
-          "is_correct": false
-        },
-        {
-          "id": "h",
-          "text": "Class diagrams",
+          "text": "The color of the 'Submit' button",
           "is_correct": false
         }
       ]
     },
     {
-      "id": "Q-20-04-03",
-      "type": "multiple_choice",
-      "points": 1,
-      "required_correct_count": 2,
-      "question_text": "What are the most important goals of software architecture?",
-      "explanation": "The primary goals of software architecture are to ensure the system meets its quality requirements (like performance, maintainability, security) and to facilitate communication/understanding among stakeholders. Strict adherence to patterns or cost-effective testing are secondary benefits or means to an end, not the primary goals.",
-      "options": [
-        {
-          "id": "a",
-          "text": "Improve accuracy of patterns in structure and implementation.",
-          "is_correct": false
-        },
-        {
-          "id": "b",
-          "text": "Achieve quality requirements in a comprehensible way.",
-          "is_correct": true
-        },
-        {
-          "id": "c",
-          "text": "Enable cost-effective integration and acceptance tests of the system.",
-          "is_correct": false
-        },
-        {
-          "id": "d",
-          "text": "Enable a basic understanding of structures and concepts for the development team and other stakeholders.",
-          "is_correct": true
-        }
-      ]
-    },
-    {
-      "id": "Q-17-13-05",
+      "id": "Set2-Q09",
       "type": "classification_matrix",
       "points": 2,
-      "question_text": "Which of the following statements regarding the information hiding principle are true and which are false?",
-      "explanation": "Information Hiding (Parnas) means modules hide their internal secrets (data formats, algorithms) from others to allow independent development and modification (Flexibility). It involves restricting access to internal details. It actually *supports* bottom-up work by creating stable building blocks.",
+      "question_text": "Decide whether the following statements about 'Coupling' and 'Cohesion' are True or False.",
+      "explanation": "Good design aims for LOOSE coupling (dependencies between modules) and HIGH cohesion (modules do one thing well). High coupling makes systems hard to maintain.",
       "column_headers": [
         "True",
         "False"
@@ -227,123 +258,853 @@
       "rows": [
         {
           "id": "a",
-          "text": "Adhering to the information hiding principle increases flexibility for modifications.",
+          "text": "High cohesion within a building block is a desirable property.",
           "correct_column_index": 0
         },
         {
           "id": "b",
-          "text": "Information hiding involves deliberately hiding information from callers or consumers of the building block.",
-          "correct_column_index": 0
-        },
-        {
-          "id": "c",
-          "text": "Information hiding makes it harder to work bottom-up.",
+          "text": "High coupling between building blocks is a desirable property.",
           "correct_column_index": 1
         },
         {
+          "id": "c",
+          "text": "Loose coupling facilitates the independent testability of components.",
+          "correct_column_index": 0
+        },
+        {
           "id": "d",
-          "text": "Information hiding is a derivative of the approach of incremental refinement along the control flow.",
+          "text": "Cohesion measures the degree of dependency between different modules.",
           "correct_column_index": 1
         }
       ]
     },
     {
-      "id": "Q-20-04-22",
-      "type": "classification_matrix",
+      "id": "Set2-Q10",
+      "type": "single_choice",
       "points": 1,
-      "question_text": "You document a component of your software architecture. Which information should be contained in your black box description and which information should be avoided?",
-      "explanation": "A Black Box view describes the *external* view: Interfaces (how to interact) and Responsibility (what it does). It must explicitly *hide* the Internal structure and Implementation details (White Box view).",
-      "column_headers": [
-        "Contained",
-        "Avoided"
-      ],
-      "rows": [
-        {
-          "id": "a",
-          "text": "Interfaces.",
-          "correct_column_index": 0
-        },
-        {
-          "id": "b",
-          "text": "Responsibility.",
-          "correct_column_index": 0
-        },
-        {
-          "id": "c",
-          "text": "Internal structure.",
-          "correct_column_index": 1
-        },
-        {
-          "id": "d",
-          "text": "Hints for the implementation.",
-          "correct_column_index": 1
-        }
-      ]
-    },
-    {
-      "id": "Q-20-04-29",
-      "type": "multiple_choice",
-      "points": 2,
-      "required_correct_count": 2,
-      "question_text": "You try to analyze your architecture quantitatively. Which are the TWO most appropriate indicators for architectural problem areas?",
-      "explanation": "High coupling indicates poor modularity and high dependency, making the system rigid. Error clusters (modules with frequent bugs) often indicate structural weaknesses or high complexity. Missing comments or naming conventions are code-level quality issues, not primary architectural metrics.",
+      "question_text": "What is the primary purpose of a 'Context View' in architecture documentation?",
+      "explanation": "The Context View delineates the system scope, showing the system as a black box and its interfaces to external neighbors (users, other systems). It does not show internal white-box details.",
       "options": [
         {
           "id": "a",
-          "text": "High coupling of components.",
+          "text": "To show the internal classes and their methods.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To define the system boundaries and its relationships with external neighbors.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To list the hardware requirements for the servers.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q11",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are valid approaches for architectural development?",
+      "explanation": "Top-down (starting from high-level requirements) and Bottom-up (starting from existing components/code) are standard development strategies. 'Inside-Out' and 'Sideways' are not standard formal terms in this context.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Top-down design",
           "is_correct": true
         },
         {
           "id": "b",
-          "text": "Inappropriate names of public methods.",
+          "text": "Sideways design",
           "is_correct": false
         },
         {
           "id": "c",
-          "text": "Missing comments.",
+          "text": "Bottom-up design",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Random-walk design",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q12",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Identify which of the following are 'Technical Constraints' and which are 'Organizational Constraints'.",
+      "explanation": "Technical constraints relate to hardware, software, or standards. Organizational constraints relate to budget, schedule, team structure, or company policies.",
+      "column_headers": [
+        "Technical Constraint",
+        "Organizational Constraint"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The system must be implemented in Java 17.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "The project deadline is fixed for December 31st.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "The team must use the Scrum methodology.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "The target hardware is a specific ARM-based microcontroller.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q13",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the 'Separation of Concerns' (SoC) principle?",
+      "explanation": "SoC dictates that a system should be divided into distinct sections, where each section addresses a separate concern (e.g., separating UI logic from business logic).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Combining all functionality into a single module for performance.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Dividing a system into distinct sections, each addressing a specific concern.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Ensuring that every developer works on every part of the system.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q14",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are essential elements of a 'Quality Scenario'?",
+      "explanation": "A quality scenario typically includes a Stimulus (event), the Artifact/System affected, and the Response (measurable outcome). 'Budget' is a project constraint, not part of a technical quality scenario structure.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stimulus / Event",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Response / Action",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Response Measure / Metric",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "The Project Budget",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q15",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "When using the 'arc42' template, where do the following pieces of information belong?",
+      "explanation": "arc42 Section 1 is 'Introduction & Goals'. Section 3 is 'Context'. Section 5 is 'Building Block View'. Section 8 is 'Cross-cutting Concepts'.",
+      "column_headers": [
+        "Building Block View",
+        "Cross-cutting Concepts"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The hierarchy of software modules and their dependencies.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "The global strategy for exception handling and logging.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "The internal white-box structure of 'Component A'.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "The decision to use UTF-8 encoding throughout the system.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q16",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which design pattern separates the 'read' model from the 'write' model to optimize performance and scalability?",
+      "explanation": "CQRS (Command Query Responsibility Segregation) strictly separates the operations that read data (Queries) from those that update data (Commands).",
+      "options": [
+        {
+          "id": "a",
+          "text": "MVC (Model-View-Controller)",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "CQRS (Command Query Responsibility Segregation)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Singleton",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q17",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 2,
+      "question_text": "Qualitative architecture evaluation methods (like ATAM) often use which TWO of the following to assess the architecture?",
+      "explanation": "ATAM (Architecture Tradeoff Analysis Method) relies heavily on 'Scenarios' (to test quality attributes) and 'Stakeholders' (to define those scenarios). It does not primarily rely on 'Unit Tests' or 'Compiler Warnings'.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quality Scenarios",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Stakeholder Interviews / Workshops",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Automated Unit Tests",
           "is_correct": false
         },
         {
           "id": "d",
-          "text": "Cluster of errors (in certain building blocks).",
+          "text": "Compiler Warnings",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q18",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the following characteristics to the correct architectural pattern: 'Layered Architecture' or 'Microservices'.",
+      "explanation": "Microservices are independently deployable units. Layered architectures typically separate concerns horizontally (UI, Logic, Data) within a single deployment unit (Monolith), though they can be distributed.",
+      "column_headers": [
+        "Layered Architecture",
+        "Microservices"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Structuring into Presentation, Business Logic, and Data Access.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Independently deployable services focusing on specific business capabilities.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Strict rules typically forbid skipping levels (e.g., UI accessing Data directly).",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q19",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the meaning of the 'L' in the SOLID principles?",
+      "explanation": "L stands for Liskov Substitution Principle: Objects of a superclass should be replaceable with objects of its subclasses without breaking the application.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Loose Coupling Principle",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Liskov Substitution Principle",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Layered Architecture Principle",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q20",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which architectural pattern is best suited for a system that needs to process data in a series of independent steps, where the output of one step is the input to the next?",
+      "explanation": "The 'Pipes and Filters' pattern is designed for processing data streams where processing steps (Filters) are connected by data transfer channels (Pipes).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Model-View-Controller (MVC)",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Pipes and Filters",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Blackboard",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q21",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "According to the ISO 25010 standard, which of the following are sub-characteristics of 'Maintainability'?",
+      "explanation": "Maintainability includes Modularity, Reusability, Analysability, Modifiability, and Testability. Availability is part of Reliability. Confidentiality is part of Security.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modularity",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Availability",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Analysability",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Confidentiality",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Testability",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q22",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify the following statements regarding 'Design for Testability' as True or False.",
+      "explanation": "Testability is improved by low coupling (easy to isolate) and high cohesion. Relying on global state or hidden dependencies (like singletons) reduces testability.",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Tightly coupled components are generally easier to unit test.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Dependency Injection improves testability by allowing the injection of mock objects.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Using static global variables usually simplifies the testing process.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Separation of Concerns usually leads to better testability.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q23",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the 'Open-Closed Principle' (the 'O' in SOLID)?",
+      "explanation": "Software entities should be open for extension (you can add new behavior) but closed for modification (you shouldn't have to change existing source code to add that behavior).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Source code should be open source and closed to proprietary modification.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Software entities should be open for extension, but closed for modification.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Database connections should be opened late and closed early.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q24",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which of the following are valid reasons to use the 'Adapter' design pattern?",
+      "explanation": "The Adapter pattern allows incompatible interfaces to work together. It wraps an existing class with a new interface so that it matches the client's expectations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To enable communication between classes with incompatible interfaces.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "To ensure only one instance of a class exists (Singleton).",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "To integrate a legacy component into a new system without changing the legacy code.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "To notify multiple objects about state changes (Observer).",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q25",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Assign the following examples to the correct 'Coupling' category: 'Static Coupling' or 'Dynamic Coupling'.",
+      "explanation": "Static coupling is determined at compile-time (source code dependencies, inheritance). Dynamic coupling occurs at runtime (polymorphism, passing messages via a bus).",
+      "column_headers": [
+        "Static Coupling",
+        "Dynamic Coupling"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Class A inherits from Class B.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Component A calls a service via a polymorphic interface resolved at runtime.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Module A imports a package from Module B.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Service A sends a message to a message queue; Service B reads it later.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q26",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is meant by 'Conway's Law' in the context of software architecture?",
+      "explanation": "Conway's Law states that organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The complexity of a system increases over time unless work is done to reduce it.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "The structure of the system mirrors the communication structure of the organization that designed it.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Adding manpower to a late software project makes it later.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q27",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which THREE of the following are typical elements of a 'deployment view'?",
+      "explanation": "Deployment views map software artifacts to infrastructure. They include Nodes (hardware/virtual machines), Artifacts (files/executables), and Networking channels/protocols.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hardware Nodes / Servers",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Class Inheritance Hierarchies",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Network Connections / Protocols",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "User Stories",
+          "is_correct": false
+        },
+        {
+          "id": "e",
+          "text": "Software Artifacts (WARs, JARs, EXEs)",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q28",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Decide if the following are examples of 'Qualitative Analysis' or 'Quantitative Analysis' of an architecture.",
+      "explanation": "Quantitative analysis uses metrics and numbers (lines of code, complexity indices). Qualitative analysis relies on expert judgment, reviews, and scenarios (ATAM, reviews).",
+      "column_headers": [
+        "Qualitative Analysis",
+        "Quantitative Analysis"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Measuring the Cyclomatic Complexity of the source code.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Conducting an ATAM (Architecture Tradeoff Analysis Method) workshop.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Counting the number of dependencies between modules.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q29",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In the context of 'arc42', what is the purpose of the 'Solution Strategy' section?",
+      "explanation": "The Solution Strategy (Section 4 of arc42) provides a high-level summary of the fundamental decisions and solution ideas (technology choices, top-level patterns) before diving into details.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To list all requirements in detail.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To summarize the fundamental decisions and solution ideas.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To define the detailed interfaces of all classes.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q30",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are benefits of explicitly documenting 'Architecture Decisions' (e.g., using ADRs)?",
+      "explanation": "ADRs (Architecture Decision Records) prevent knowledge loss by documenting the 'Why' (rationale) and help new team members understand the history and context of the system.",
+      "options": [
+        {
+          "id": "a",
+          "text": "It guarantees that the code is bug-free.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "It makes the rationale behind decisions transparent and traceable.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "It helps onboard new team members by explaining the 'why'.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "It replaces the need for requirements engineering.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q31",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify the following as 'Top-Down' or 'Bottom-Up' approaches to architecture development.",
+      "explanation": "Top-Down starts with high-level requirements and breaks them down. Bottom-Up starts with existing components/code and builds higher-level structures from them.",
+      "column_headers": [
+        "Top-Down",
+        "Bottom-Up"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Designing the overall system structure based on business requirements before implementing modules.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Refactoring existing classes to discover and define higher-level components.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Decomposing the main context into sub-contexts.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Wrapping legacy code into new services to form a new application.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q32",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is a 'Model-View-Controller' (MVC) pattern primarily used for?",
+      "explanation": "MVC is an architectural pattern used to structure interactive applications by separating the internal data (Model), the user interface (View), and the user input handling (Controller).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Optimizing database queries.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Structuring interactive user interfaces by separating concerns.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Encrypting data transmission between servers.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q33",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which of the following are examples of 'Technical Debt' in software architecture?",
+      "explanation": "Technical debt includes temporary workarounds (hacks) and outdated/missing documentation. These require future effort to fix. 'Using a design pattern' is a good practice, not debt.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using a 'quick and dirty' solution to meet a deadline.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Consistently updating documentation to match the code.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Outdated libraries with known security vulnerabilities.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Applying the Factory pattern to create objects.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q34",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the following descriptions to 'White Box' or 'Black Box' views.",
+      "explanation": "White Box shows internals (classes, inner components). Black Box shows only externals (interfaces, responsibilities).",
+      "column_headers": [
+        "White Box",
+        "Black Box"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Detailed internal class structure of a component.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Public API definition without implementation details.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Description of the internal data flow logic.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q35",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which principle suggests that a class should have only one reason to change?",
+      "explanation": "The Single Responsibility Principle (SRP) states that a class should have only one responsibility, and thus only one reason to change.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Liskov Substitution Principle",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Single Responsibility Principle",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Interface Segregation Principle",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q36",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following tools are commonly used for 'Static Code Analysis' to support architecture evaluation?",
+      "explanation": "SonarQube, FindBugs (or SpotBugs), and Checkstyle are standard tools for static analysis. JUnit is for dynamic testing (unit tests). Git is for version control.",
+      "options": [
+        {
+          "id": "a",
+          "text": "SonarQube",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Git",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "FindBugs / SpotBugs",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Checkstyle",
           "is_correct": true
         },
         {
           "id": "e",
-          "text": "Number of test cases per component.",
+          "text": "JUnit",
           "is_correct": false
         }
       ]
     },
     {
-      "id": "Q-20-04-21",
+      "id": "Set2-Q37",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In a 'Broker' architectural pattern, what is the main responsibility of the Broker component?",
+      "explanation": "The Broker component is responsible for coordinating communication, such as forwarding requests, between decoupled components (clients and servers).",
+      "options": [
+        {
+          "id": "a",
+          "text": "To store the persistent data of the system.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To coordinate communication and decouple clients from servers.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To display the user interface to the user.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set2-Q38",
       "type": "classification_matrix",
       "points": 2,
-      "question_text": "What are characteristics of tight (high) or loose (low) coupling?",
-      "explanation": "Tight coupling occurs when components depend directly on each other's internals (shared data structures, shared database tables) or concrete implementations. Loose coupling is achieved by depending on abstractions (interfaces) and the Dependency Inversion Principle.",
+      "question_text": "Match the following UML diagram types to their primary usage: 'Static Structure' or 'Dynamic Behavior'.",
+      "explanation": "Class and Component diagrams show static structure. Sequence and State diagrams show dynamic behavior (runtime).",
       "column_headers": [
-        "Tight coupling",
-        "Loose coupling"
+        "Static Structure",
+        "Dynamic Behavior"
       ],
       "rows": [
         {
           "id": "a",
-          "text": "Building blocks directly call dependent building blocks, i.e., without using indirect calls via interfaces or abstractions.",
+          "text": "Class Diagram",
           "correct_column_index": 0
         },
         {
           "id": "b",
-          "text": "Building blocks use shared complex data structures.",
-          "correct_column_index": 0
+          "text": "Sequence Diagram",
+          "correct_column_index": 1
         },
         {
           "id": "c",
-          "text": "Building blocks use a shared table (for read- and write operations) within a relational database.",
+          "text": "Component Diagram",
           "correct_column_index": 0
         },
         {
           "id": "d",
-          "text": "When designing building blocks, you have consistently applied the dependency inversion principle.",
+          "text": "State Machine Diagram",
           "correct_column_index": 1
         }
       ]

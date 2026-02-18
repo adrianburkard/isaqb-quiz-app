@@ -1,0 +1,1113 @@
+{
+  "exam_title": "iSAQB CPSA-F Practice Exam - Set 2",
+  "version": "2025.1-Set3-Batch1",
+  "questions": [
+    {
+      "id": "Set3-Q01",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the primary difference between a 'Layer' and a 'Tier' in software architecture?",
+      "explanation": "A 'Layer' is a logical separation of concerns within the code (e.g., UI, Business, Data). A 'Tier' is a physical separation of components on different infrastructure (e.g., Client, App Server, DB Server).",
+      "options": [
+        {
+          "id": "a",
+          "text": "There is no difference; the terms are synonymous.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Layers are logical separations; Tiers are physical deployment separations.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Layers are for databases; Tiers are for user interfaces.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q02",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following statements about the 'Facade' design pattern are true?",
+      "explanation": "Facades provide a simplified interface to a complex subsystem, reducing coupling between the client and the subsystem's complex internals.",
+      "options": [
+        {
+          "id": "a",
+          "text": "It provides a simplified interface to a complex subsystem.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "It allows a class to have only one instance.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "It reduces coupling between the client and the complex subsystem.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "It is used to traverse elements of a collection.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q03",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Determine whether the following are 'Functional Requirements' or 'Constraints'.",
+      "explanation": "Constraints limit the solution space (budget, legal, technology mandates). Functional requirements describe what the system must do.",
+      "column_headers": [
+        "Functional Requirement",
+        "Constraint"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The system must run on the existing Linux servers.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "The user must be able to reset their password via email.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "The development budget is capped at $50,000.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "The system must generate a monthly sales report.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q04",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In the context of documentation, what does the 'Golden Rule' of arc42 suggest?",
+      "explanation": "The Golden Rule of documentation is to only document what is relevant and adds value for the stakeholders, avoiding unnecessary work ('write only what is read').",
+      "options": [
+        {
+          "id": "a",
+          "text": "Document absolutely everything, just in case.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Only document what you really need to communicate; avoid 'write-only' documentation.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Never document anything; the code is the only truth.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q05",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are typical 'Quality Scenarios' types?",
+      "explanation": "Usage scenarios (normal use), Change scenarios (maintenance/evolution), and Failure scenarios (resilience/recovery) are the standard types of quality scenarios.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Usage Scenarios",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Change Scenarios",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Budget Scenarios",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Failure / Risk Scenarios",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Color Palette Scenarios",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q06",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Classify the following architectural views as 'Static' or 'Dynamic'.",
+      "explanation": "The Context View and Building Block View show structure (Static). The Runtime View shows behavior over time (Dynamic).",
+      "column_headers": [
+        "Static View",
+        "Dynamic View"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Building Block View",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Runtime View",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Context View (System Scope)",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q07",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the core idea of 'Domain-Driven Design' (DDD)?",
+      "explanation": "DDD focuses on tackling complex software projects by connecting the implementation to an evolving model of the core business concepts (the Domain).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Designing the database schema first.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Aligning the software design closely with the business domain and its logic.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Using only open-source frameworks.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q08",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following statements about 'Interfaces' are correct?",
+      "explanation": "Interfaces act as contracts between components, decoupling the implementation from the usage. They should generally be stable and well-defined.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interfaces decouple the caller from the implementation.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Interfaces should expose as many implementation details as possible.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Interfaces define the expected behavior and inputs/outputs.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Interfaces increase the coupling between modules.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q09",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Evaluate the following statements regarding 'Technical Debt'.",
+      "explanation": "Technical debt is a metaphor for the implied cost of additional rework caused by choosing an easy solution now instead of a better approach that would take longer. It needs to be managed and eventually 'paid back'.",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Technical debt should be completely avoided in every project.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Technical debt can be incurred intentionally to speed up delivery.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Technical debt never needs to be paid back.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Unmanaged technical debt can make future changes significantly harder.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q10",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the 'Interface Segregation Principle' (the 'I' in SOLID)?",
+      "explanation": "Clients should not be forced to depend on interfaces they do not use. It is better to have specific, narrow interfaces than a single general-purpose one.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A class should implement as many interfaces as possible.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Clients should not be forced to depend on interfaces they do not use.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Interfaces should be segregated into separate files.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q11",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are benefits of using 'Design Patterns'?",
+      "explanation": "Design patterns provide proven solutions to common problems, facilitate communication (shared vocabulary), and improve design flexibility. They do not automatically generate code or guarantee zero bugs.",
+      "options": [
+        {
+          "id": "a",
+          "text": "They provide proven solutions to common design problems.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "They provide a shared vocabulary for developers.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "They automatically generate the source code.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "They make the design more flexible and maintainable.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "They guarantee that the software will be bug-free.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q12",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Decide whether the following concepts relate to 'Security' or 'Safety'.",
+      "explanation": "Security protects the system from malicious attacks (Confidentiality, Integrity). Safety ensures the system does not harm the environment or people (e.g., ABS brakes, medical devices).",
+      "column_headers": [
+        "Security",
+        "Safety"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Preventing unauthorized access to user data.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Ensuring the medical device does not overheat and burn the patient.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Protecting against SQL injection attacks.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Ensuring the car's airbag deploys correctly in a crash.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q13",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the primary role of the 'Presentation Layer' in a Layered Architecture?",
+      "explanation": "The Presentation Layer (or UI Layer) is responsible for handling user interactions and displaying information. It delegates business logic to the Business Layer.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To execute complex business rules.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To persist data to the database.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "To handle user interaction and display information.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q14",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are characteristics of 'Microservices'?",
+      "explanation": "Microservices are independently deployable and organized around business capabilities. They are not necessarily built in the same language (polyglot) and do not share a single massive database (database per service).",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are independently deployable.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "They must all be written in the same programming language.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "They are organized around business capabilities.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "They all share a single, monolithic database.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q15",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Assign the following diagrams to their UML type: 'Structure Diagram' or 'Behavior Diagram'.",
+      "explanation": "Class and Deployment diagrams show static structure. Use Case and Sequence diagrams show dynamic behavior.",
+      "column_headers": [
+        "Structure Diagram",
+        "Behavior Diagram"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Class Diagram",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Use Case Diagram",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Deployment Diagram",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Sequence Diagram",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q16",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In the 'Broker' pattern, what is the role of the 'Stub' (or Proxy)?",
+      "explanation": "The Stub (or Proxy) resides on the client side and provides a local interface that mimics the remote service, hiding the details of the network communication (marshalling/unmarshalling) from the client.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To store the data on the server.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To act as a local representative of a remote object, hiding communication details.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To manage the central registry of services.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q17",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are typical sections in the 'arc42' documentation template?",
+      "explanation": "Introduction and Goals, Building Block View, and Runtime View are standard arc42 sections. 'Employee Vacation Plan' and 'Stock Market Ticker' are not.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Introduction and Goals",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Building Block View",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Employee Vacation Plan",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Runtime View",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Stock Market Ticker",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q18",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Determine if the following statements about 'Loose Coupling' are True or False.",
+      "explanation": "Loose coupling makes systems easier to maintain and change. It does not mean components don't communicate; it means they communicate via stable abstractions.",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Loose coupling makes the system more difficult to maintain.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Loose coupling allows components to be changed independently.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Loose coupling means components never exchange data.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q19",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the main goal of the 'Singleton' design pattern?",
+      "explanation": "The Singleton pattern ensures a class has only one instance and provides a global point of access to it.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To create a family of related objects.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To ensure a class has only one instance and provide a global point of access to it.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To decouple an abstraction from its implementation.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q20",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify the following statements about 'Architecture Decisions' as True or False.",
+      "explanation": "Architecture decisions have long-lasting effects and often involve trade-offs. They should be documented (e.g., in ADRs). Reverting them is usually costly.",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "They usually have a high impact on the system structure.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "They are easily reversible at any time without cost.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "They often involve a trade-off between conflicting quality goals.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "They should only be made by the project manager.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q21",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which design pattern would you use to notify a variable number of objects about a state change in another object?",
+      "explanation": "The Observer pattern defines a one-to-many dependency so that when one object changes state, all its dependents are notified and updated automatically.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strategy",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Observer",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Factory",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q22",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are sub-characteristics of 'Performance Efficiency' in ISO 25010?",
+      "explanation": "Time Behavior (response time, latency) and Resource Utilization (memory, CPU usage) are key aspects of Performance Efficiency.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Time Behavior",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Fault Tolerance",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Resource Utilization",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Installability",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q23",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the following examples to the correct interface type: 'Provided Interface' or 'Required Interface'.",
+      "explanation": "A Provided Interface is what a component offers to others. A Required Interface is what a component needs from others to function.",
+      "column_headers": [
+        "Provided Interface",
+        "Required Interface"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Component A offers a public API method 'calculateTax()'.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Component B calls the 'sendEmail()' method of an external Service C.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Component A implements the 'ISortable' interface.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q24",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the primary purpose of a 'Building Block View' (Whitebox)?",
+      "explanation": "The Building Block View shows the static decomposition of the system into modules, components, or subsystems and their relationships.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To show the hardware infrastructure and network topology.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To show the static structure of the system code (modules/components).",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To show the sequence of messages between objects at runtime.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q25",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are typical 'Cross-cutting Concepts'?",
+      "explanation": "Internationalization (i18n), Plausibility Checking (Validation), and Transaction Handling are classic cross-cutting concerns that affect many layers and components.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Internationalization (i18n)",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Plausibility Checking / Validation",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "The main method of the application",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Transaction Handling",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "The implementation of the 'User' class",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q26",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Decide whether the following statements about 'Architecture Patterns' are True or False.",
+      "explanation": "Patterns are proven solutions to recurring problems. They are not laws; they must be adapted to the specific context.",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Architecture patterns are reusable solutions to common problems.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "You must always implement a pattern exactly as described in the book.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Using patterns facilitates communication among architects.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "Patterns automatically guarantee high performance.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q27",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What does the 'S' in SOLID stand for?",
+      "explanation": "S stands for Single Responsibility Principle: A class should have one, and only one, reason to change.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simple Design Principle",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Single Responsibility Principle",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Separation of Concerns",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q28",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are benefits of 'Information Hiding'?",
+      "explanation": "Information hiding reduces dependencies (coupling) because clients rely only on stable interfaces, not internals. This makes the system easier to understand and modify.",
+      "options": [
+        {
+          "id": "a",
+          "text": "It reduces the dependency of clients on the internal implementation.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "It makes the code execute faster.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "It improves the understandability of the system by hiding complexity.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "It exposes all data fields as public variables.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q29",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the following tasks to the correct role: 'Software Architect' or 'Project Manager'.",
+      "explanation": "Architects handle technical structure and technology selection. Project Managers handle budget, staffing, and schedules.",
+      "column_headers": [
+        "Software Architect",
+        "Project Manager"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Selecting the database technology.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Approving the holiday requests of the team.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Defining the layer structure of the application.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q30",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which UML diagram is best suited to show the physical deployment of artifacts to nodes?",
+      "explanation": "The Deployment Diagram focuses on the mapping of software artifacts (files, executables) to hardware nodes (servers, devices).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Component Diagram",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Deployment Diagram",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Package Diagram",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q31",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following inputs are required for the ATAM (Architecture Tradeoff Analysis Method)?",
+      "explanation": "ATAM requires the Business Goals (to derive drivers), the Architecture (to evaluate), and Stakeholders (to define scenarios). Source code is not the primary input for ATAM.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Business Goals / Drivers",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Software Architecture Documentation / Presentation",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Complete Source Code",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Stakeholders (for scenarios)",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "The finished product manual",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q32",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify the following statements regarding 'Design Principles' as True or False.",
+      "explanation": "KISS (Keep It Simple, Stupid) and YAGNI (You Ain't Gonna Need It) encourage simplicity and avoiding over-engineering. High coupling is bad.",
+      "column_headers": [
+        "True",
+        "False"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The KISS principle advises to keep solutions as simple as possible.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "YAGNI suggests implementing features that might be needed in the far future.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "High coupling between modules is a goal of good design.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Separation of Concerns helps to manage complexity.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q33",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the relationship between 'Architecture' and 'Design'?",
+      "explanation": "Architecture deals with high-level structure, fundamental decisions, and cross-cutting concerns. Design deals with the detailed implementation of individual components. Architecture is a subset of design, or design includes architecture.",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are completely unrelated disciplines.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Architecture focuses on high-level structure and fundamental decisions; Design includes detailed internal structure.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Architecture is only for hardware; Design is only for software.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q34",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following patterns are best suited for 'Decoupling' components?",
+      "explanation": "Observer decouples the subject from observers. Mediator centralizes communication, decoupling colleagues. Singleton often introduces tight coupling to a global instance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Observer",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Singleton",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Mediator",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Hard-coded references",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q35",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Identify which of the following are 'Functional' or 'Non-Functional' (Quality) requirements.",
+      "explanation": "Functional: Calculating values, saving data. Non-functional: Scalability, availability.",
+      "column_headers": [
+        "Functional",
+        "Non-Functional"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The system must support 1000 concurrent users.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "The system must calculate the interest rate based on the account balance.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "The system must be available 99.9% of the time.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q36",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "In the context of software architecture, what is a 'Trade-off'?",
+      "explanation": "A trade-off is a decision where improving one quality attribute (e.g., security) necessitates sacrificing another (e.g., performance or ease of use). There is rarely a perfect solution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A discount on software licenses.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "A compromise between conflicting quality goals or requirements.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "A method to swap two modules at runtime.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q37",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are standard ways to document software architecture?",
+      "explanation": "UML diagrams, text descriptions (like arc42), and Architecture Decision Records (ADRs) are standard documentation tools. 'Oral tradition' is not a reliable documentation method.",
+      "options": [
+        {
+          "id": "a",
+          "text": "UML Diagrams",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Textual descriptions (e.g., based on templates)",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Oral tradition only",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Architecture Decision Records (ADRs)",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Marketing brochures",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set3-Q38",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Assign the following descriptions to the correct arc42 section.",
+      "explanation": "Context View (Section 3) shows external neighbors. Building Block View (Section 5) shows internal static structure. Deployment View (Section 7) shows infrastructure.",
+      "column_headers": [
+        "Context View",
+        "Building Block View",
+        "Deployment View"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Shows the system as a black box and its external interfaces.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Shows the decomposition of the system into modules and components.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Shows the mapping of software artifacts to hardware nodes.",
+          "correct_column_index": 2
+        },
+        {
+          "id": "d",
+          "text": "Describes the static code structure.",
+          "correct_column_index": 1
+        }
+      ]
+    }
+  ]
+}

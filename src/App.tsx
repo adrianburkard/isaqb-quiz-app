@@ -1,10 +1,16 @@
 import { useState } from 'react';
 import { QuizSelection } from './components/QuizSelection';
 import { QuizView } from './components/QuizView';
-import type { QuizInfo } from './types';
+import type { QuizInfo, Language } from './types';
 
 function App() {
   const [selectedQuiz, setSelectedQuiz] = useState<QuizInfo | null>(null);
+  const [language, setLanguage] = useState<Language>('de');
+
+  const handleSelectQuiz = (quiz: QuizInfo) => {
+    setLanguage(quiz.language);
+    setSelectedQuiz(quiz);
+  };
 
   if (selectedQuiz) {
     return (
@@ -15,7 +21,13 @@ function App() {
     );
   }
 
-  return <QuizSelection onSelectQuiz={setSelectedQuiz} />;
+  return (
+    <QuizSelection
+      onSelectQuiz={handleSelectQuiz}
+      language={language}
+      onLanguageChange={setLanguage}
+    />
+  );
 }
 
 export default App;

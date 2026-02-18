@@ -1,0 +1,552 @@
+{
+  "exam_title": "iSAQB CPSA-F Practice Exam - Set 3",
+  "version": "2025.1-Set4-Batch1",
+  "questions": [
+    {
+      "id": "Set4-Q01",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the primary focus of the 'Repository' pattern in Domain-Driven Design?",
+      "explanation": "A Repository mediates between the domain and data mapping layers using a collection-like interface for accessing domain objects.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To handle user authentication.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To provide a collection-like interface for accessing domain objects.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To validate user input in the UI.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q02",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are advantages of using a 'Layered Architecture'?",
+      "explanation": "Layered architectures support separation of concerns (e.g., UI vs. Logic) and testability (layers can be tested in isolation). They do *not* necessarily improve performance due to overhead.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Separation of concerns (e.g., UI separate from Business Logic).",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Zero performance overhead.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Improved testability of individual layers.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Elimination of all dependencies.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q03",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Classify the following as 'Whitebox' or 'Blackbox' views of a component.",
+      "explanation": "Whitebox reveals internal details (sub-components, logic). Blackbox hides details and shows only interfaces/responsibilities.",
+      "column_headers": [
+        "Whitebox",
+        "Blackbox"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "A diagram showing internal classes and their relationships.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "A description of the public interface and service guarantees.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "A sequence diagram of internal method calls.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "d",
+          "text": "A specification of input/output data formats only.",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q04",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What does the 'I' in SOLID stand for?",
+      "explanation": "I stands for Interface Segregation Principle: Clients should not be forced to depend on interfaces they do not use.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inheritance Principle",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Interface Segregation Principle",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Instantiation Principle",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q05",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are typical 'Quality Attributes' defined in ISO 25010?",
+      "explanation": "Reliability, Usability, and Security are top-level quality characteristics in ISO 25010. 'Cost' and 'Timeline' are project constraints, not software quality attributes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reliability",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Usability",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Development Cost",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Security",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Project Timeline",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q06",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Assign the following concerns to the correct view: 'Deployment View' or 'Runtime View'.",
+      "explanation": "Deployment View deals with hardware mapping and network topology. Runtime View deals with object interaction, data flow, and timing.",
+      "column_headers": [
+        "Deployment View",
+        "Runtime View"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Mapping of software artifacts to servers.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Sequence of messages during a login process.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Network bandwidth requirements between nodes.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q07",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "Which pattern provides a unified interface to a set of interfaces in a subsystem?",
+      "explanation": "The Facade pattern defines a higher-level interface that makes the subsystem easier to use by wrapping a complex set of interfaces.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adapter",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "Facade",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Proxy",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q08",
+      "type": "multiple_choice",
+      "points": 2,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following statements about 'Coupling' are true?",
+      "explanation": "Low coupling is desirable because it reduces the impact of changes. Tight coupling means components are highly dependent on each other, making maintenance harder.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Low coupling is generally desirable.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Tight coupling makes systems easier to maintain.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Coupling measures the degree of interdependence between modules.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Coupling and Cohesion are the same thing.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q09",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Determine if the following are 'Functional Requirements' or 'Constraints'.",
+      "explanation": "Constraints restrict design choices (technology, legal). Functional requirements specify system behavior.",
+      "column_headers": [
+        "Functional Requirement",
+        "Constraint"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "The system must use an Oracle database due to company policy.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "The system must calculate VAT for invoices.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "The application must be written in C#.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "Users must be able to search for products by name.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q10",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the main goal of the 'Model-View-Controller' (MVC) pattern?",
+      "explanation": "MVC separates the user interface (View) from the business logic (Model) and the user input handling (Controller) to improve maintainability and testability.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To combine all logic into one class.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To separate internal representation of information from the way it is presented to the user.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To encrypt data in the database.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q11",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are essential parts of the 'arc42' documentation template?",
+      "explanation": "Introduction/Goals, Building Block View, and Runtime View are core arc42 sections. 'Marketing Plan' and 'Employee Salary List' are not.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Introduction and Goals",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Building Block View",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Marketing Plan",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Runtime View",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Employee Salary List",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q12",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Decide if the following concepts relate to 'High Cohesion' or 'Low Cohesion'.",
+      "explanation": "High cohesion means a module does one thing well (focused). Low cohesion means a module does many unrelated things (random features).",
+      "column_headers": [
+        "High Cohesion",
+        "Low Cohesion"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "A class has a single, well-defined responsibility.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "A 'Utility' class contains random, unrelated helper methods.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "A module groups functions that operate on the same data entity.",
+          "correct_column_index": 0
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q13",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the primary benefit of 'Architecture Decision Records' (ADRs)?",
+      "explanation": "ADRs capture the context and rationale (the 'why') of important decisions, preventing knowledge loss and helping future maintainers understand the history.",
+      "options": [
+        {
+          "id": "a",
+          "text": "They automatically generate code.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "They document the rationale and context of architectural decisions for future reference.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "They replace the need for requirements engineering.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q14",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 2,
+      "question_text": "Which TWO of the following are characteristics of 'Event-Driven Architecture'?",
+      "explanation": "Event-driven systems are decoupled (producers don't know consumers) and asynchronous (processing happens when events arrive). They are typically not synchronous or monolithic.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decoupling of event producers and consumers.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Strictly synchronous communication.",
+          "is_correct": false
+        },
+        {
+          "id": "c",
+          "text": "Asynchronous communication via events.",
+          "is_correct": true
+        },
+        {
+          "id": "d",
+          "text": "Monolithic deployment structure.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q15",
+      "type": "classification_matrix",
+      "points": 2,
+      "question_text": "Match the UML diagram to its category: 'Structure' or 'Behavior'.",
+      "explanation": "Class diagrams show static structure. Activity, Sequence, and State Machine diagrams show dynamic behavior.",
+      "column_headers": [
+        "Structure Diagram",
+        "Behavior Diagram"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Class Diagram",
+          "correct_column_index": 0
+        },
+        {
+          "id": "b",
+          "text": "Activity Diagram",
+          "correct_column_index": 1
+        },
+        {
+          "id": "c",
+          "text": "Sequence Diagram",
+          "correct_column_index": 1
+        },
+        {
+          "id": "d",
+          "text": "State Machine Diagram",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q16",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is the purpose of the 'Context View'?",
+      "explanation": "The Context View defines the system boundary, identifying external interfaces and neighboring systems (actors). It treats the system as a black box.",
+      "options": [
+        {
+          "id": "a",
+          "text": "To show the internal class hierarchy.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "To delimit the system from its environment and identify external interfaces.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "To list all database tables.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q17",
+      "type": "multiple_choice",
+      "points": 1,
+      "required_correct_count": 3,
+      "question_text": "Which of the following are typical responsibilities of a Software Architect?",
+      "explanation": "Architects design structure, evaluate technical risks, and communicate with stakeholders. Writing all the code or selling the product are usually not their primary responsibilities.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Designing the overall system structure.",
+          "is_correct": true
+        },
+        {
+          "id": "b",
+          "text": "Evaluating technical risks.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "Writing every line of code personally.",
+          "is_correct": false
+        },
+        {
+          "id": "d",
+          "text": "Communicating decisions to stakeholders.",
+          "is_correct": true
+        },
+        {
+          "id": "e",
+          "text": "Selling the product to customers.",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q18",
+      "type": "classification_matrix",
+      "points": 1,
+      "question_text": "Decide if the statement relates to 'Microservices' or 'Monolith'.",
+      "explanation": "Monoliths are single deployment units. Microservices are distributed, independently deployable units.",
+      "column_headers": [
+        "Microservices",
+        "Monolith"
+      ],
+      "rows": [
+        {
+          "id": "a",
+          "text": "Single deployment unit containing all functionality.",
+          "correct_column_index": 1
+        },
+        {
+          "id": "b",
+          "text": "Distributed system with independently deployable services.",
+          "correct_column_index": 0
+        },
+        {
+          "id": "c",
+          "text": "Tends to be easier to debug initially (single process).",
+          "correct_column_index": 1
+        }
+      ]
+    },
+    {
+      "id": "Set4-Q19",
+      "type": "single_choice",
+      "points": 1,
+      "question_text": "What is 'Technical Debt'?",
+      "explanation": "Technical Debt refers to the implied cost of future reworking required when choosing an easy/quick solution now instead of a better approach that would take longer.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Money owed to software vendors.",
+          "is_correct": false
+        },
+        {
+          "id": "b",
+          "text": "The implied cost of additional rework caused by choosing an easy solution now.",
+          "is_correct": true
+        },
+        {
+          "id": "c",
+          "text": "The monthly fee for cloud hosting.",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}

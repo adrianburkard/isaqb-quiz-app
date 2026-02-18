@@ -50,12 +50,16 @@ export interface Exam {
   questions: Question[];
 }
 
+// Supported languages
+export type Language = 'de' | 'en';
+
 // Quiz catalog entry
 export interface QuizInfo {
   id: string;
   filename: string;
   title: string;
   description?: string;
+  language: Language;
 }
 
 // User answers
