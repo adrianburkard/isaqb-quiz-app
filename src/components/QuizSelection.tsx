@@ -49,14 +49,14 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
   const t = labels[language];
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
-      <header className="bg-white dark:bg-gray-800 shadow-sm">
+    <div className="min-h-screen bg-page">
+      <header className="bg-header shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-6">
           <div className="flex items-center justify-between mb-4">
-            <h1 className="text-2xl font-bold text-gray-800 dark:text-gray-100">{t.title}</h1>
+            <h1 className="text-2xl font-bold text-primary">{t.title}</h1>
             <PreferencesPanel language={language} />
           </div>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">{t.subtitle}</p>
+          <p className="text-secondary mb-4">{t.subtitle}</p>
 
           {/* Language Tabs */}
           <div className="flex gap-2">
@@ -67,7 +67,7 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
                 className={`px-4 py-2 rounded-lg font-medium transition-colors ${
                   language === lang
                     ? 'bg-blue-500 text-white'
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                    : 'bg-muted text-secondary hover:bg-hover'
                 }`}
               >
                 {languageLabels[lang]}
@@ -91,15 +91,15 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
               <div
                 key={quiz.id}
                 onClick={() => onSelectQuiz(quiz)}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-blue-500"
+                className="bg-card rounded-lg shadow-md p-6 cursor-pointer hover:shadow-lg transition-shadow border-l-4 border-l-blue-500"
               >
                 <div className="flex items-start justify-between">
                   <div className="flex-1">
-                    <h2 className="text-lg font-semibold text-gray-800 dark:text-gray-100">
+                    <h2 className="text-lg font-semibold text-primary">
                       {quiz.title}
                     </h2>
                     {quiz.description && (
-                      <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">
+                      <p className="text-secondary text-sm mt-1">
                         {quiz.description}
                       </p>
                     )}
@@ -107,17 +107,17 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
                     {hasProgress && (
                       <div className="mt-3">
                         <div className="flex items-center gap-4 text-sm">
-                          <span className="text-gray-600 dark:text-gray-400">
+                          <span className="text-secondary">
                             {progress.answeredCount} / {progress.totalQuestions}{' '}
                             {t.answered}
                           </span>
                           {isComplete && (
-                            <span className="px-2 py-0.5 bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">
+                            <span className="px-2 py-0.5 bg-success text-success rounded-full text-xs font-medium">
                               {t.completed}
                             </span>
                           )}
                         </div>
-                        <div className="mt-2 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                        <div className="mt-2 h-2 bg-muted rounded-full overflow-hidden">
                           <div
                             className={`h-full transition-all ${
                               isComplete ? 'bg-green-500' : 'bg-blue-500'
@@ -129,7 +129,7 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
                     )}
 
                     {!hasProgress && (
-                      <p className="mt-3 text-sm text-gray-500 dark:text-gray-500">{t.notStarted}</p>
+                      <p className="mt-3 text-sm text-muted">{t.notStarted}</p>
                     )}
                   </div>
 
@@ -137,7 +137,7 @@ export function QuizSelection({ onSelectQuiz, language, onLanguageChange }: Prop
                     {hasProgress && (
                       <button
                         onClick={(e) => handleReset(quiz.id, e)}
-                        className="p-2 text-gray-400 hover:text-orange-500 hover:bg-orange-50 dark:hover:bg-orange-900/30 rounded-lg transition-colors"
+                        className="p-2 text-muted hover:text-orange-500 hover:bg-orange-100 rounded-lg transition-colors"
                         title={t.resetTitle}
                       >
                         <svg

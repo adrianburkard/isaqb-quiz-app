@@ -11,6 +11,12 @@ import { SingleChoice } from './SingleChoice';
 import { MultipleChoice } from './MultipleChoice';
 import { ClassificationMatrix } from './ClassificationMatrix';
 
+const typeLabels: Record<Question['type'], string> = {
+  single_choice: 'A-Frage',
+  multiple_choice: 'P-Frage',
+  classification_matrix: 'K-Frage',
+};
+
 interface Props {
   question: Question;
   questionNumber: number;
@@ -113,20 +119,14 @@ export function QuestionCard({
     }
   };
 
-  const typeLabels: Record<Question['type'], string> = {
-    single_choice: 'A-Frage',
-    multiple_choice: 'P-Frage',
-    classification_matrix: 'K-Frage',
-  };
-
   return (
-    <div className={`bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 ${borderColor}`}>
+    <div className={`bg-card rounded-lg shadow-md p-6 border-l-4 ${borderColor}`}>
       <div className="flex items-center justify-between mb-4">
         <div className="flex items-center gap-3">
-          <span className="text-lg font-bold text-gray-700 dark:text-gray-200">
+          <span className="text-lg font-bold text-primary">
             Frage {questionNumber}
           </span>
-          <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 text-xs rounded">
+          <span className="px-2 py-1 bg-muted text-secondary text-xs rounded">
             {typeLabels[question.type]}
           </span>
         </div>
@@ -135,32 +135,32 @@ export function QuestionCard({
             <span
               className={`font-medium ${
                 score.isFullyCorrect
-                  ? 'text-green-600 dark:text-green-400'
+                  ? 'text-success'
                   : score.earnedPoints > 0
-                    ? 'text-yellow-600 dark:text-yellow-400'
-                    : 'text-red-600 dark:text-red-400'
+                    ? 'text-warning'
+                    : 'text-error'
               }`}
             >
               {score.earnedPoints} / {score.maxPoints} Punkte
             </span>
           )}
           {!isSubmitted && (
-            <span className="text-gray-500 dark:text-gray-400 text-sm">
+            <span className="text-muted text-sm">
               {question.points} {question.points === 1 ? 'Punkt' : 'Punkte'}
             </span>
           )}
         </div>
       </div>
 
-      <p className="text-gray-800 dark:text-gray-100 mb-4 font-medium">{question.question_text}</p>
+      <p className="text-primary mb-4 font-medium">{question.question_text}</p>
 
       {renderQuestion()}
 
       {isSubmitted && question.explanation && (
-        <div className="mt-4 p-4 bg-green-50 dark:bg-green-900/30 border border-green-200 dark:border-green-800 rounded-lg">
+        <div className="mt-4 p-4 bg-success border border-success rounded-lg">
           <div className="flex gap-2">
             <svg
-              className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5"
+              className="w-5 h-5 text-success shrink-0 mt-0.5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -173,8 +173,8 @@ export function QuestionCard({
               />
             </svg>
             <div>
-              <p className="font-medium text-green-800 dark:text-green-300 mb-1">Erklärung</p>
-              <p className="text-green-700 dark:text-green-400 text-sm">{question.explanation}</p>
+              <p className="font-medium text-success-strong mb-1">Erklärung</p>
+              <p className="text-success text-sm">{question.explanation}</p>
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@ export function QuestionCard({
             className={`px-4 py-2 rounded-lg font-medium transition-colors ${
               canSubmit
                 ? 'bg-blue-500 text-white hover:bg-blue-600'
-                : 'bg-gray-200 dark:bg-gray-700 text-gray-400 dark:text-gray-500 cursor-not-allowed'
+                : 'bg-muted text-muted cursor-not-allowed'
             }`}
           >
             Antwort prufen

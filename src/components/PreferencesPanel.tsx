@@ -80,7 +80,7 @@ export function PreferencesPanel({ language }: Props) {
     <div className="relative" ref={panelRef}>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="p-2 text-gray-500 hover:text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-gray-200 dark:hover:bg-gray-700 rounded-lg transition-colors"
+        className="p-2 text-muted hover:text-primary hover:bg-hover rounded-lg transition-colors"
         title={t.settings}
         aria-label={t.settings}
       >
@@ -106,15 +106,15 @@ export function PreferencesPanel({ language }: Props) {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 top-full mt-2 w-64 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50">
+        <div className="absolute right-0 top-full mt-2 w-64 bg-card rounded-lg shadow-lg border border-default z-50">
           <div className="p-4">
-            <h3 className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+            <h3 className="text-sm font-semibold text-primary mb-3">
               {t.settings}
             </h3>
 
             {/* Theme selection */}
             <div className="mb-4">
-              <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">
+              <label className="block text-xs font-medium text-muted mb-2">
                 {t.theme}
               </label>
               <div className="flex gap-1">
@@ -125,7 +125,7 @@ export function PreferencesPanel({ language }: Props) {
                     className={`flex-1 px-2 py-1.5 text-xs font-medium rounded transition-colors ${
                       preferences.theme === option.value
                         ? 'bg-blue-500 text-white'
-                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                        : 'bg-muted text-secondary hover:bg-hover'
                     }`}
                   >
                     {option.label}
@@ -136,7 +136,7 @@ export function PreferencesPanel({ language }: Props) {
 
             {/* Font size selection */}
             <div>
-              <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">
+              <label className="block text-xs font-medium text-muted mb-2">
                 {t.fontSize}
               </label>
               <div className="flex gap-1">
@@ -147,7 +147,7 @@ export function PreferencesPanel({ language }: Props) {
                     className={`flex-1 px-2 py-1.5 text-xs font-medium rounded transition-colors ${
                       preferences.fontSize === option.value
                         ? 'bg-blue-500 text-white'
-                        : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                        : 'bg-muted text-secondary hover:bg-hover'
                     }`}
                   >
                     {option.label}
