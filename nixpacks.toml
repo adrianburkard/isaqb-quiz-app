@@ -1,0 +1,4 @@
+# Vite 7 / Tailwind 4 native bindings need Node ^20.19 || >=22.12
+[variables]
+NIXPACKS_NODE_VERSION = "22"
+NPM_CONFIG_PRODUCTION = "false"
